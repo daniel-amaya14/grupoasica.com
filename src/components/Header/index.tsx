@@ -30,7 +30,7 @@ export default function Header() {
 
         {/* svg */}
         <div className="text-primary w-full overflow-hidden absolute bottom-[-4px] -z-[1]">
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
           >
@@ -39,6 +39,16 @@ export default function Header() {
               fillOpacity={1}
               d="M0,192L120,160C240,128,480,64,720,64C960,64,1200,128,1320,160L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
             ></path>
+          </svg> */}
+          <svg
+            viewBox="0 0 1440 79"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M-38 79C265.2 -26.3333 720 -26.3333 1478 79H-38Z"
+              fill="currentColor"
+            />
           </svg>
         </div>
       </header>
