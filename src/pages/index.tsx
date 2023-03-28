@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from '@/components/Header';
+import RootLayout from '@/layout/RootLayout';
 import ListCards from '@/components/ListCards';
 import CardLarge from '@/components/CardLarge';
 import CardPartner from '@/components/CardPartner';
-import Footer from '@/components/Footer';
 import { Icon } from '@iconify/react';
 
 import IconCATO from '@/public/svg/cato-networks.svg';
@@ -14,15 +13,22 @@ import IconJumpcloud from '@/public/svg/jumpcloud.svg';
 import IconSAS from '@/public/svg/sas.svg';
 import IconGremlin from '@/public/svg/gremlin.svg';
 import IconASEINFO from '@/public/svg/aseinfo.png';
-import RootLayout from '@/layout/RootLayout';
 
 const ItemsSerevicios = [
-  { name: 'Gobierno', icon: 'fluent:building-government-24-regular' },
-  { name: 'Corporación', icon: 'clarity:building-line' },
-  { name: 'PYMES', icon: 'fluent:building-16-regular' },
-  { name: 'Banca y Finanzas', icon: 'mingcute:bank-line' },
-  { name: 'Salud', icon: 'bi:hospital' },
-  { name: `Estudiante/Pasante`, icon: 'ph:student-fill' },
+  {
+    name: 'Gobierno',
+    href: 'gobierno',
+    icon: 'fluent:building-government-24-regular',
+  },
+  { name: 'Corporación', href: 'corporacion', icon: 'clarity:building-line' },
+  { name: 'PYMES', href: 'pymes', icon: 'fluent:building-16-regular' },
+  {
+    name: 'Banca y Finanzas',
+    href: 'banca-finanzas',
+    icon: 'mingcute:bank-line',
+  },
+  { name: 'Salud', href: 'salud', icon: 'bi:hospital' },
+  { name: `Estudiante`, href: `estudiante`, icon: 'ph:student-fill' },
 ];
 
 const iconsAbout = [
@@ -116,10 +122,10 @@ const ItemsPartnersSecundarios = [
 export default function Home() {
   return (
     <>
-      <RootLayout>
+      <RootLayout withBanner={true}>
         {/* que soy */}
         <section className="py-10 xl:px-48">
-          <h2 className="text-3xl font-bold text-[#5D4B9F] text-center mb-4 md:text-4xl">
+          <h2 className="text-3xl font-bold text-[#5D4B9F] text-center mb-8 md:text-4xl">
             ¿Qué soy?
             <br />
           </h2>
