@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import ListCards from '@/components/ListCards';
+import Footer from '@/components/Footer';
 import { Icon } from '@iconify/react';
 
 const ItemsSerevicios = [
@@ -97,6 +98,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
