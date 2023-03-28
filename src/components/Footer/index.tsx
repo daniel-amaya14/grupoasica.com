@@ -36,10 +36,13 @@ const listaRedes = [
 const ListarItems = ({ listaItems, title }) => {
   return (
     <div>
-      <h4 className="font-bold mb-3 text-[#404143] text-lg">{title}</h4>
+      <h4 className="font-bold mb-3 text-[#404143] text-base">{title}</h4>
       <ul className="flex flex-col gap-2">
         {listaItems.map(({ name, href, icon = '', color = '' }) => (
-          <li key={name.toLowerCase().replaceAll(' ', '-')}>
+          <li
+            key={name.toLowerCase().replaceAll(' ', '-')}
+            className="text-xs"
+          >
             {icon ? <Icon icon={icon} /> : name}
           </li>
         ))}
@@ -52,7 +55,7 @@ export default function Footer() {
   return (
     <footer className="bg-white px-6 py-10 xl:px-20 xl:pt-16">
       <section className="flex flex-col gap-10">
-        <div className="flex flex-col gap-6 md:flex-row justify-center">
+        <div className="flex flex-col gap-6 md:flex-row justify-center xl:gap-20">
           {/* lista-servicios */}
           <ListarItems
             listaItems={listaServicios}
@@ -73,10 +76,10 @@ export default function Footer() {
 
           {/* lista información */}
           <div>
-            <h4 className="font-bold mb-3 text-[#404143] text-lg">
+            <h4 className="font-bold mb-3 text-[#404143] text-base">
               Información
             </h4>
-            <p className="leading-6 mb-3">
+            <p className="leading-6 mb-3 text-xs">
               Colonia Payaquí, Calle principal, casa N°1650, Tegucigalpa M.D.C.{' '}
               <br />
               Honduras, C.A. <br />
@@ -87,7 +90,7 @@ export default function Footer() {
               {listaRedes.map(({ name, icon, href, color }) => (
                 <li
                   key={name.toLowerCase()}
-                  className={`text-slate-700 hover:text-[#${color}] w-7 aspect-square cursor-pointer`}
+                  className={`text-slate-700 hover:text-[#${color}] w-5  aspect-square cursor-pointer`}
                 >
                   <Icon
                     className={`text-slate-700 hover:text-[#${color}]`}
@@ -100,7 +103,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <p className="text-center text-lg">© 2023 Grupo ASICA</p>
+        <p className="text-center text-base">© 2023 Grupo ASICA</p>
       </section>
     </footer>
   );
