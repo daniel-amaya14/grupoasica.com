@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 interface CardPartnerProps {
   name: string;
-  src: React.ReactNode;
+  src: any;
   url: string;
   alt: string;
 }
 
-export default function CardPartner({ name, src, url, alt }: CardPartnerProps) {
+export default function CardPartner({ src, url, alt }: CardPartnerProps) {
   return (
     <Link
       href={url}

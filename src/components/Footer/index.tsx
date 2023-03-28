@@ -33,12 +33,17 @@ const listaRedes = [
   { name: 'Youtube', icon: 'bi:youtube', href: '', color: 'FF0000' },
 ];
 
-const ListarItems = ({ listaItems, title }) => {
+interface ListarItemsProps {
+  listaItems: { name: string; icon?: string }[];
+  title: string;
+}
+
+const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
   return (
     <div>
       <h4 className="font-bold mb-3 text-[#404143] text-base">{title}</h4>
       <ul className="flex flex-col gap-2">
-        {listaItems.map(({ name, href, icon = '', color = '' }) => (
+        {listaItems.map(({ name, icon = '' }) => (
           <li
             key={name.toLowerCase().replaceAll(' ', '-')}
             className="text-xs"
@@ -87,7 +92,7 @@ export default function Footer() {
               PBX : (+504) 2203-6275
             </p>
             <ul className="flex flex-wrap items-center gap-3 md:gap-4">
-              {listaRedes.map(({ name, icon, href, color }) => (
+              {listaRedes.map(({ name, icon, color }) => (
                 <li
                   key={name.toLowerCase()}
                   className={`text-slate-700 hover:text-[#${color}] w-5  aspect-square cursor-pointer`}
