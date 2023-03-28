@@ -1,26 +1,27 @@
 import React from 'react';
+import Link from 'next/link';
 import { Icon } from '@iconify/react';
 
 const listaServicios = [
-  { name: 'eGovernment', href: '' },
-  { name: 'Comercio e Indistria', href: '' },
-  { name: 'Administración de Proyectos', href: '' },
-  { name: 'Capacitaciones', href: '' },
-  { name: 'Soporte técnico', href: '' },
+  { name: 'eGovernment', href: '/servicios/gobierno' },
+  { name: 'Comercio e Indistria', href: '/servicios' },
+  { name: 'Administración de Proyectos', href: '/servicios' },
+  { name: 'Capacitaciones', href: '/capacitaciones' },
+  { name: 'Soporte técnico', href: '/soporte' },
 ];
 
 const listaProductos = [
-  { name: 'Inteligencia Artificial', href: '' },
-  { name: 'Administración', href: '' },
-  { name: 'Banca y Finanzas', href: '' },
-  { name: 'Ciberseguridad', href: '' },
-  { name: 'PYMES', href: '' },
+  { name: 'Inteligencia Artificial', href: '/productos/ia' },
+  { name: 'Administración', href: '/productos/admon' },
+  { name: 'Banca y Finanzas', href: '/productos/banca-finanzas' },
+  { name: 'Ciberseguridad', href: '/productos/ciberseguridad' },
+  { name: 'PYMES', href: '/productos/pymes' },
 ];
 
 const listaAyuda = [
-  { name: 'Contacto', href: '' },
-  { name: 'Abrir ticket de soporte técnico', href: '' },
-  { name: 'Legal', href: '' },
+  { name: 'Contacto', href: '/contacto' },
+  { name: 'Abrir ticket de soporte técnico', href: '/soporte' },
+  { name: 'Legal', href: '/legal' },
 ];
 
 const listaRedes = [
@@ -34,7 +35,7 @@ const listaRedes = [
 ];
 
 interface ListarItemsProps {
-  listaItems: { name: string; icon?: string }[];
+  listaItems: { name: string; href: string; icon?: string }[];
   title: string;
 }
 
@@ -43,13 +44,14 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
     <div>
       <h4 className="font-bold mb-3 text-[#404143] text-base">{title}</h4>
       <ul className="flex flex-col gap-2">
-        {listaItems.map(({ name, icon = '' }) => (
-          <li
+        {listaItems.map(({ name, href, icon = '' }) => (
+          <Link
+            href={href}
             key={name.toLowerCase().replaceAll(' ', '-')}
-            className="text-xs"
+            className="text-xs hover:text-indigo-400"
           >
             {icon ? <Icon icon={icon} /> : name}
-          </li>
+          </Link>
         ))}
       </ul>
     </div>

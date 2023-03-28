@@ -5,10 +5,10 @@ import LogoAsica from '@/public/images/logo-asica.png';
 
 const navLinks = [
   { name: 'Inicio', href: '/' },
-  { name: 'Sobre nosotros', href: '#' },
-  { name: 'Servicios', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'Soporte', href: '#' },
+  { name: 'Sobre nosotros', href: '/about' },
+  { name: 'Servicios', href: '/servicios' },
+  { name: 'Partners', href: '/partners' },
+  { name: 'Soporte', href: '/soporte' },
 ];
 
 export default function Navbar() {
@@ -38,7 +38,7 @@ export default function Navbar() {
         {/* Boton contacto y menu mobil */}
         <div className="flex md:justify-end md:flex-1 md:order-2">
           <Link
-            href="/"
+            href="/contacto"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Contacto
