@@ -14,6 +14,7 @@ import IconJumpcloud from '@/public/svg/jumpcloud.svg';
 import IconSAS from '@/public/svg/sas.svg';
 import IconGremlin from '@/public/svg/gremlin.svg';
 import IconASEINFO from '@/public/svg/aseinfo.png';
+import RootLayout from '@/layout/RootLayout';
 
 const ItemsSerevicios = [
   { name: 'Gobierno', icon: 'fluent:building-government-24-regular' },
@@ -115,8 +116,7 @@ const ItemsPartnersSecundarios = [
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
+      <RootLayout>
         {/* que soy */}
         <section className="py-10 xl:px-48">
           <h2 className="text-3xl font-bold text-[#5D4B9F] text-center mb-4 md:text-4xl">
@@ -323,8 +323,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
+      </RootLayout>
     </>
   );
 }
