@@ -25,13 +25,13 @@ const listaAyuda = [
 ];
 
 const listaRedes = [
-  { name: 'WhatsApp', icon: 'ic:outline-whatsapp', href: '', color: '25D366' },
-  { name: 'Gmail', icon: 'bxl:gmail', href: '', color: 'EA4335' },
-  { name: 'LinkedIn', icon: 'mdi:linkedin', href: '', color: '0A66C2' },
-  { name: 'Twitter', icon: 'uil:twitter', href: '', color: '1DA1F2' },
-  { name: 'Facebook', icon: 'ic:outline-facebook', href: '', color: '1877F2' },
-  { name: 'Instagram', icon: 'mdi:instagram', href: '', color: 'E4405F' },
-  { name: 'Youtube', icon: 'bi:youtube', href: '', color: 'FF0000' },
+  { name: 'WhatsApp', icon: 'ic:outline-whatsapp', href: '', color: '#25D366' },
+  { name: 'Gmail', icon: 'bxl:gmail', href: '', color: '#EA4335' },
+  { name: 'LinkedIn', icon: 'mdi:linkedin', href: '', color: '#0A66C2' },
+  { name: 'Twitter', icon: 'uil:twitter', href: '', color: '#1DA1F2' },
+  { name: 'Facebook', icon: 'ic:outline-facebook', href: '', color: '#1877F2' },
+  { name: 'Instagram', icon: 'mdi:instagram', href: '', color: '#E4405F' },
+  { name: 'Youtube', icon: 'bi:youtube', href: '', color: '#FF0000' },
 ];
 
 interface ListarItemsProps {
@@ -93,21 +93,17 @@ export default function Footer() {
               ventas@grupoasica.com <br />
               PBX : (+504) 2203-6275
             </p>
-            <ul className="flex flex-wrap items-center gap-3 md:gap-4">
-              {listaRedes.map(({ name, icon, color }) => (
-                <li
+            <div className="flex flex-wrap items-center gap-3 md:gap-4">
+              {listaRedes.map(({ name, icon, href, color }) => (
+                <Link
+                  href={href}
                   key={name.toLowerCase()}
-                  className={`text-slate-700 hover:text-[#${color}] w-5  aspect-square cursor-pointer`}
+                  className={`text-slate-600 hover:text-black  text-2xl`}
                 >
-                  <Icon
-                    className={`text-slate-700 hover:text-[#${color}]`}
-                    fill="currentColor"
-                    icon={icon}
-                    width="full"
-                  />
-                </li>
+                  <Icon icon={icon} />
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
         <p className="text-center text-base">© 2023 Grupo ASICA</p>
