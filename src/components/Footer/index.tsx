@@ -94,7 +94,7 @@ export default function Footer() {
               PBX : (+504) 2203-6275
             </p>
             <div className="flex flex-wrap items-center gap-3 md:gap-4">
-              {listaRedes.map(({ name, icon, href, color }) => (
+              {listaRedes.map(({ name, icon, href }) => (
                 <Link
                   href={href}
                   key={name.toLowerCase()}
