@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <>
       {withBanner ? (
-        <Header isHome={true}>
+        <Header>
           <BannerHeader />
         </Header>
       ) : (
         <Header />
       )}
-      <main>{children}</main>
+      <main className="pt-14">{children}</main>
       <Footer />
     </>
   );
