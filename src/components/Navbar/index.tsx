@@ -17,7 +17,7 @@ export default function Navbar() {
   const handleMobileMenuToggle = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <nav className="fixed w-full top-0 px-2 sm:px-4 bg-white z-10 bg-opacity-50 backdrop-blur-md">
+    <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
       {/* container */}
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         {/* Logo */}
@@ -81,6 +81,7 @@ export default function Navbar() {
                 <Link
                   href={href}
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:underline"
+                  onClick={handleMobileMenuToggle}
                 >
                   {name}
                 </Link>

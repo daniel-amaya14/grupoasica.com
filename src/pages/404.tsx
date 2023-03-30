@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Page404() {
   return (
     <RootLayout>
-      <div className="grid h-full px-4 pb-8 place-content-center">
+      <div className="grid h-screen place-content-center">
         <div className="text-center">
           <h1 className="font-black text-gray-200 text-9xl">404</h1>
 

@@ -124,7 +124,7 @@ export default function Home() {
     <>
       <RootLayout withBanner={true}>
         {/* que soy */}
-        <section className="py-10 xl:px-48">
+        <section className="pb-10 xl:px-48">
           <h2 className="text-3xl font-bold text-[#5D4B9F] text-center mb-8 md:text-4xl">
             ¿Qué soy?
             <br />

@@ -19,9 +19,9 @@ export default function Contact() {
             className="absolute inset-0 h-full w-full object-cover"
           />
         </div>
-        <div className="w-full px-4 py-6 sm:px-6 lg:py-0 lg:w-1/2 lg:px-8 ">
+        <div className="w-full px-4 py-6 sm:px-6 lg:pt-8 lg:pb-0 lg:w-1/2 lg:px-8 xl:pt-10">
           <div className="mx-auto max-w-md">
-            <h1 className="text-2xl font-bold text-[#5D4B9F] md:text-3xl">
+            <h1 className="text-xl font-bold text-[#5D4B9F] sm:text-2xl md:text-3xl">
               Comunícate con nosotros
             </h1>
           </div>
