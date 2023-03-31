@@ -2,21 +2,12 @@ import React from 'react';
 import RootLayout from '@/layout/RootLayout';
 import ListCards from '@/components/ListCards';
 import CardLarge from '@/components/CardLarge';
-import CardPartner from '@/components/CardPartner';
+import ListPartners from '@/components/ListPartners';
 import { Icon } from '@iconify/react';
 
 import IMGOffice from '@/public/images/office365.png';
 import IMGManagement from '@/public/images/management.jpg';
 import IMGWellness from '@/public/images/wellness.jpg';
-
-import IconCATO from '@/public/svg/cato-networks.svg';
-import IconDATADOG from '@/public/svg/datadog.svg';
-import IconHTB from '@/public/svg/htb.svg';
-import IconHuntress from '@/public/svg/huntress.svg';
-import IconJumpcloud from '@/public/svg/jumpcloud.svg';
-import IconSAS from '@/public/svg/sas.svg';
-import IconGremlin from '@/public/svg/gremlin.svg';
-import IconASEINFO from '@/public/svg/aseinfo.png';
 
 const ItemsSerevicios = [
   {
@@ -66,61 +57,6 @@ const ItemsCredenciales = [
   { name: 'JumpCloud' },
   { name: 'CATO' },
   { name: 'Acumatica' },
-];
-
-const ItemsPartnersPrincipales = [
-  {
-    name: 'SAS',
-    src: IconSAS,
-    url: 'https://www.sas.com/es_mx/home.html',
-    alt: 'Logo SAS',
-  },
-  {
-    name: 'Hack The Box',
-    src: IconHTB,
-    url: 'https://www.hackthebox.com/',
-    alt: 'Logo Hack The Box',
-  },
-  {
-    name: 'CATO Networks',
-    src: IconCATO,
-    url: 'https://www.catonetworks.com/',
-    alt: 'Logo CATO Networks',
-  },
-  {
-    name: 'JumpCloud',
-    src: IconJumpcloud,
-    url: 'https://jumpcloud.com/',
-    alt: 'Logo JumpCloud',
-  },
-  {
-    name: 'Huntress',
-    src: IconHuntress,
-    url: 'https://www.huntress.com/',
-    alt: 'Logo Huntress',
-  },
-  {
-    name: 'DATADOG',
-    src: IconDATADOG,
-    url: 'https://www.datadoghq.com/',
-    alt: 'Logo DATADOG',
-  },
-  {
-    name: 'Gremlin',
-    src: IconGremlin,
-    url: 'https://www.gremlin.com/',
-    alt: 'Logo Gremlin',
-  },
-];
-
-// eslint-disable-next-line no-unused-vars
-const ItemsPartnersSecundarios = [
-  {
-    name: 'ASEINFO',
-    src: IconASEINFO,
-    url: 'https://www.aseinfo.com.sv/',
-    alt: 'Logo ASEINFO',
-  },
 ];
 
 export default function Home() {
@@ -325,17 +261,7 @@ export default function Home() {
               Únete a nuestra red de colaboradores y crezcamos juntos en la era
               digital.
             </h2>
-            <div className="grid grid-cols-auto-layout-partners md:grid-cols-auto-layout-partners-md xl:grid-cols-auto-layout-partners-xl auto-rows-fr gap-4 mb-10">
-              {ItemsPartnersPrincipales.map(({ name, src, url, alt }) => (
-                <CardPartner
-                  key={name.toLowerCase().replaceAll(' ', '-')}
-                  name={name}
-                  src={src}
-                  url={url}
-                  alt={alt}
-                />
-              ))}
-            </div>
+            <ListPartners />
             <div className="text-center">
               <button className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-md active:ring-4 active:ring-blue-300">
                 Quiero ser partner
