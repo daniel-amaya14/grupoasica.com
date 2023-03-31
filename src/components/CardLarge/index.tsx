@@ -7,15 +7,9 @@ interface CardLargeProps {
   title: string;
   children: React.ReactNode;
   src?: StaticImageData;
-  alt?: string;
 }
 
-export default function CardLarge({
-  title,
-  children,
-  src,
-  alt,
-}: CardLargeProps) {
+export default function CardLarge({ title, children, src }: CardLargeProps) {
   return (
     <div className="max-w-sm bg-white rounded-md shadow">
       {src ? (
@@ -23,7 +17,7 @@ export default function CardLarge({
           <Image
             className="rounded-t-lg"
             src={src}
-            alt={alt}
+            alt="image"
           />
         </Link>
       ) : null}

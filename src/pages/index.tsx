@@ -253,7 +253,6 @@ export default function Home() {
             <CardLarge
               title="Gestión (Diplomado)"
               src={IMGWellness}
-              alt="Wellness coaching"
             >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -266,7 +265,6 @@ export default function Home() {
             <CardLarge
               title="Coaching Bienestar"
               src={IMGManagement}
-              alt="Diplomado en gestión"
             >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -279,7 +277,6 @@ export default function Home() {
             <CardLarge
               title="Microsoft Office"
               src={IMGOffice}
-              alt="Office 365"
             >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
