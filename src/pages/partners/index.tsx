@@ -60,7 +60,7 @@ export default function Partners() {
     <RootLayout>
       <section className="flex flex-col justify-between overflow-hidden">
         <div className="py-6 px-8 xl:px-40 xl:py-10">
-          <h2 className="text-2xl font-bold text-[#5D4B9F] pb-4 md:text-4xl">
+          <h2 className="text-2xl font-bold text-fontPrimary text-justify pb-4 md:text-4xl">
             Contamos con la mejor red de colaboradores
           </h2>
           <p className="text-sm pb-6 md:text-base md:pb-10">
@@ -81,8 +81,8 @@ export default function Partners() {
             ))}
           </div>
           <div className="text-center">
-            <button className="bg-indigo-400 hover:bg-indigo-600 text-white py-3 px-4 rounded-md">
-              Convertirse en Partner
+            <button className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-md active:ring-4 active:ring-blue-300">
+              Quiero ser partner
             </button>
           </div>
         </div>

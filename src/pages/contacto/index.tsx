@@ -21,7 +21,7 @@ export default function Contact() {
         </div>
         <div className="w-full px-4 py-6 sm:px-6 lg:pt-8 lg:pb-0 lg:w-1/2 lg:px-8 xl:pt-10">
           <div className="mx-auto max-w-md">
-            <h1 className="text-xl font-bold text-[#5D4B9F] sm:text-2xl md:text-3xl">
+            <h1 className="text-xl font-bold text-fontPrimary text-justify sm:text-2xl md:text-3xl">
               Comunícate con nosotros
             </h1>
           </div>
@@ -117,7 +117,7 @@ export default function Contact() {
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                className="text-white bg-blue-700 hover:bg-blue-800 active:ring-4 active:ring-blue-300 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
               >
                 Enviar
               </button>

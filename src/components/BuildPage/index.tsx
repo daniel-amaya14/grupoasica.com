@@ -13,11 +13,11 @@ export default function BuildPage() {
           height={300}
           alt="Página en construcción"
         />
-        <div className="text-center">
-          <p className="text-2xl md:text-3xl font-bold text-yellow-300">
+        <div>
+          <p className="text-2xl font-bold text-yellow-300 text-center md:text-3xl">
             Página en construcción
           </p>
-          <p className="text-2xl md:text-3xl font-bold text-indigo-400">
+          <p className="text-2xl font-bold text-indigo-400 text-center md:text-3xl">
             Vuelva pronto
           </p>
         </div>

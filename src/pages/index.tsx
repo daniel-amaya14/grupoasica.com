@@ -5,6 +5,10 @@ import CardLarge from '@/components/CardLarge';
 import CardPartner from '@/components/CardPartner';
 import { Icon } from '@iconify/react';
 
+import IMGOffice from '@/public/images/office365.png';
+import IMGManagement from '@/public/images/management.jpg';
+import IMGWellness from '@/public/images/wellness.jpg';
+
 import IconCATO from '@/public/svg/cato-networks.svg';
 import IconDATADOG from '@/public/svg/datadog.svg';
 import IconHTB from '@/public/svg/htb.svg';
@@ -123,10 +127,10 @@ export default function Home() {
   return (
     <>
       <RootLayout withBanner={true}>
-        {/* que soy */}
+        {/* quién eres */}
         <section className="pb-10 xl:px-48">
-          <h2 className="text-3xl font-bold text-[#5D4B9F] text-center mb-8 md:text-4xl">
-            ¿Qué soy?
+          <h2 className="text-3xl font-bold text-fontPrimary text-center mb-8 md:text-4xl">
+            ¿Quién eres?
             <br />
           </h2>
           <ListCards listItems={ItemsSerevicios} />
@@ -150,7 +154,7 @@ export default function Home() {
 
           {/* content */}
           <div className="py-10 px-8 xl:px-40 xl:py-20">
-            <h2 className="text-2xl font-bold text-[#5D4B9F] pb-4 md:text-4xl">
+            <h2 className="text-2xl font-bold text-fontPrimary text-justify mb-4 md:text-4xl">
               Sobre nosotros
             </h2>
             <p className="text-sm pb-6 md:text-base md:pb-10">
@@ -170,10 +174,11 @@ export default function Home() {
                     className="flex flex-col gap-0.5 justify-center items-center text-sm w-[120px] aspect-square"
                   >
                     <Icon
+                      className="text-fontPrimary"
                       icon={icon}
                       width={42}
                     />
-                    <p>{title}</p>
+                    <p className="font-semibold">{title}</p>
                     <span>{span}</span>
                   </li>
                 ))}
@@ -196,10 +201,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* certificate con nocostros */}
+        {/* certificate con nosotros */}
         <section className="py-10 px-8 xl:px-40 xl:py-20">
           <div className="flex flex-col gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-[#5D4B9F] md:text-4xl">
+            <h2 className="text-2xl font-bold text-fontPrimary text-justify md:text-4xl">
               Certifícate con nosotros
             </h2>
             <p>
@@ -209,7 +214,7 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-14 auto-rows-auto grid-flow-dense gap-4">
+          <div className="grid grid-cols-auto-layout-14 auto-rows-auto grid-flow-dense place-items-center gap-4">
             {ItemsCertificaciones.map(({ name, description, modulos }) => (
               <CardLarge
                 title={name}
@@ -234,7 +239,7 @@ export default function Home() {
         {/* capacitate con nosotros */}
         <section className="py-10 px-8 xl:px-40 xl:py-20">
           <div className="flex flex-col gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-[#5D4B9F] md:text-4xl">
+            <h2 className="text-2xl font-bold text-fontPrimary text-justify md:text-4xl">
               Capacítate con nosotros
             </h2>
             <p>
@@ -244,8 +249,12 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense gap-4">
-            <CardLarge title="Gestión (Diplomado)">
+          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense place-items-center gap-4">
+            <CardLarge
+              title="Gestión (Diplomado)"
+              src={IMGWellness}
+              alt="Wellness coaching"
+            >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus sed finibus libero. Nullam vitae sodales est. Orci
@@ -254,7 +263,11 @@ export default function Home() {
               </p>
             </CardLarge>
 
-            <CardLarge title="Coaching Bienestar">
+            <CardLarge
+              title="Coaching Bienestar"
+              src={IMGManagement}
+              alt="Diplomado en gestión"
+            >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus sed finibus libero. Nullam vitae sodales est. Orci
@@ -263,7 +276,11 @@ export default function Home() {
               </p>
             </CardLarge>
 
-            <CardLarge title="Microsoft Office">
+            <CardLarge
+              title="Microsoft Office"
+              src={IMGOffice}
+              alt="Office 365"
+            >
               <p className="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus sed finibus libero. Nullam vitae sodales est. Orci
@@ -277,7 +294,7 @@ export default function Home() {
         {/* nuestras credenciales */}
         <section className="py-10 px-8 xl:px-40 xl:py-20">
           <div className="flex flex-col gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-[#5D4B9F] md:text-4xl">
+            <h2 className="text-2xl font-bold text-fontPrimary text-justify md:text-4xl">
               Nuestras credenciales
             </h2>
             <p>
@@ -287,7 +304,7 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense gap-4">
+          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense place-items-center gap-4">
             {ItemsCredenciales.map(({ name }) => (
               <CardLarge
                 title={name}
@@ -307,7 +324,7 @@ export default function Home() {
         {/* partners */}
         <section className="py-10 px-8 xl:px-40 xl:py-20">
           <div>
-            <h2 className="text-2xl font-bold text-[#5D4B9F] mb-6 md:text-4xl">
+            <h2 className="text-2xl font-bold text-fontPrimary text-justify mb-6 md:text-4xl">
               Únete a nuestra red de colaboradores y crezcamos juntos en la era
               digital.
             </h2>
@@ -323,8 +340,8 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center">
-              <button className="bg-indigo-400 hover:bg-indigo-600 text-white py-3 px-4 rounded-md">
-                Convertirse en Partner
+              <button className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-md active:ring-4 active:ring-blue-300">
+                Quiero ser partner
               </button>
             </div>
           </div>

@@ -14,7 +14,7 @@ export default function About() {
     <RootLayout>
       <section className="flex flex-col justify-between overflow-hidden">
         <div className="py-6 px-8 xl:px-40 xl:py-10">
-          <h2 className="text-2xl font-bold text-[#5D4B9F] pb-4 md:text-4xl">
+          <h2 className="text-2xl font-bold text-fontPrimary text-justify pb-4 md:text-4xl">
             Grupo ASICA
           </h2>
           <p className="text-sm pb-6 md:text-base md:pb-10">
@@ -34,10 +34,11 @@ export default function About() {
                   className="flex flex-col gap-0.5 justify-center items-center text-sm w-[120px] aspect-square"
                 >
                   <Icon
+                    className="text-fontPrimary"
                     icon={icon}
                     width={42}
                   />
-                  <p>{title}</p>
+                  <p className="font-semibold">{title}</p>
                   <span>{span}</span>
                 </li>
               ))}

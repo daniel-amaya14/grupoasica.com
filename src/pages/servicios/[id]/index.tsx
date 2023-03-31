@@ -20,7 +20,7 @@ export default function ServiceID({ id }: ServiceIDProps) {
     <RootLayout>
       <section className="flex flex-col justify-between overflow-hidden">
         <div className="py-6 px-8 xl:px-40 xl:py-10">
-          <h2 className="text-2xl font-bold text-[#5D4B9F] pb-4 md:text-4xl">
+          <h2 className="text-2xl font-bold text-fontPrimary text-justify pb-4 md:text-4xl">
             {id.toUpperCase().replaceAll('-', ' ')}
           </h2>
           <p className="text-sm pb-6 md:text-base md:pb-10">
