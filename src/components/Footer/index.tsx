@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 const listaServicios = [
   { name: 'eGovernment', href: '/servicios/gobierno' },
-  { name: 'Comercio e Indistria', href: '/servicios' },
+  { name: 'Comercio e Industria', href: '/servicios' },
   { name: 'Administración de Proyectos', href: '/servicios' },
   { name: 'Capacitaciones', href: '/capacitaciones' },
   { name: 'Soporte técnico', href: '/soporte' },
@@ -26,12 +26,12 @@ const listaAyuda = [
 
 const listaRedes = [
   { name: 'WhatsApp', icon: 'ic:outline-whatsapp', href: '', color: '#25D366' },
-  { name: 'Gmail', icon: 'bxl:gmail', href: '', color: '#EA4335' },
+  { name: 'GMail', icon: 'bxl:gmail', href: '', color: '#EA4335' },
   { name: 'LinkedIn', icon: 'mdi:linkedin', href: '', color: '#0A66C2' },
   { name: 'Twitter', icon: 'uil:twitter', href: '', color: '#1DA1F2' },
   { name: 'Facebook', icon: 'ic:outline-facebook', href: '', color: '#1877F2' },
   { name: 'Instagram', icon: 'mdi:instagram', href: '', color: '#E4405F' },
-  { name: 'Youtube', icon: 'bi:youtube', href: '', color: '#FF0000' },
+  { name: 'YouTube', icon: 'bi:youtube', href: '', color: '#FF0000' },
 ];
 
 interface ListarItemsProps {
