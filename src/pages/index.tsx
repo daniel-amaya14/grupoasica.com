@@ -1,62 +1,17 @@
 import React from 'react';
 import RootLayout from '@/layout/RootLayout';
-import ListCards from '@/components/ListCards';
-import CardLarge from '@/components/CardLarge';
-import ListPartners from '@/components/ListPartners';
+import ListCardsServicios from '@/components/ListCardsServicios';
+import ListCardsCertificaciones from '@/components/ListCardsCertificaciones';
+import ListCardsCredenciales from '@/components/ListCardsCredenciales';
+import ListCardsCapacitaciones from '@/components/ListCardsCapacitaciones';
+import ListCardsPartners from '@/components/ListCardsPartners';
 import { Icon } from '@iconify/react';
-
-import IMGOffice from '@/public/images/office365.png';
-import IMGManagement from '@/public/images/management.jpg';
-import IMGWellness from '@/public/images/wellness.jpg';
-
-const ItemsSerevicios = [
-  {
-    name: 'Gobierno',
-    href: 'gobierno',
-    icon: 'fluent:building-government-24-regular',
-  },
-  { name: 'Corporación', href: 'corporacion', icon: 'clarity:building-line' },
-  { name: 'PYMES', href: 'pymes', icon: 'fluent:building-16-regular' },
-  {
-    name: 'Banca y Finanzas',
-    href: 'banca-finanzas',
-    icon: 'mingcute:bank-line',
-  },
-  { name: 'Salud', href: 'salud', icon: 'bi:hospital' },
-  { name: `Estudiante`, href: `estudiante`, icon: 'ph:student-fill' },
-];
 
 const iconsAbout = [
   { icon: 'ph:folder-open-bold', title: '+400', span: 'Proyectos' },
   { icon: 'uil:users-alt', title: '+100', span: 'Clientes' },
   { icon: 'ic:round-star-outline', title: '+28 años', span: 'Experiencia' },
   { icon: 'ph:briefcase', title: '+37 partners', span: 'A nivel mundial' },
-];
-
-const ItemsCertificaciones = [
-  {
-    name: 'CPTS',
-    description: 'HTB Certified Penetration Testing Specialist',
-    modulos: '28',
-  },
-  {
-    name: 'CBBH',
-    description: 'HTB Certified Bug Bounty Hunter',
-    modulos: '20',
-  },
-  {
-    name: 'Otro',
-    description: 'Lorem ipsum dolor sit amet',
-    modulos: '20',
-  },
-];
-
-const ItemsCredenciales = [
-  { name: 'Certificación DD' },
-  { name: 'Gremlin' },
-  { name: 'JumpCloud' },
-  { name: 'CATO' },
-  { name: 'Acumatica' },
 ];
 
 export default function Home() {
@@ -69,7 +24,7 @@ export default function Home() {
             ¿Quién eres?
             <br />
           </h2>
-          <ListCards listItems={ItemsSerevicios} />
+          <ListCardsServicios />
         </section>
 
         {/* sobre nosotros */}
@@ -150,26 +105,7 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-14 auto-rows-auto grid-flow-dense place-items-center gap-4">
-            {ItemsCertificaciones.map(({ name, description, modulos }) => (
-              <CardLarge
-                title={name}
-                key={name.toLowerCase().replaceAll(' ', '-')}
-              >
-                <p className="text-xs mb-3">{description}</p>
-                <div className="flex items-center gap-6">
-                  <div className="flex justify-center items-center gap-2">
-                    <Icon icon="fluent:layer-20-filled" />
-                    <p className="text-xs">{modulos} módulos</p>
-                  </div>
-                  <div className="flex justify-center items-center gap-2">
-                    <Icon icon="mingcute:certificate-fill" />
-                    <p className="text-xs">{modulos} Examen Incluido</p>
-                  </div>
-                </div>
-              </CardLarge>
-            ))}
-          </div>
+          <ListCardsCertificaciones />
         </section>
 
         {/* capacitate con nosotros */}
@@ -185,43 +121,7 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense place-items-center gap-4">
-            <CardLarge
-              title="Gestión (Diplomado)"
-              src={IMGWellness}
-            >
-              <p className="text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus sed finibus libero. Nullam vitae sodales est. Orci
-                varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </CardLarge>
-
-            <CardLarge
-              title="Coaching Bienestar"
-              src={IMGManagement}
-            >
-              <p className="text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus sed finibus libero. Nullam vitae sodales est. Orci
-                varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </CardLarge>
-
-            <CardLarge
-              title="Microsoft Office"
-              src={IMGOffice}
-            >
-              <p className="text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus sed finibus libero. Nullam vitae sodales est. Orci
-                varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </CardLarge>
-          </div>
+          <ListCardsCapacitaciones />
         </section>
 
         {/* nuestras credenciales */}
@@ -237,21 +137,7 @@ export default function Home() {
               molestias, ducimus soluta ratione molestiae aut nobis.
             </p>
           </div>
-          <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense place-items-center gap-4">
-            {ItemsCredenciales.map(({ name }) => (
-              <CardLarge
-                title={name}
-                key={name.toLowerCase().replaceAll(' ', '-')}
-              >
-                <p className="text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus sed finibus libero. Nullam vitae sodales est. Orci
-                  varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </CardLarge>
-            ))}
-          </div>
+          <ListCardsCredenciales />
         </section>
 
         {/* partners */}
@@ -261,7 +147,7 @@ export default function Home() {
               Únete a nuestra red de colaboradores y crezcamos juntos en la era
               digital.
             </h2>
-            <ListPartners />
+            <ListCardsPartners />
             <div className="text-center">
               <button className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-md active:ring-4 active:ring-blue-300">
                 Quiero ser partner

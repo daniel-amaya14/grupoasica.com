@@ -1,6 +1,6 @@
 import React from 'react';
 import RootLayout from '@/layout/RootLayout';
-import ListPartners from '@/components/ListPartners';
+import ListCardsPartners from '@/components/ListCardsPartners';
 
 export default function Partners() {
   return (
@@ -21,7 +21,7 @@ export default function Partners() {
             </button>
           </div>
         </div>
-        <ListPartners />
+        <ListCardsPartners />
       </section>
     </RootLayout>
   );

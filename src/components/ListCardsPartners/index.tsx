@@ -54,7 +54,7 @@ const ItemsPartnersPrincipales = [
   },
 ];
 
-export default function ListPartners() {
+export default function ListCardsPartners() {
   return (
     <div className="grid grid-cols-auto-layout-partners md:grid-cols-auto-layout-partners-md xl:grid-cols-auto-layout-partners-xl auto-rows-fr gap-4 mb-10">
       {ItemsPartnersPrincipales.map(({ name, src, url, alt }) => (
