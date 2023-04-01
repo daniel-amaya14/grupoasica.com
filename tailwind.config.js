@@ -25,6 +25,7 @@ module.exports = {
         'auto-layout-partners': 'repeat(auto-fit, minmax(7rem, 1fr))',
         'auto-layout-partners-md': 'repeat(auto-fit, minmax(10rem, 1fr))',
         'auto-layout-partners-xl': 'repeat(auto-fit, minmax(14rem, 1fr))',
+        'auto-layout-itemsGovernment': 'repeat(auto-fill, minmax(13rem, 1fr))',
       },
     },
   },

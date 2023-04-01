@@ -12,7 +12,6 @@ export default function RootLayout({
   children,
   withBanner = false,
 }: RootLayoutProps) {
-  console.log(withBanner);
   return (
     <>
       {withBanner ? (
