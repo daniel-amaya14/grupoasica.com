@@ -144,9 +144,13 @@ export default function Footer() {
                 <Link
                   href={href}
                   key={name.toLowerCase()}
-                  className={`text-slate-600 hover:text-black  text-2xl`}
+                  className="gruop rounded-md bg-gray-100 p-1 text-gray-500 transition hover:bg-gray-200"
                 >
-                  <Icon icon={icon} />
+                  <Icon
+                    icon={icon}
+                    className="h-6 w-6 hover:text-black"
+                    fill="currentColor"
+                  />
                 </Link>
               ))}
             </div>
