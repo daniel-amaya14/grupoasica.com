@@ -1,10 +1,63 @@
 import React from 'react';
-import RootLayout from '@/layout/RootLayout';
-import ListCardsPartners from '@/components/ListCardsPartners';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+
+import IconCATO from '@/public/partners/cato-networks.svg';
+import IconDATADOG from '@/public/partners/datadog.svg';
+import IconHTB from '@/public/partners/htb.svg';
+import IconHuntress from '@/public/partners/huntress.svg';
+import IconJumpcloud from '@/public/partners/jumpcloud.svg';
+import IconSAS from '@/public/partners/sas.svg';
+import IconGremlin from '@/public/partners/gremlin.svg';
+
+const partners = [
+  {
+    name: 'SAS',
+    src: IconSAS,
+    url: 'https://www.sas.com/es_mx/home.html',
+    alt: 'Logo SAS',
+  },
+  {
+    name: 'Hack The Box',
+    src: IconHTB,
+    url: 'https://www.hackthebox.com/',
+    alt: 'Logo Hack The Box',
+  },
+  {
+    name: 'CATO Networks',
+    src: IconCATO,
+    url: 'https://www.catonetworks.com/',
+    alt: 'Logo CATO Networks',
+  },
+  {
+    name: 'JumpCloud',
+    src: IconJumpcloud,
+    url: 'https://jumpcloud.com/',
+    alt: 'Logo JumpCloud',
+  },
+  {
+    name: 'Huntress',
+    src: IconHuntress,
+    url: 'https://www.huntress.com/',
+    alt: 'Logo Huntress',
+  },
+  {
+    name: 'DATADOG',
+    src: IconDATADOG,
+    url: 'https://www.datadoghq.com/',
+    alt: 'Logo DATADOG',
+  },
+  {
+    name: 'Gremlin',
+    src: IconGremlin,
+    url: 'https://www.gremlin.com/',
+    alt: 'Logo Gremlin',
+  },
+];
 
 export default function Partners() {
   return (
-    <RootLayout>
+    <>
       <section className="flex flex-col gap-12 py-6 px-8 xl:px-40 xl:py-10">
         <div className="flex flex-col gap-6">
           <h1 className="text-2xl font-bold text-fontPrimary text-center md:text-4xl">
@@ -15,14 +68,43 @@ export default function Partners() {
             ayudan a ofrecer soluciones integrales a nuestros clientes. Si
             quieres ser parte de nuestra red de colaboradores, contáctanos.
           </p>
-          <div className="text-center">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-md active:ring-4 active:ring-blue-300">
-              Quiero ser partner
-            </button>
+        </div>
+      </section>
+      <section>
+        <div className="relative w-full mx-auto md:px-12 lg:px-16 max-w-7xl pb-14">
+          <div className="grid grid-cols-2 gap-0.5 md:grid-cols-3 overflow-hidden rounded-md">
+            {partners.map(({ src, alt }) => (
+              <Card
+                key={alt}
+                src={src}
+                alt={alt}
+              />
+            ))}
           </div>
         </div>
-        <ListCardsPartners />
       </section>
-    </RootLayout>
+    </>
   );
 }
+
+interface CardProps {
+  src: StaticImageData;
+  alt: string;
+}
+
+const Card = ({ src, alt }: CardProps) => {
+  return (
+    <Link
+      href="#"
+      className="flex justify-center col-span-1 p-8 bg-gray-200 hover:bg-indigo-200"
+    >
+      <Image
+        className="max-h-12 aspect-square contrast-0"
+        src={src}
+        alt={alt}
+        width={120}
+        height={110}
+      />
+    </Link>
+  );
+};
