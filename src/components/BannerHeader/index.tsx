@@ -6,7 +6,7 @@ export default function BannerHeader() {
   return (
     <div className="relative ">
       {/* titulo */}
-      <div className="w-full text-center absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  md:top-1/2 xl:top-[40%]">
+      <div className="w-full text-center absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-1/2 xl:top-[40%]">
         <h1 className="text-white uppercase text-xl font-semibold drop-shadow-4xl md:text-4xl xl:text-5xl">
           <span className="text-[#00D1FF] font-bold ">
             Desarrollamos soluciones
