@@ -3,38 +3,38 @@ import CardProductos from '@/components/CardProductos';
 
 const productos = [
   {
-    title: 'Digitalizar',
+    title: 'ERD',
     description:
       'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'Automatización',
+    title: 'Hockey Sports',
+    description:
+      'A business big enough that it could be listed on the NASDAQ goes belly up.',
+  },
+  {
+    title: 'Protección de Activos',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
   {
-    title: 'Protección de activos',
+    title: 'Consultoría IT',
     description:
       'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
   },
   {
-    title: 'TDR',
+    title: 'Analítica Avanzada',
     description:
       'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
   },
   {
-    title: 'Transformación',
+    title: 'Entrenamiento',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
-  {
-    title: 'Entrenamiento',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-  },
 ];
 
-export default function Gobierno() {
+export default function Corporación() {
   return (
     <div className="">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -115,7 +115,7 @@ export default function Gobierno() {
               </svg>
               <span className="relative">Soluciones</span>
             </span>{' '} */}
-            Gobierno
+            Corporación
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

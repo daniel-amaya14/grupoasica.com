@@ -1,5 +1,4 @@
 import React from 'react';
-import RootLayout from '@/layout/RootLayout';
 import Image from 'next/image';
 import ImgContacto from '@/public/images/contacto.jpg';
 
@@ -9,7 +8,7 @@ export default function Contact() {
   };
 
   return (
-    <RootLayout>
+    <>
       <section className="relative flex flex-wrap lg:h-screen">
         <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
           <Image
@@ -125,6 +124,6 @@ export default function Contact() {
           </form>
         </div>
       </section>
-    </RootLayout>
+    </>
   );
 }

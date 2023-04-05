@@ -3,38 +3,43 @@ import CardProductos from '@/components/CardProductos';
 
 const productos = [
   {
-    title: 'Digitalizar',
+    title: 'NIFF 9',
     description:
       'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'Automatización',
+    title: 'Riesgos',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
   {
-    title: 'Protección de activos',
+    title: 'Cash management',
     description:
       'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
   },
   {
-    title: 'TDR',
+    title: 'Weight Lifting Sports',
     description:
       'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
   },
   {
-    title: 'Transformación',
+    title: 'Ciberseguridad',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
   {
-    title: 'Entrenamiento',
+    title: 'Inteligencia Artificial',
     description:
       'A business big enough that it could be listed on the NASDAQ goes belly up.',
   },
+  {
+    title: 'Etrenamiento',
+    description:
+      'Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder.',
+  },
 ];
 
-export default function Gobierno() {
+export default function Banca() {
   return (
     <div className="">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -115,7 +120,7 @@ export default function Gobierno() {
               </svg>
               <span className="relative">Soluciones</span>
             </span>{' '} */}
-            Gobierno
+            Banca y Finanzas
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

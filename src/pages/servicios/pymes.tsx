@@ -3,27 +3,27 @@ import CardProductos from '@/components/CardProductos';
 
 const productos = [
   {
-    title: 'Digitalizar',
+    title: 'Facturación',
     description:
       'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'Automatización',
+    title: 'Inventario',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
   {
-    title: 'Protección de activos',
+    title: 'Contabilidad',
     description:
       'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
   },
   {
-    title: 'TDR',
+    title: 'Protección de Hardware',
     description:
       'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
   },
   {
-    title: 'Transformación',
+    title: 'Identidad Digital',
     description:
       'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
   },
@@ -34,7 +34,7 @@ const productos = [
   },
 ];
 
-export default function Gobierno() {
+export default function Pymes() {
   return (
     <div className="">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -115,7 +115,7 @@ export default function Gobierno() {
               </svg>
               <span className="relative">Soluciones</span>
             </span>{' '} */}
-            Gobierno
+            PYMES
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

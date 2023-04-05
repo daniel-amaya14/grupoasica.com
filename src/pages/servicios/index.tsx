@@ -1,34 +1,8 @@
 import React from 'react';
-import RootLayout from '@/layout/RootLayout';
-import {
-  ListOfGovernmentServices,
-  ListOfCorServices,
-  ListOfPymesServices,
-  ListOfBancaServices,
-  ListOfHealthtServices,
-  ListOfStudentServices,
-} from '@/components/Lists';
-
-const ItemsSerevicios = [
-  {
-    name: 'Gobierno',
-    href: 'gobierno',
-    icon: 'fluent:building-government-24-regular',
-  },
-  { name: 'Corporación', href: 'corporacion', icon: 'clarity:building-line' },
-  { name: 'PYMES', href: 'pymes', icon: 'fluent:building-16-regular' },
-  {
-    name: 'Banca y Finanzas',
-    href: 'banca-finanzas',
-    icon: 'mingcute:bank-line',
-  },
-  { name: 'Salud', href: 'salud', icon: 'bi:hospital' },
-  { name: `Estudiante`, href: `estudiante`, icon: 'ph:student-fill' },
-];
 
 export default function PageServicios() {
   return (
-    <RootLayout>
+    <>
       {/* pb-10 py-6 px-8 xl:px-40 xl:py-10 */}
       <section className="flex flex-col gap-20 px-6 py-20 xl:px-16">
         {/*  */}
@@ -58,14 +32,7 @@ export default function PageServicios() {
             <span className="text-blue-500">Click aquí</span>
           </p>
         </div>
-
-        <ListOfGovernmentServices />
-        <ListOfCorServices />
-        <ListOfPymesServices />
-        <ListOfBancaServices />
-        <ListOfHealthtServices />
-        <ListOfStudentServices />
       </section>
-    </RootLayout>
+    </>
   );
 }
