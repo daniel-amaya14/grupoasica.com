@@ -1,5 +1,6 @@
 import React from 'react';
-import BannerHeader from '@/components/BannerHeader';
+// import BannerHeader from '@/components/BannerHeader';
+import Hero from '@/components/BannerHeader/Hero';
 import ListCardsServicios from '@/components/ListCardsServicios';
 import ListCardsCertificaciones from '@/components/ListCardsCertificaciones';
 import ListCardsCredenciales from '@/components/ListCardsCredenciales';
@@ -19,7 +20,8 @@ export default function Home() {
   return (
     <>
       {/* banner */}
-      <BannerHeader />
+      {/* <BannerHeader /> */}
+      <Hero />
 
       {/* quién eres */}
       <section className="pb-10 xl:px-48 mt-40">
@@ -169,50 +171,6 @@ export default function Home() {
               </div>
             </div>
             <PartnerSection />
-            {/* <div className="grid grid-cols-2 gap-0.5 lg:grid-cols-2 lg:mt-0 md:grid-cols-3 mt-8">
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src={}
-                    alt="logo"
-                  />
-                </div>
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src="https://d33wubrfki0l68.cloudfront.net/aae3d6dfaee9138c485f5305dd33b7f80379edb4/64dd2/images/logos/2.svg"
-                    alt="logo"
-                  />
-                </div>
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src="https://d33wubrfki0l68.cloudfront.net/4dc5df63255f9f0c1f54c804dd3149cf11308507/b7a70/images/logos/3.svg"
-                    alt="logo"
-                  />
-                </div>
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src="https://d33wubrfki0l68.cloudfront.net/be7130b04bb6b932ed9222877a5e9146d80c0eba/6511d/images/logos/4.svg"
-                    alt="logo"
-                  />
-                </div>
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src="https://d33wubrfki0l68.cloudfront.net/456c999508e76cd199714cfa4fad3826ebb02216/9147b/images/logos/5.svg"
-                    alt="logo"
-                  />
-                </div>
-                <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-5">
-                  <Image
-                    className="max-h-12"
-                    src="https://d33wubrfki0l68.cloudfront.net/b5d09ea7476a226d10dd1235e071288761e51da7/e68ac/images/logos/6.svg"
-                    alt="logo"
-                  />
-                </div>
-              </div> */}
           </div>
         </div>
       </section>

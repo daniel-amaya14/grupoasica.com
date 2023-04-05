@@ -23,11 +23,11 @@ export default function CardProductos({
             className="w-8 h-8 text-purple-400"
             stroke="currentColor"
             viewBox="0 0 52 52"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <polygon
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
               fill="none"
               points="29 13 14 29 25 29 23 39 38 23 27 23"
             />

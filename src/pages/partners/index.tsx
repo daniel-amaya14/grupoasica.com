@@ -2,7 +2,8 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
-import IconCATO from '@/public/partners/cato-networks.svg';
+// import IconCATO from '@/public/partners/cato-networks.svg';
+import IconCATO from '@/public/partners/cato.svg';
 import IconDATADOG from '@/public/partners/datadog.svg';
 import IconHTB from '@/public/partners/htb.svg';
 import IconHuntress from '@/public/partners/huntress.svg';
@@ -96,10 +97,10 @@ const Card = ({ src, alt }: CardProps) => {
   return (
     <Link
       href="#"
-      className="flex justify-center col-span-1 p-8 bg-gray-200 hover:bg-indigo-200"
+      className="group flex justify-center col-span-1 p-8 bg-gray-100 transition-all duration-200 ease-in-out hover:bg-white hover:shadow-sm"
     >
       <Image
-        className="max-h-12 aspect-square contrast-0"
+        className="max-h-12 aspect-square contrast-0 group-hover:contrast-100"
         src={src}
         alt={alt}
         width={120}
