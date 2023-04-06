@@ -20,7 +20,7 @@ export default function ListOfTrainings() {
           title={name}
           src={img}
         >
-          <p className="text-xs">
+          <p className="text-xs text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             sed finibus libero. Nullam vitae sodales est. Orci varius natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.

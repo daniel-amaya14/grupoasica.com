@@ -33,7 +33,7 @@ export default function CardLarge({ title, children, src }: CardLargeProps) {
             />
           </div>
           <Link href="#">
-            <h5 className="flex items-center text-md font-semibold ">
+            <h5 className="flex items-center text-md font-semibold text-justify">
               {title}
             </h5>
           </Link>

@@ -10,13 +10,37 @@ interface CardProductosProps {
 export default function CardProductos({
   title,
   description,
-  href = '#',
+  href,
 }: CardProductosProps) {
   return (
-    <Link
-      href={href}
-      className="flex flex-col justify-between overflow-hidden text-left bg-white rounded shadow-md group transition-all duration-500 hover:shadow-lg hover:scale-105"
-    >
+    <>
+      {href ? (
+        <Link
+          href={href}
+          className="flex flex-col justify-between overflow-hidden text-left bg-white rounded shadow-md group transition-all duration-500 hover:shadow-lg hover:scale-105"
+        >
+          <Content
+            title={title}
+            description={description}
+          />
+        </Link>
+      ) : (
+        <div className="flex flex-col justify-between overflow-hidden text-left bg-white rounded shadow-md group transition-all duration-500 hover:shadow-lg hover:scale-105">
+          <Content
+            title={title}
+            description={description}
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
+interface ContentProps extends CardProductosProps {}
+
+const Content = ({ title, description }: ContentProps) => {
+  return (
+    <>
       <div className="p-5">
         <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
           <svg
@@ -34,9 +58,11 @@ export default function CardProductos({
           </svg>
         </div>
         <p className="mb-2 font-bold">{title}</p>
-        <p className="text-sm leading-5 text-gray-900">{description}</p>
+        <p className="text-sm leading-5 text-gray-900 text-justify">
+          {description}
+        </p>
       </div>
       <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-purple-400 group-hover:scale-x-100" />
-    </Link>
+    </>
   );
-}
+};
