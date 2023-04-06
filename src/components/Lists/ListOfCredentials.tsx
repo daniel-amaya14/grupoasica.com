@@ -1,24 +1,21 @@
 import React from 'react';
 import CardLarge from '../CardLarge';
 
-import IMGOffice from '@/public/images/office365.png';
-import IMGManagement from '@/public/images/management.jpg';
-import IMGWellness from '@/public/images/wellness.jpg';
-
-const itemsCapacitaciones = [
-  { name: 'Gestión (Diplomado)', img: IMGWellness },
-  { name: 'Coaching Bienestar', img: IMGManagement },
-  { name: 'Microsoft Office', img: IMGOffice },
+const ItemsCredenciales = [
+  { name: 'Certificación DD' },
+  { name: 'Gremlin' },
+  { name: 'JumpCloud' },
+  { name: 'CATO' },
+  { name: 'Acumatica' },
 ];
 
-export default function ListCardsCapacitaciones() {
+export default function ListOfCredentials() {
   return (
     <div className="grid grid-cols-auto-layout-16 auto-rows-auto grid-flow-dense place-items-center gap-4">
-      {itemsCapacitaciones.map(({ name, img }) => (
+      {ItemsCredenciales.map(({ name }) => (
         <CardLarge
-          key={name}
           title={name}
-          src={img}
+          key={name.toLowerCase().replaceAll(' ', '-')}
         >
           <p className="text-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus

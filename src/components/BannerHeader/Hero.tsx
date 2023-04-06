@@ -45,7 +45,7 @@ export default function Hero() {
           </p>
           <div className="">
             <Link
-              href="/"
+              href="/servicios"
               className="inline-flex items-center justify-center h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
             >
               Conoce nuestros servicios

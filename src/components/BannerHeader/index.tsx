@@ -18,7 +18,8 @@ export default function BannerHeader() {
       {/* hero - img */}
       <Image
         src={ImgHero}
-        alt="img-hero"
+        loading="lazy"
+        alt=""
         className="object-cover w-full h-full"
       />
 

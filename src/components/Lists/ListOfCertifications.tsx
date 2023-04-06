@@ -20,7 +20,7 @@ const itemsCertificaciones = [
   },
 ];
 
-export default function ListCardsCertificaciones() {
+export default function ListOfCertifications() {
   return (
     <div className="grid grid-cols-auto-layout-14 auto-rows-auto grid-flow-dense place-items-center gap-4">
       {itemsCertificaciones.map(({ name, description, modulos }) => (

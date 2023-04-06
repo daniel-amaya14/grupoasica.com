@@ -17,7 +17,8 @@ export default function CardLarge({ title, children, src }: CardLargeProps) {
           <Image
             className="rounded-t-lg"
             src={src}
-            alt="image"
+            loading="lazy"
+            alt=""
           />
         </Link>
       ) : null}

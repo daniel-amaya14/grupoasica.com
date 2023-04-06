@@ -20,7 +20,7 @@ const logos = [
   { src: CATO, alt: 'logo cato', href: '/partners' },
 ];
 
-export default function PartnerSection() {
+export default function PartnersList() {
   return (
     <>
       {/* m-auto md:w-11/12 lg:w-8/12 xl:w-7/12 */}

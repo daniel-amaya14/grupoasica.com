@@ -1,5 +1,5 @@
 import React from 'react';
-import CardServicios from '@/components/CardServicios';
+import CardServicios from '@/components/Cards/CardServicios';
 
 const itemsSerevicios = [
   {
@@ -18,7 +18,7 @@ const itemsSerevicios = [
   { name: `Estudiante`, href: `estudiante`, icon: 'ph:student-fill' },
 ];
 
-export default function ListCardsServicios() {
+export default function ListsOfServices() {
   return (
     <div className="flex justify-center gap-4 flex-wrap md:gap-6">
       {itemsSerevicios.map(({ name, href, icon }) => (
