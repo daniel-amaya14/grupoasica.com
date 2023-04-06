@@ -64,7 +64,7 @@ export default function Partners() {
           <h1 className="text-2xl font-bold text-fontPrimary text-center md:text-4xl">
             ASICA Partners
           </h1>
-          <p className="text-center text-sm md:text-base sm:mx-14 md:mx-16 xl:mx-28">
+          <p className="text-sm text-justify md:text-base sm:mx-14 md:mx-16 xl:mx-28">
             Contamos con la mejor red de colaboradores. Nuestros partners nos
             ayudan a ofrecer soluciones integrales a nuestros clientes. Si
             quieres ser parte de nuestra red de colaboradores, contáctanos.

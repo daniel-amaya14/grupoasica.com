@@ -8,7 +8,7 @@ export default function TrainingSection() {
         <h2 className="text-2xl font-bold text-fontPrimary text-justify md:text-4xl">
           Capacítate con nosotros
         </h2>
-        <p>
+        <p className="text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus
           omnis voluptatibus amet placeat, soluta repudiandae mollitia facilis,
           repellat molestiae quisquam ullam? Quo molestias, ducimus soluta

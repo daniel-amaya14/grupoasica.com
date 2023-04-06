@@ -30,7 +30,7 @@ export default function AboutSection() {
         <h2 className="text-2xl font-bold text-fontPrimary text-justify mb-4 md:text-4xl">
           Sobre nosotros
         </h2>
-        <p className="text-sm pb-6 md:text-base md:pb-10">
+        <p className="text-sm pb-6 md:text-base md:pb-10 text-justify">
           Somo líder en la implementación de software propio y de terceros en
           Honduras y Centroamérica. Ofrecemos servicios de consultoría y
           asesoría en informática para organizaciones complejas y contamos con

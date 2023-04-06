@@ -10,8 +10,8 @@ export default function PageServicios() {
           <h1 className="text-2xl font-bold text-fontPrimary text-justify pb-4 md:text-4xl">
             Nuestros Servicios
           </h1>
-          <p className="text-sm md:text-base">
-            ofrecemos soluciones informáticas y servicios especializados para
+          <p className="text-sm md:text-base text-justify">
+            Ofrecemos soluciones informáticas y servicios especializados para
             satisfacer las necesidades de nuestros clientes en distintos
             ámbitos. Nuestros servicios incluyen el diseño e implementación de
             sistemas de gestión de información, la automatización de procesos
