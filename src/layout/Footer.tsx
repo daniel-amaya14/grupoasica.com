@@ -80,6 +80,7 @@ export default function Footer() {
             </h4> */}
             <Image
               src={LogoASICA}
+              loading="lazy"
               alt="Logo ASICA"
               width={130}
               height={100}

@@ -2,10 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html
-      lang="es"
-      className="scroll-smooth"
-    >
+    <Html lang="es">
       <Head />
       <body className="bg-primary">
         <Main />

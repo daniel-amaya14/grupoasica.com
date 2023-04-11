@@ -9,6 +9,7 @@ export default function BuildPage() {
         <Image
           className="m-auto"
           src={SvgBuilding}
+          loading="lazy"
           width={300}
           height={300}
           alt="Página en construcción"
