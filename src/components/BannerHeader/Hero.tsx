@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import HeroImage from '@/public/images/imghero.jpg';
+import HeroImage from '@/public/images/imghero.webp';
 
 export default function Hero() {
   return (
@@ -19,7 +19,6 @@ export default function Hero() {
         <Image
           className="object-cover w-full h-56 rounded shadow-lg lg:object-left lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
           src={HeroImage}
-          loading="lazy"
           alt=""
         />
       </div>

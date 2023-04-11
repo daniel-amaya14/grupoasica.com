@@ -15,7 +15,7 @@ const itemsSerevicios = [
     icon: 'mingcute:bank-line',
   },
   { name: 'Salud', href: 'salud', icon: 'bi:hospital' },
-  { name: `Estudiante`, href: `estudiante`, icon: 'ph:student-fill' },
+  { name: `Estudiante`, href: `estudiantes`, icon: 'ph:student-fill' },
 ];
 
 export default function ListsOfServices() {

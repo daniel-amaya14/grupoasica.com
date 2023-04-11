@@ -1,7 +1,7 @@
 import React from 'react';
 import BannerServicios from '@/components/BannerServicios';
 import Image from 'next/image';
-import ImgContacto from '@/public/images/contacto.jpg';
+import ImgContacto from '@/public/images/contacto.webp';
 
 export default function Contact() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -18,7 +18,6 @@ export default function Contact() {
         <section className="relative flex h-32 items-start bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
           <Image
             alt=""
-            loading="lazy"
             src={ImgContacto}
             className="absolute inset-0 h-full w-full object-cover opacity-80"
           />

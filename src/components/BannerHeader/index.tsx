@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgHero from '@/public/images/hero.jpg';
+import ImgHero from '@/public/images/hero.webp';
 import Image from 'next/image';
 
 export default function BannerHeader() {
@@ -18,7 +18,6 @@ export default function BannerHeader() {
       {/* hero - img */}
       <Image
         src={ImgHero}
-        loading="lazy"
         alt=""
         className="object-cover w-full h-full"
       />

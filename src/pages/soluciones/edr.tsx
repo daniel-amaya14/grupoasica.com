@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutSoluciones from '@/layout/LayoutSoluciones';
-import ImageBanner from '@/public/images/soluciones/edr.jpg';
+import ImageBanner from '@/public/images/soluciones/edr.webp';
 import Container from '@/components/Elements/Container';
 
 const LayoutSolucionesProps = {

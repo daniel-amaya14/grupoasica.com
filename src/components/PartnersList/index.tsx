@@ -54,7 +54,6 @@ const CardPartner = ({ src, alt }: CardPartnerProps) => {
       <Image
         src={src}
         className="contrast-0 transition duration-100 ease-in-out group-hover:contrast-100"
-        loading="lazy"
         alt={alt}
         width={120}
         height={100}

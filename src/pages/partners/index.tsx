@@ -102,7 +102,6 @@ const Card = ({ src, alt }: CardProps) => {
       <Image
         className="max-h-12 aspect-square contrast-0 group-hover:contrast-100"
         src={src}
-        loading="lazy"
         alt={alt}
         width={120}
         height={110}

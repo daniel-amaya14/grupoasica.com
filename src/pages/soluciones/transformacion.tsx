@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutSoluciones from '@/layout/LayoutSoluciones';
-import ImageBanner from '@/public/images/soluciones/transformacion.jpg';
+import ImageBanner from '@/public/images/soluciones/transformacion.webp';
 import Container from '@/components/Elements/Container';
 
 const LayoutSolucionesProps = {

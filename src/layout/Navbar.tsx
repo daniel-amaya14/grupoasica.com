@@ -27,7 +27,6 @@ export default function Navbar() {
               src={LogoAsica}
               width={140}
               height={140}
-              loading="lazy"
               alt="Grupo ASICA Logo"
             />
             <span className="sr-only self-center text-xl font-semibold whitespace-nowrap">

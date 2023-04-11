@@ -2,7 +2,7 @@ import React from 'react';
 import CardLarge from '../CardLarge';
 
 import IMGOffice from '@/public/images/office365.png';
-import IMGManagement from '@/public/images/management.jpg';
+import IMGManagement from '@/public/images/management.webp';
 import IMGWellness from '@/public/images/wellness.jpg';
 
 const itemsCapacitaciones = [
