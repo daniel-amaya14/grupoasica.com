@@ -5,19 +5,27 @@ import { Icon } from '@iconify/react';
 import LogoASICA from '@/public/images/logo-asica.png';
 
 const listaServicios = [
-  { name: 'eGovernment', href: '/servicios/gobierno' },
-  { name: 'Comercio e Industria', href: '/servicios' },
-  { name: 'Administración de Proyectos', href: '/servicios' },
-  { name: 'Capacitaciones', href: '/capacitaciones' },
-  { name: 'Soporte técnico', href: '/soporte' },
+  { name: 'Gobierno', href: '/gobierno' },
+  { name: 'Coporación', href: '/corporacion' },
+  { name: 'PYMES', href: '/pymes' },
+  { name: 'Banca y Finanzas', href: '/banca-finanzas' },
+  { name: 'Salud', href: '/salud' },
+  { name: 'Estudiante', href: '/estudiante' },
 ];
 
 const listaProductos = [
-  { name: 'Inteligencia Artificial', href: '/productos/ia' },
-  { name: 'Administración', href: '/productos/admon' },
-  { name: 'Banca y Finanzas', href: '/productos/banca-finanzas' },
-  { name: 'Ciberseguridad', href: '/productos/ciberseguridad' },
-  { name: 'PYMES', href: '/productos/pymes' },
+  { name: 'Analítica Avanzada', href: '/soluciones/analitica-avanzada' },
+  { name: 'Ciberseguridad', href: '/soluciones/ciberseguridad' },
+  { name: 'Identidad Digital', href: '/soluciones/identidad-digital' },
+  { name: 'Entrenamiento', href: '/soluciones/entrenamiento' },
+  {
+    name: 'Inteligencia Artificial',
+    href: '/soluciones/inteligencia-artificial',
+  },
+  {
+    name: 'Ver más',
+    href: '/servicios',
+  },
 ];
 
 const listaAyuda = [

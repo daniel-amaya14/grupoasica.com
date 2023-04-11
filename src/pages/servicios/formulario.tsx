@@ -213,6 +213,7 @@ export default function FormularioServicios() {
               {/* formulario */}
               <form
                 action="#"
+                onSubmit={handleSubmit}
                 className="grid grid-cols-10 gap-6"
               >
                 {/* input - nombre contacto */}
@@ -317,6 +318,7 @@ export default function FormularioServicios() {
                     <option value="gobierno">Gobierno</option>
                     <option value="pymes">Pymes</option>
                     <option value="salud">Salud</option>
+                    <option value="personalizado">Personalizado</option>
                     <option value="otro">Otro</option>
                   </select>
                 </div>
