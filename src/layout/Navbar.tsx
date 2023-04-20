@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import LogoAsica from '@/public/images/logo-asica.png';
@@ -13,13 +13,12 @@ const navLinks = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const handleMobileMenuToggle = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <nav className="bg-white w-full border-b border-gray-200 ">
+    <nav className="bg-white w-full border-b border-gray-200">
       {/* container */}
-      <div className="container flex flex-wrap items-center justify-between mx-auto">
+      <div className="container flex flex-wrap items-center justify-between mx-auto sm:px-2">
         {/* Logo */}
         <div className="flex items-center md:flex-1">
           <Link href="/">
@@ -36,10 +35,10 @@ export default function Navbar() {
         </div>
 
         {/* Boton contacto y menu mobil */}
-        <div className="flex md:justify-end md:flex-1 md:order-2">
+        <div className="flex md:justify-end md:flex-1 md:order-2 mr-1 sm:mr-0">
           <Link
             href="/contacto"
-            className="text-white bg-blue-700 hover:bg-blue-800 active:ring-4 active:ring-blue-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            className="text-white bg-blue-700 hover:bg-blue-800 active:ring-4 active:ring-blue-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 md:mr-0"
           >
             Contacto
           </Link>
