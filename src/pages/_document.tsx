@@ -7,7 +7,7 @@ export default function Document() {
       className="scroll-smooth"
     >
       <Head />
-      <body className="bg-primary">
+      <body>
         <Main />
         <NextScript />
       </body>

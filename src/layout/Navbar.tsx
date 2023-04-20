@@ -8,7 +8,7 @@ const navLinks = [
   { name: 'Sobre nosotros', href: '/about' },
   { name: 'Servicios', href: '/servicios' },
   { name: 'Partners', href: '/partners' },
-  { name: 'Soporte', href: '/soporte' },
+  { name: 'Soporte', href: 'https://grupoasica.freshdesk.com/support/login' },
 ];
 
 export default function Navbar() {
@@ -77,7 +77,7 @@ export default function Navbar() {
         >
           <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 mb-2.5 md:mb-0 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-transparent">
             {navLinks.map(({ name, href }) => (
-              <li key={name.toLowerCase().replaceAll(' ', '-')}>
+              <li key={name}>
                 <Link
                   href={href}
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:underline"

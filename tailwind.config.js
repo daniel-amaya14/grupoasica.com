@@ -27,6 +27,9 @@ module.exports = {
         'auto-layout-partners-xl': 'repeat(auto-fit, minmax(14rem, 1fr))',
         'auto-layout-itemsGovernment': 'repeat(auto-fill, minmax(13rem, 1fr))',
       },
+      animation: {
+        'bounce-slow': 'bounce 1.8s linear infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

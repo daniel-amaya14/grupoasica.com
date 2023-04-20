@@ -3,16 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 
-export interface HeroServiciosProps {
+export interface HeroSolucionesProps {
   bannerTitlte: string;
   imageUrl: StaticImageData;
 }
 
-export default function HeroServicios({
+export default function HeroSoluciones({
   bannerTitlte,
   imageUrl,
-}: HeroServiciosProps) {
-  console.log(imageUrl);
+}: HeroSolucionesProps) {
   return (
     <section className="relative">
       <Image

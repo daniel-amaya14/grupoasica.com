@@ -30,7 +30,10 @@ const listaProductos = [
 
 const listaAyuda = [
   { name: 'Contacto', href: '/contacto' },
-  { name: 'Abrir ticket de soporte técnico', href: '/soporte' },
+  {
+    name: 'Abrir ticket de soporte técnico',
+    href: 'https://grupoasica.freshdesk.com/support/login',
+  },
   { name: 'Legal', href: '/legal' },
 ];
 
@@ -57,8 +60,8 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
         {listaItems.map(({ name, href, icon = '' }) => (
           <Link
             href={href}
-            key={name.toLowerCase().replaceAll(' ', '-')}
-            className="hover:text-indigo-400"
+            key={name}
+            className="hover:text-fontPrimary"
           >
             {icon ? <Icon icon={icon} /> : name}
           </Link>
@@ -70,7 +73,7 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
 
 export default function Footer() {
   return (
-    <footer className="bg-white px-6 pt-16 pb-10 xl:px-20 xl:pt-16">
+    <footer className="bg-[#f4f3ff] px-6 pt-16 pb-10 xl:px-20 xl:pt-16">
       <section>
         <div className="flex flex-col gap-10 mb-10 md:flex-row justify-between xl:gap-20">
           {/* lista información */}
@@ -155,7 +158,7 @@ export default function Footer() {
                 <Link
                   href={href}
                   key={name.toLowerCase()}
-                  className="gruop rounded-md bg-gray-100 p-1 text-gray-500 transition hover:bg-gray-200"
+                  className="text-gray-500"
                 >
                   <Icon
                     icon={icon}

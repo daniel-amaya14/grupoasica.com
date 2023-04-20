@@ -1,8 +1,9 @@
 import React from 'react';
-import HeroServicios from '@/components/HeroServicios';
-import { HeroServiciosProps } from '@/components/HeroServicios';
+import HeroSoluciones, {
+  HeroSolucionesProps,
+} from '@/components/HeroSoluciones';
 
-interface LayoutSolucionesProps extends HeroServiciosProps {
+interface LayoutSolucionesProps extends HeroSolucionesProps {
   children: React.ReactNode;
 }
 
@@ -13,7 +14,7 @@ export default function LayoutSoluciones({
 }: LayoutSolucionesProps) {
   return (
     <>
-      <HeroServicios
+      <HeroSoluciones
         bannerTitlte={bannerTitlte}
         imageUrl={imageUrl}
       />

@@ -36,9 +36,7 @@ export default function CardProductos({
   );
 }
 
-interface ContentProps extends CardProductosProps {}
-
-const Content = ({ title, description }: ContentProps) => {
+const Content = ({ title, description }: CardProductosProps) => {
   return (
     <>
       <div className="p-5">

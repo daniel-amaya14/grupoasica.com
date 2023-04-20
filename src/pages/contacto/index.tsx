@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerServicios from '@/components/BannerServicios';
+import BannerInfoServicios from '@/components/BannerInfoServicios';
 import Image from 'next/image';
 import ImgContacto from '@/public/images/contacto.webp';
 
@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <section className="bg-white">
-      <BannerServicios />
+      <BannerInfoServicios />
 
       {/* container */}
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">

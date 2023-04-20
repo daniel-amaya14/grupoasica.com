@@ -1,17 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
 
-interface BannerServiciosProps {
+interface BannerInfoServiciosProps {
   title?: string;
   description?: string;
   href?: string;
 }
 
-export default function BannerServicios({
+export default function BannerInfoServicios({
   title,
   description,
   href,
-}: BannerServiciosProps) {
+}: BannerInfoServiciosProps) {
   return (
     <div className="px-6 py-6 bg-purple-700 dark:bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
       <div className="xl:w-0 xl:flex-1">
