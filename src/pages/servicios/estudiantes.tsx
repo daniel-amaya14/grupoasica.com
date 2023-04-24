@@ -93,8 +93,9 @@ export default function Estudiante() {
         </div>
       </div>
 
-      <div className="px-6 py-6 bg-purple-700 dark:bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 lg:flex lg :items-start">
+      <div className="px-6 py-6 bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 lg:flex lg:items-start">
         <div className="xl:w-0 xl:flex-1 text-justify">
+          adssad
           <h2 className="text-2xl font-extrabold leading-8 tracking-tight text-white sm:text-3xl sm:leading-9">
             Únete a nuestro equipo
           </h2>
@@ -102,7 +103,6 @@ export default function Estudiante() {
             Trabaja en proyectos desafiantes mientras aprendes de expertos en la
             industria y comienza a impulsar tu carrera hoy mismo.
           </p>
-
           <Image
             src={ImgEquipo}
             className="w-full h-72 sm:h-96 xl:h-[32rem] object-cover object-center rounded-sm"
