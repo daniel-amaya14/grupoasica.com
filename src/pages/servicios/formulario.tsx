@@ -259,7 +259,7 @@ export default function FormularioServicios() {
                     htmlFor="telefono"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Telefono
+                    Teléfono/Celular
                     <span className="text-red-600">*</span>
                   </label>
 

@@ -261,7 +261,7 @@ export default function Contact() {
                   htmlFor="telefono"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Telefono
+                  Teléfono/Celular
                 </label>
 
                 <input

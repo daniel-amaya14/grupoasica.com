@@ -164,7 +164,7 @@ export default function Estudiante() {
                   htmlFor="telefono"
                   className="block text-sm font-medium text-white"
                 >
-                  Telefono
+                  Teléfono/Celular
                   <span className="text-red-600">*</span>
                 </label>
 
