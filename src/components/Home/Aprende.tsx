@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 import ImgAprende from '@/public/svg/aprende.svg';
 
@@ -22,7 +22,7 @@ export default function Aprende() {
             Estudia con {''}
             <span className="text-fontPrimary">nosotros</span>
           </h2>
-          <p className="mt-6 mb-8 text-lg sm:mb-12 text-justify">
+          <p className="mt-6 text-lg text-justify">
             <span className="block mb-4 font-semibold">
               ¿Estás buscando dar un impulso a tu carrera profesional?
             </span>
@@ -31,7 +31,7 @@ export default function Aprende() {
             habilidades y conocimientos necesarios para destacarte en tu campo
             laboral y aumentar tus oportunidades de crecimiento y desarrollo.
           </p>
-          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+          {/* <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -46,7 +46,7 @@ export default function Aprende() {
             >
               Solicitar
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

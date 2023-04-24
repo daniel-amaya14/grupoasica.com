@@ -3,12 +3,14 @@ import CardCursos from './CardCursos';
 
 const certificaciones = [
   {
-    title: 'HTB Certified Bug Bounty Hunter',
+    title: 'Certified Bug Bounty Hunter',
     description: 'Hack the Box',
+    href: '/cursos/bug-bounty-hunter',
   },
   {
     title: 'Certified Penetration Testing Specialist',
     description: 'Hack the Box',
+    href: '/cursos/penetration-testing-specialist',
   },
 ];
 
@@ -16,7 +18,7 @@ export default function ContainerCertificaciones() {
   return (
     <section className="text-gray-600 body-font">
       <div className="flex flex-wrap -m-4">
-        {certificaciones.map(({ title, description }) => {
+        {certificaciones.map(({ title, description, href }) => {
           return (
             <div
               className="p-4 md:w-1/3"
@@ -25,6 +27,7 @@ export default function ContainerCertificaciones() {
               <CardCursos
                 title={title}
                 description={description}
+                href={href}
               />
             </div>
           );

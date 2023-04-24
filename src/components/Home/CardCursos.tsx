@@ -4,14 +4,16 @@ import Image, { StaticImageData } from 'next/image';
 
 interface CardCursosProps {
   title: string;
-  image?: StaticImageData;
   description: string;
+  href?: string;
+  image?: StaticImageData;
 }
 
 export default function CardCursos({
   title,
-  image,
   description,
+  href = '/#',
+  image,
 }: CardCursosProps) {
   return (
     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-lg">
@@ -46,7 +48,7 @@ export default function CardCursos({
         <p className="leading-relaxed mb-3 text-justify">{description}</p>
         <div className="mt-auto">
           <Link
-            href="#"
+            href={href}
             className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
           >
             Más información
