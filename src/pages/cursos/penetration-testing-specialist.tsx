@@ -20,7 +20,7 @@ export default function PenetrationTestingSpecialist() {
         <div className="absolute inset-0 bg-black/40 bg-gradient-to-r from-black/40 to-black/40"></div>
         <div>
           <h1 className="relative text-white mb-4 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
-            Certified Penetration Testing Specialist
+            Certificado Penetration Testing Specialist
           </h1>
           <p className="relative text-white max-w-xl text-justify">
             Hack the Box
@@ -407,7 +407,7 @@ export default function PenetrationTestingSpecialist() {
         {/* formulario md:absolute md:-top-28 md:right-8*/}
         <div className="w-full h-fit sm:mx-auto sm:w-3/4 md:bg-white md:shadow md:p-8 md:rounded-lg lg:relative lg:-top-36 lg:w-2/5 ">
           <h3 className="mb-4 text-xl font-semibold sm:text-2xl sm:leading-none">
-            Solicitar Coaching Bienestar
+            Solicitar Penetration Testing Specialist
           </h3>
 
           <p className="text-gray-600 mt-10 mb-6 lg:mt-0">

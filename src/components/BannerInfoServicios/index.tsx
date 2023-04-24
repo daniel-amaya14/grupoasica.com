@@ -13,7 +13,7 @@ export default function BannerInfoServicios({
   href,
 }: BannerInfoServiciosProps) {
   return (
-    <div className="px-6 py-6 bg-purple-700 dark:bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+    <div className="px-6 py-6 bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
       <div className="xl:w-0 xl:flex-1">
         <h2 className="text-2xl font-extrabold leading-8 tracking-tight text-white sm:text-3xl sm:leading-9">
           {title ? title : '¿Deseas contratar nuestros servicios?'}
