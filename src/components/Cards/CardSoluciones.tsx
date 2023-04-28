@@ -1,23 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 
-interface CardProductosProps {
+interface CardSolucionesProps {
   title: string;
   description: string;
   href?: string;
 }
 
-export default function CardProductos({
+export default function CardSoluciones({
   title,
   description,
   href,
-}: CardProductosProps) {
+}: CardSolucionesProps) {
   return (
     <>
       {href ? (
         <Link
           href={href}
-          className="flex flex-col justify-between overflow-hidden text-left bg-white rounded shadow-md group transition-all duration-500 hover:shadow-lg hover:scale-105"
+          className="flex flex-col justify-between overflow-hidden text-left border border-gray-100 bg-white rounded shadow-sm group transition-all duration-500 hover:shadow-md hover:-translate-y-2"
         >
           <Content
             title={title}
@@ -25,7 +25,7 @@ export default function CardProductos({
           />
         </Link>
       ) : (
-        <div className="flex flex-col justify-between overflow-hidden text-left bg-white rounded shadow-md group transition-all duration-500 hover:shadow-lg hover:scale-105">
+        <div className="flex flex-col justify-between overflow-hidden text-left border border-gray-100 bg-white rounded shadow-sm group transition-all duration-500 hover:shadow-md hover:-translate-y-2">
           <Content
             title={title}
             description={description}
@@ -36,13 +36,13 @@ export default function CardProductos({
   );
 }
 
-const Content = ({ title, description }: CardProductosProps) => {
+const Content = ({ title, description }: CardSolucionesProps) => {
   return (
     <>
       <div className="p-5">
         <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
           <svg
-            className="w-8 h-8 text-purple-400"
+            className="w-8 h-8"
             stroke="currentColor"
             viewBox="0 0 52 52"
             strokeWidth={3}
@@ -55,12 +55,12 @@ const Content = ({ title, description }: CardProductosProps) => {
             />
           </svg>
         </div>
-        <p className="mb-2 font-bold">{title}</p>
+        <p className="mb-2 font-bold text-fontPrimary">{title}</p>
         <p className="text-sm leading-5 text-gray-900 text-justify">
           {description}
         </p>
       </div>
-      <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-purple-400 group-hover:scale-x-100" />
+      <div className="w-full h-1 ml-auto duration-500 origin-left transform scale-x-0 bg-fontPrimary/70 group-hover:scale-x-100" />
     </>
   );
 };
