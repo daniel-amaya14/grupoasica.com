@@ -1,25 +1,8 @@
 import React from 'react';
-import CardProductos from '@/components/Cards/CardProductos';
+import CardSoluciones from '@/components/Cards/CardSoluciones';
 import Image from 'next/image';
 import ImgEquipo from '@/public/images/imgequipo.webp';
-
-const productos = [
-  {
-    title: 'Pasante',
-    description:
-      'Buscamos estudiantes apasionados que quieran ganar experiencia práctica en la industria tecnológica. Únete a nuestro equipo como pasante y trabaja en proyectos desafiantes mientras aprendes de expertos en la industria.',
-  },
-  {
-    title: 'Practicante',
-    description:
-      'Si eres un estudiante interesado en la tecnología y en busca de oportunidades de realizar tu práctica profesional, Grupo ASICA es el lugar perfecto para ti.',
-  },
-  {
-    title: 'Entrenamiento',
-    description:
-      'En Grupo ASICA, ofrecemos programas de entrenamiento prácticos y significativos para aquellos que buscan mejorar sus habilidades técnicas y profesionales.',
-  },
-];
+import { solucionesEducacion } from '@/data/listServices';
 
 export default function Estudiante() {
   return (
@@ -75,16 +58,14 @@ export default function Estudiante() {
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             Estudiante
           </h2>
-          <p className="text-base text-justify text-gray-700 md:text-lg">
-            Si eres un estudiante o pasante en busca de una experiencia valiosa,
-            Grupo ASICA es el lugar perfecto para ti. Nos enorgullece ofrecer
-            oportunidades de aprendizaje prácticas y significativas para jóvenes
-            talentosos y apasionados.
+          <p className="text-base text-center text-gray-700 md:text-lg">
+            El mundo de TI es basto, Grupo ASICA es la empresa que te guiará
+            eficientemente por el mundo de la tecnología.
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description }) => (
-            <CardProductos
+          {solucionesEducacion.map(({ title, description }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}
@@ -95,7 +76,6 @@ export default function Estudiante() {
 
       <div className="px-6 py-6 bg-gray-800 md:py-12 md:px-12 lg:py-16 lg:px-16 lg:flex lg:items-start">
         <div className="xl:w-0 xl:flex-1 text-justify">
-          adssad
           <h2 className="text-2xl font-extrabold leading-8 tracking-tight text-white sm:text-3xl sm:leading-9">
             Únete a nuestro equipo
           </h2>

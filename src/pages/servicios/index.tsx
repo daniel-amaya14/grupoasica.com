@@ -1,137 +1,42 @@
 import React from 'react';
-import InfoServices from '@/components/InfoServices';
+import ListSoluciones from '@/components/ListSoluciones';
+import ListServices from '@/components/ListServices';
 
 export default function PageServicios() {
   return (
     <>
-      {/* hero */}
-      <section className="bg-white bg-gradient-to-b from-slate-200/40 to-white px-6 py-20 xl:px-16">
-        {/*  */}
-        <InfoServices />
-        {/*  */}
-        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:pt-20">
-          <h2 className="mb-8 text-2xl font-semibold leading-none">
-            ¿Qué podemos ofrecer?
+      {/* Hero */}
+      <section className="bg-gray-100 py-8 px-6 md:py-12 md:px-20">
+        <div className="container mx-auto">
+          <h1 className="font-bold text-3xl leading-normal md:text-4xl">
+            Descrubra soluciones de Grupo ASICA y sus socios
+          </h1>
+          <p className="text-justify max-w-2xl mt-3">
+            Ofrecemos una amplia gama de servicios para satisfacer tus
+            necesidades tecnológicas, desde el soporte y mantenimiento de
+            sistemas hasta la implementación de soluciones de seguridad y
+            software personalizado.
+          </p>
+        </div>
+      </section>
+
+      {/* servicios */}
+      <section className="py-8 px-6 md:py-12 md:px-20">
+        <div className="container mx-auto">
+          <h2 className="font-semibold text-2xl leading-normal mb-5 md:text-3xl">
+            Explora soluciones por sector
           </h2>
-          <ul className="grid gap-3 gap-y-6 md:grid-cols-2 text-justify">
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Experiencia y conocimientos en tecnología e informática.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Equipo de profesionales altamente capacitados y especializados.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Tecnología avanzada y herramientas de software eficientes.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Soluciones personalizadas y adaptadas a las necesidades del
-                cliente.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>Atención al cliente excepcional y comunicación clara.</span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Soluciones innovadoras y creativas que agreguen valor.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Foco en la seguridad de la información y la privacidad de los
-                datos.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Servicios de soporte y mantenimiento post-implementación.
-              </span>
-            </li>
-            <li className="flex space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className="w-5 h-5 fill-current dark:dark:text-violet-400"
-              >
-                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
-                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
-              </svg>
-              <span>
-                Compromiso con la puntualidad y transparencia en los costos.
-              </span>
-            </li>
-          </ul>
+          <ListServices />
+        </div>
+      </section>
+
+      {/* soluciones */}
+      <section className="py-8 px-6 md:py-12 md:px-20">
+        <div className="container mx-auto">
+          <h2 className="font-semibold text-2xl leading-normal mb-5 md:text-3xl">
+            Explorar todas las soluciones
+          </h2>
+          <ListSoluciones />
         </div>
       </section>
     </>

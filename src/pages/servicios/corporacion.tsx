@@ -1,46 +1,9 @@
 import React from 'react';
 import LayoutServicios from '@/layout/LayoutServicios';
-import CardProductos from '@/components/Cards/CardProductos';
+import CardSoluciones from '@/components/Cards/CardSoluciones';
+import { solucionesCorporacion } from '@/data/listServices';
 
-const productos = [
-  {
-    title: 'Endpoint Detection and Response',
-    description:
-      'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: '/soluciones/edr',
-  },
-  {
-    title: 'Hockey Sports',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-  },
-  {
-    title: 'Protección de Activos',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/proteccion-de-activos',
-  },
-  {
-    title: 'Consultoría IT',
-    description:
-      'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
-    href: '/soluciones/consultoria-ti',
-  },
-  {
-    title: 'Analítica Avanzada',
-    description:
-      'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
-    href: '/soluciones/analitica-avanzada',
-  },
-  {
-    title: 'Entrenamiento',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/entrenamiento',
-  },
-];
-
-export default function Corporación() {
+export default function Corporacion() {
   return (
     <LayoutServicios>
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -124,13 +87,13 @@ export default function Corporación() {
             Corporación
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            Nuestras soluciones cubren todas los objetivos tecnológicos que las
+            empresas desean lograr.
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description, href }) => (
-            <CardProductos
+          {solucionesCorporacion.map(({ title, description, href }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}

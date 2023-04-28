@@ -1,45 +1,7 @@
 import React from 'react';
 import LayoutServicios from '@/layout/LayoutServicios';
-import CardProductos from '@/components/Cards/CardProductos';
-
-const productos = [
-  {
-    title: 'Digitalizar',
-    description:
-      'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: '/soluciones/digitalizar',
-  },
-  {
-    title: 'Automatización',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/automatizacion',
-  },
-  {
-    title: 'Protección de activos',
-    description:
-      'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
-    href: '/soluciones/proteccion-de-activos',
-  },
-  {
-    title: 'Endpoint Detection and Response',
-    description:
-      'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
-    href: '/soluciones/edr',
-  },
-  {
-    title: 'Transformación',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/transformacion',
-  },
-  {
-    title: 'Entrenamiento',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-    href: '/soluciones/entrenamiento',
-  },
-];
+import CardSoluciones from '@/components/Cards/CardSoluciones';
+import { solucionesGobierno } from '@/data/listServices';
 
 export default function Gobierno() {
   return (
@@ -125,14 +87,13 @@ export default function Gobierno() {
             Gobierno
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Proporcionamos soluciones informáticas y servicios especializados,
-            con el propósito de mejorar la eficiencia y transparencia de las
-            instituciones públicas.
+            Grupo ASICA tiene soluciones para automatizar, inventariar activos,
+            manejar presupuestos. ¿Eres funcionario, dinos que deseas lograr?
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description, href }) => (
-            <CardProductos
+          {solucionesGobierno.map(({ title, description, href }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}

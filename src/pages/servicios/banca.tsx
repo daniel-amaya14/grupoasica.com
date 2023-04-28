@@ -1,50 +1,7 @@
 import React from 'react';
 import LayoutServicios from '@/layout/LayoutServicios';
-import CardProductos from '@/components/Cards/CardProductos';
-
-const productos = [
-  {
-    title: 'NIFF 9',
-    description:
-      'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: '/soluciones/niif',
-  },
-  {
-    title: 'Riesgos',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/riesgos-financieros',
-  },
-  {
-    title: 'Cash management',
-    description:
-      'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
-    href: '/soluciones/cash-management',
-  },
-  {
-    title: 'Weight Lifting Sports',
-    description:
-      'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
-  },
-  {
-    title: 'Ciberseguridad',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/ciberseguridad',
-  },
-  {
-    title: 'Inteligencia Artificial',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-    href: '/soluciones/inteligencia-artificial',
-  },
-  {
-    title: 'Etrenamiento',
-    description:
-      'Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder.',
-    href: '/soluciones/entrenamiento',
-  },
-];
+import CardSoluciones from '@/components/Cards/CardSoluciones';
+import { solucionesBanca } from '@/data/listServices';
 
 export default function Banca() {
   return (
@@ -130,13 +87,15 @@ export default function Banca() {
             Banca y Finanzas
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            La Inteligencia Artificial está modelando al mundo a nuevas
+            exigencias. Descubre como con Grupo ASICA y sus partners puedes
+            ponerte a la vanguardia de la tecnología y liderar el mundo
+            financiero.
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description, href }) => (
-            <CardProductos
+          {solucionesBanca.map(({ title, description, href }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}

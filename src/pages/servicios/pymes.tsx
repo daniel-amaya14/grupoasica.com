@@ -1,45 +1,7 @@
 import React from 'react';
 import LayoutServicios from '@/layout/LayoutServicios';
-import CardProductos from '@/components/Cards/CardProductos';
-
-const productos = [
-  {
-    title: 'Facturación',
-    description:
-      'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: '/soluciones/facturacion',
-  },
-  {
-    title: 'Inventario',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/inventario',
-  },
-  {
-    title: 'Contabilidad',
-    description:
-      'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
-    href: '/soluciones/contabilidad',
-  },
-  {
-    title: 'Protección de Hardware',
-    description:
-      'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
-    href: '/soluciones/proteccion-de-hardware',
-  },
-  {
-    title: 'Identidad Digital',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/identidad-digital',
-  },
-  {
-    title: 'Entrenamiento',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-    href: '/soluciones/entrenamiento',
-  },
-];
+import CardSoluciones from '@/components/Cards/CardSoluciones';
+import { solucionesPymes } from '@/data/listServices';
 
 export default function Pymes() {
   return (
@@ -125,13 +87,14 @@ export default function Pymes() {
             PYMES
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            ¿Quieres aumentar tus ventas? ¿Deseas llevar control de tu
+            inventario? ¿Quieres protegerte de virus? Ven, mira lo que tenemos
+            para las PYMES.
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description, href }) => (
-            <CardProductos
+          {solucionesPymes.map(({ title, description, href }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}

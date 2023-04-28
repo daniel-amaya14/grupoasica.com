@@ -1,45 +1,7 @@
 import React from 'react';
 import LayoutServicios from '@/layout/LayoutServicios';
-import CardProductos from '@/components/Cards/CardProductos';
-
-const productos = [
-  {
-    title: 'Control de Pacientes',
-    description:
-      'Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    href: '/soluciones/control-de-pacientes',
-  },
-  {
-    title: 'Inventario de Farmacia',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/inventario-farmacia',
-  },
-  {
-    title: 'Identidad Digital',
-    description:
-      'A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.',
-    href: '/soluciones/identidad-digital',
-  },
-  {
-    title: 'Ciberseguridad',
-    description:
-      'Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.',
-    href: '/soluciones/ciberseguridad',
-  },
-  {
-    title: 'Analítica Avanzada',
-    description:
-      'Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.',
-    href: '/soluciones/analitica-avanzada',
-  },
-  {
-    title: 'Entrenamiento',
-    description:
-      'A business big enough that it could be listed on the NASDAQ goes belly up.',
-    href: '/soluciones/entrenamiento',
-  },
-];
+import CardSoluciones from '@/components/Cards/CardSoluciones';
+import { solucionesSalud } from '@/data/listServices';
 
 export default function Salud() {
   return (
@@ -125,13 +87,14 @@ export default function Salud() {
             Salud
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            ¿Tienes una clinica? ¿Lideras un Hospital? Descubre como con
+            nuestras soluciones puedes mejorar la atención médica de tus
+            pacientes, y así generar más ingresos.
           </p>
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {productos.map(({ title, description, href }) => (
-            <CardProductos
+          {solucionesSalud.map(({ title, description, href }) => (
+            <CardSoluciones
               key={title}
               title={title}
               description={description}
