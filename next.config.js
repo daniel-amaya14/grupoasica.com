@@ -14,8 +14,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/banca-finanzas',
-        destination: '/servicios/banca-finanzas',
+        source: '/banca',
+        destination: '/servicios/banca',
         permanent: true,
       },
       {
@@ -29,8 +29,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/estudiantes',
-        destination: '/servicios/estudiantes',
+        source: '/educacion',
+        destination: '/servicios/educacion',
         permanent: true,
       },
     ];
