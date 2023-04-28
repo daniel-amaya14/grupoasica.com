@@ -8,9 +8,9 @@ const listaServicios = [
   { name: 'Gobierno', href: '/gobierno' },
   { name: 'Coporación', href: '/corporacion' },
   { name: 'PYMES', href: '/pymes' },
-  { name: 'Banca y Finanzas', href: '/banca-finanzas' },
+  { name: 'Banca y Finanzas', href: '/banca' },
   { name: 'Salud', href: '/salud' },
-  { name: 'Estudiante', href: '/estudiante' },
+  { name: 'Estudiante', href: '/educacion' },
 ];
 
 const listaProductos = [
