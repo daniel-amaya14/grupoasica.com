@@ -1,7 +1,6 @@
 import React from 'react';
 import LayoutSoluciones from '@/layout/LayoutSoluciones';
 import ImageBanner from '@/public/images/soluciones/digitalizar.webp';
-import Container from '@/components/Elements/Container';
 
 const LayoutSolucionesProps = {
   bannerTitlte: 'Digitalizar',
@@ -11,9 +10,9 @@ const LayoutSolucionesProps = {
 export default function Digitalizar() {
   return (
     <LayoutSoluciones {...LayoutSolucionesProps}>
-      <Container>
+      <div className="container mx-auto py-8 px-6 md:py-12 md:px-20">
         <h2 className="text-xl font-semibold">Digitalizar</h2>
-      </Container>
+      </div>
     </LayoutSoluciones>
   );
 }
