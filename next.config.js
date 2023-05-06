@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         source: '/arprotecsa',
-        destination: '/productos/arpotecsa',
+        destination: '/productos/arprotecsa',
         permanent: true,
       },
       {
