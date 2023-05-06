@@ -27,6 +27,7 @@ export default function jumpcloud() {
         </div>
       </section>
 
+      {/* Content */}
       <div className="py-8 px-6 flex flex-col gap-20 md:py-12 md:px-20">
         <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div className="order-2 md:order-1">

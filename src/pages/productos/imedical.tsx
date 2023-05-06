@@ -24,8 +24,9 @@ export default function Imedical() {
         </div>
       </section>
 
-      <section className="py-8 px-6 flex flex-col gap-20 lg:py-12 lg:px-20">
-        <div className="flex flex-col gap-10 justify-center items-center lg:flex-row">
+      {/* Content */}
+      <div className="py-8 px-6 flex flex-col gap-20 lg:py-12 lg:px-20">
+        <section className="flex flex-col gap-10 justify-center items-center lg:flex-row">
           <div className="order-2 lg:order-1">
             <h2 className="font-semibold text-2xl text-justify leading-normal mb-2 lg:mb-4 lg:text-3xl">
               Software para la administración y gestión de IPS, Clínicas y
@@ -49,9 +50,9 @@ export default function Imedical() {
             alt="Freebalance"
             className="w-1/2 lg:w-1/3 h-fit object-cover order-1 lg:order-2"
           />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h2 className="font-semibold text-2xl leading-normal mb-2 lg:mb-4 lg:text-3xl">
             ¿Por qué iMedical?
           </h2>
@@ -93,9 +94,9 @@ export default function Imedical() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-16">
+        <section className="flex flex-col gap-16">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
             <div className="order-2 lg:order1">
               <h2 className="font-semibold text-2xl leading-normal mb-2 lg:mb-4 lg:text-3xl">
@@ -1588,9 +1589,9 @@ export default function Imedical() {
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-10 justify-center items-center lg:flex-row">
+        <section className="flex flex-col gap-10 justify-center items-center lg:flex-row">
           <div className="order-2 lg:order-1">
             <h2 className="font-semibold text-2xl text-justify leading-normal lg:text-3xl">
               Mejores decisiones fundamentadas en la correcta interpretación de
@@ -1603,9 +1604,9 @@ export default function Imedical() {
             alt="Freebalance"
             className="w-1/2 lg:w-1/3 h-fit object-cover order-1 lg:order-2"
           />
-        </div>
+        </section>
 
-        <div className="grid divide-y-[1px] divide-gray-300 md:divide-y-0 md:grid-cols-3">
+        <section className="grid divide-y-[1px] divide-gray-300 md:divide-y-0 md:grid-cols-3">
           {/*  */}
           <div className="grid justify-center gap-4 grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
             <div className="flex items-center justify-center lg:col-span-1 col-span-full">
@@ -1846,9 +1847,9 @@ export default function Imedical() {
               </span>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-10 justify-center items-center mb-2 lg:mb-4 lg:flex-row">
+        <section className="flex flex-col gap-10 justify-center items-center mb-2 lg:mb-4 lg:flex-row">
           <div className="order-2 lg:order-1">
             <h2 className="font-semibold text-2xl text-justify leading-normal lg:text-3xl">
               Reportes de los productos no POS vendidos en un solo lugar
@@ -1864,9 +1865,9 @@ export default function Imedical() {
             alt="Freebalance"
             className="w-1/2 lg:w-1/3 h-fit object-cover order-1 lg:order-2"
           />
-        </div>
+        </section>
 
-        <div className="grid gap-12 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left md:grid-cols-3">
+        <section className="grid gap-12 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left md:grid-cols-3">
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
@@ -1927,8 +1928,8 @@ export default function Imedical() {
               Tableros de control que recolectan tu información más importante.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 }

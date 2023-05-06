@@ -22,9 +22,9 @@ export default function Huntress() {
         </div>
       </section>
 
-      {/* content */}
-      <section className="py-8 px-6 flex flex-col gap-20 md:py-12 md:px-20">
-        <div className="flex flex-col gap-4 justify-center items-center md:flex-row">
+      {/* Content */}
+      <div className="py-8 px-6 flex flex-col gap-20 md:py-12 md:px-20">
+        <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
               La plataforma de seguridad gestionada para el 99%
@@ -43,9 +43,9 @@ export default function Huntress() {
             alt="Freebalance"
             className="w-1/2 md:w-1/3 h-fit object-cover"
           />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
             Cómo funciona Huntress
           </h2>
@@ -89,9 +89,9 @@ export default function Huntress() {
                   <g
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
                   >
                     <path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5.697M18 12V7a2 2 0 0 0-2-2h-2" />
                     <path d="M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm0 6h4m-4 4h3m3 2.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0m4.5 2L21 22" />
@@ -149,9 +149,9 @@ export default function Huntress() {
                   <g
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
                   >
                     <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
                     <path d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm0 12v-5m3 5v-1m3 1v-3" />
@@ -171,9 +171,9 @@ export default function Huntress() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
             Funciones Principales
           </h2>
@@ -230,56 +230,56 @@ export default function Huntress() {
                   <path
                     d="M44.2563 13.0992C44.0978 13.0074 43.9663 12.8758 43.8749 12.7173C43.7835 12.5589 43.7354 12.3793 43.7354 12.1964C43.7354 12.0136 43.7835 11.834 43.8749 11.6756C43.9663 11.5171 44.0978 11.3855 44.2563 11.2937L47.2003 9.60358L54.2043 5.89033C54.9035 5.487 53.5629 6.53055 53.5629 7.33722L51.3565 11.5562L51.6708 15.5448C51.6708 16.345 51.4848 16.9853 50.7921 16.5883L47.1939 14.7701L44.2563 13.0992Z"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M73.5103 8.66223C72.8208 7.20606 71.8331 5.91032 70.6111 4.85861C69.389 3.80689 67.9596 3.02255 66.4152 2.55618C64.8707 2.08982 63.2455 1.95178 61.6443 2.15098C60.0431 2.35018 58.5015 2.88219 57.119 3.71269C55.7365 4.54319 54.5437 5.65374 53.6177 6.9727C52.6916 8.29166 52.0528 9.78973 51.7425 11.3703C51.4322 12.9508 51.4573 14.5788 51.8161 16.149C52.175 17.7193 52.8596 19.1971 53.8258 20.487C53.8993 20.5835 53.9524 20.6939 53.982 20.8114C54.0115 20.929 54.0168 21.0514 53.9976 21.171C53.9785 21.2907 53.9351 21.4053 53.8703 21.5078C53.8055 21.6103 53.7205 21.6986 53.6206 21.7674L53.5564 21.8186L2.33453 64.521C2.21841 64.6166 2.12821 64.7397 2.07223 64.8792C2.01626 65.0186 1.99629 65.1699 2.01417 65.319C2.03205 65.4682 2.08721 65.6105 2.17457 65.7328C2.26193 65.8551 2.37869 65.9536 2.51412 66.0191C4.77183 67.1267 9.56947 69.3546 12.18 69.7195C12.3678 69.7489 12.5413 69.8374 12.6751 69.9722C12.809 70.1069 12.8962 70.2809 12.924 70.4686C13.119 71.9976 13.6208 73.4717 14.3992 74.8028C14.4732 74.9158 14.5714 75.011 14.6869 75.0813C14.8023 75.1517 14.932 75.1955 15.0665 75.2096C15.201 75.2237 15.3369 75.2078 15.4645 75.1629C15.592 75.118 15.708 75.0453 15.8038 74.9501L40.7285 50.0713C40.8332 49.9641 40.9634 49.885 41.1069 49.8414C41.2504 49.7977 41.4026 49.791 41.5495 49.8217C44.5063 50.4619 60.6887 53.4005 69.6041 44.2518C78.5196 35.1031 79.5714 20.7623 74.7353 11.2423C74.3056 10.3908 73.9143 9.52652 73.5103 8.66223V8.66223Z"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M12.8213 69.8733L26.1944 57.2803"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
+                    strokeLinecap="round"
                   />
                   <path
                     d="M59.6943 50.2824L66.4418 57.4336M64.8961 47.9648L70.2517 53.6948L64.8961 47.9648Z"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M62.3305 14.8403C63.79 14.8403 64.9731 13.6594 64.9731 12.2026C64.9731 10.7459 63.79 9.56494 62.3305 9.56494C60.8711 9.56494 59.688 10.7459 59.688 12.2026C59.688 13.6594 60.8711 14.8403 62.3305 14.8403Z"
                     fill="#222124"
                     stroke="#222124"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M67.6075 67.2035L80.6522 56.0676C80.8314 55.9145 81.0391 55.7982 81.2633 55.7253C81.4876 55.6524 81.7241 55.6243 81.9592 55.6426C82.1943 55.6609 82.4236 55.7253 82.6338 55.8321C82.844 55.9388 83.0311 56.0858 83.1844 56.2647L88.6042 62.5901C89.492 63.6222 90.1675 64.8188 90.592 66.1116C91.0165 67.4043 91.1818 68.7678 91.0783 70.1243C90.9748 71.4808 90.6047 72.8036 89.989 74.0173C89.3734 75.231 88.5242 76.3118 87.4901 77.1979C86.4544 78.0821 85.2543 78.7541 83.9583 79.1754C82.6624 79.5967 81.296 79.7591 79.9372 79.6533C78.5784 79.5475 77.2538 79.1755 76.039 78.5587C74.8242 77.9419 73.7431 77.0922 72.8573 76.0583L67.4375 69.7329C67.2842 69.554 67.1677 69.3467 67.0946 69.1229C67.0216 68.8991 66.9934 68.663 67.0118 68.4283C67.0301 68.1936 67.0946 67.9648 67.2016 67.755C67.3085 67.5451 67.4558 67.3584 67.635 67.2054L67.6075 67.2035Z"
                     stroke="#F2AB26"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M81.4893 68.2473L83.4135 70.4624C83.5643 70.641 83.6382 70.8718 83.619 71.1046C83.5997 71.3373 83.489 71.553 83.3109 71.7044L83.1377 71.8453C82.9631 71.9985 82.7349 72.0765 82.5029 72.0621C82.2709 72.0477 82.054 71.9421 81.8998 71.7685L80.0141 69.5853C79.5184 69.7715 78.9775 69.802 78.4639 69.6727C77.9503 69.5434 77.4886 69.2605 77.1407 68.8619C76.9137 68.5987 76.7408 68.2935 76.632 67.9637C76.5232 67.6339 76.4805 67.2859 76.5064 66.9396C76.5323 66.5933 76.6263 66.2555 76.783 65.9454C76.9397 65.6354 77.156 65.3592 77.4197 65.1326C77.6833 64.9061 77.9891 64.7335 78.3195 64.6249C78.6499 64.5163 78.9986 64.4737 79.3455 64.4995C79.6924 64.5254 80.0309 64.6192 80.3415 64.7756C80.6521 64.932 80.9288 65.148 81.1558 65.4111C81.4872 65.7974 81.696 66.2734 81.7554 66.7785C81.8148 67.2836 81.7222 67.7949 81.4893 68.2473V68.2473Z"
                     stroke="#F2AB26"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={3}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M70.079 64.1111L68.0457 61.6847C67.2546 60.7654 66.861 59.5705 66.9512 58.362C67.0413 57.1535 67.6079 56.0299 68.5268 55.2378V55.2378C68.9434 54.845 69.4374 54.5432 69.9773 54.3516C70.5173 54.16 71.0913 54.0828 71.6628 54.125C72.2343 54.1671 72.7907 54.3277 73.2965 54.5965C73.8024 54.8652 74.2466 55.2363 74.6008 55.6859L77.1279 58.6117"
                     stroke="#F2AB26"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -340,34 +340,34 @@ export default function Huntress() {
                   <path
                     d="M39.986 58.902c8.681 0 15.719-7.228 15.719-16.144 0-8.916-7.038-16.144-15.72-16.144-8.68 0-15.718 7.228-15.718 16.144 0 8.916 7.037 16.144 15.719 16.144Z"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M71.996 41.9h-32s.359-33.37 0-33.328c-8 .508-15.303 3.858-20.004 7.728-4.701 3.87-8.244 9.027-10.222 14.875a33.774 33.774 0 0 0-.957 18.186c1.352 6.033 4.333 11.552 8.6 15.922 4.267 4.37 9.647 7.412 15.522 8.778a7.447 7.447 0 0 1 2.382-4.594 7.07 7.07 0 0 1 4.739-1.835 7.07 7.07 0 0 1 4.739 1.835 7.446 7.446 0 0 1 2.382 4.594c7.071-1.674 13.379-5.768 17.888-11.612 6.431-8.333 6.93-20.549 6.93-20.549Z"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M47.194 74.343a7.38 7.38 0 0 0-2.364-4.554 7.018 7.018 0 0 0-4.702-1.82c-1.73 0-3.402.648-4.702 1.82a7.38 7.38 0 0 0-2.364 4.554m0 .019a8.41 8.41 0 0 0-.066.876 7.43 7.43 0 0 0 2.24 4.827 7.056 7.056 0 0 0 4.834 1.99 7.05 7.05 0 0 0 4.867-1.902 7.423 7.423 0 0 0 2.323-4.787 7.243 7.243 0 0 0-.066-1.023l-14.132.019Z"
                     stroke="#056AF9"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M9.132 48.981c3.939 0 7.132-3.28 7.132-7.325s-3.193-7.325-7.132-7.325C5.193 34.331 2 37.611 2 41.656c0 4.046 3.193 7.325 7.132 7.325Zm30.996 32.623c3.939 0 7.132-3.28 7.132-7.325s-3.193-7.325-7.132-7.325c-3.939 0-7.132 3.28-7.132 7.325s3.193 7.325 7.132 7.325Z"
                     fill="#fff"
                     stroke="#056AF9"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
+                    strokeWidth={4}
+                    strokeMiterlimit={10}
                   />
                   <path
                     d="M40.117 2v39.913h38.778"
                     stroke="#222124"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth={4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -538,7 +538,7 @@ export default function Huntress() {
                   fill="none"
                   className="w-16 h-16"
                 >
-                  <g clip-path="url(#clip0_41_116)">
+                  <g clipPath="url(#clip0_41_116)">
                     <path
                       d="M83 16.5L97 10L113.5 43.5L100.5 49.5L83 16.5Z"
                       fill="#01C5D1"
@@ -573,9 +573,9 @@ export default function Huntress() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
             ¿Por qué elegir la solución EDR gestionada de Huntress?
           </h2>
@@ -623,8 +623,8 @@ export default function Huntress() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 }

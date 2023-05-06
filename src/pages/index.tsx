@@ -203,13 +203,13 @@ export default function Home() {
                     gradientUnits="userSpaceOnUse"
                   >
                     <stop
-                      stop-color="white"
-                      stop-opacity="0.07"
+                      stopColor="white"
+                      stopOpacity={0.07}
                     />
                     <stop
                       offset="1"
-                      stop-color="white"
-                      stop-opacity="0"
+                      stopColor="white"
+                      stopOpacity={0}
                     />
                   </linearGradient>
                 </defs>
@@ -240,13 +240,13 @@ export default function Home() {
                     gradientUnits="userSpaceOnUse"
                   >
                     <stop
-                      stop-color="white"
-                      stop-opacity="0.07"
+                      stopColor="white"
+                      stopOpacity={0.07}
                     />
                     <stop
                       offset="1"
-                      stop-color="white"
-                      stop-opacity="0"
+                      stopColor="white"
+                      stopOpacity={0}
                     />
                   </linearGradient>
                 </defs>

@@ -28,9 +28,9 @@ export default function Freebalance() {
         </div>
       </section>
 
-      {/* content */}
-      <section className="py-8 px-6 flex flex-col gap-20 md:py-12 md:px-20">
-        <div className="flex flex-col gap-4 justify-center items-center md:flex-row">
+      {/* Content */}
+      <div className="py-8 px-6 flex flex-col gap-20 md:py-12 md:px-20">
+        <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
               Diseñado con el Gobierno. Para el Gobierno.
@@ -102,10 +102,10 @@ export default function Freebalance() {
             alt="Freebalance"
             className="w-full md:w-1/3 h-fit object-cover"
           />
-        </div>
+        </section>
 
         <DynamicProductsFreebalance />
-      </section>
+      </div>
     </>
   );
 }
