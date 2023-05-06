@@ -30,76 +30,76 @@ export const SOLUCIONES = Object.freeze({
     title: 'Digitalizar',
     description:
       '¿Estas cansado de tener todo en papel? ¿Necesitas recuperar y sanear documentos?',
-    href: '/soluciones/digitalizar',
+    href: '/arprotecsa',
   },
 
   automatizacion: {
     title: 'Automatización',
     description:
       '¿Deseas eliminar burocracia apostandole a la eficiencia de procesos?',
-    href: '/soluciones/automatizacion',
+    href: '/freebalance',
   },
 
   proteccion_de_activos: {
     title: 'Protección de Activos',
     description:
       'Deten la exfiltarción de datos con nuestras soluciones de ciberseguridad',
-    href: '/soluciones/proteccion-de-activos',
+    href: '/seguridad',
   },
 
   endpoint_detection_and_response: {
     title: 'Endpoint Detection and Response',
     description:
       'EDR y Windows Defender Administrado, contrata nuestros especialistas de seguridad IT de detección y respuesta a nivel de punto final, para que tengas defensa de última generación contra todo tipo de Malware.',
-    href: '/soluciones/edr',
+    href: '/huntress',
   },
 
   transformacion: {
     title: 'Transformación',
     description:
       'Implementa eficiencia en los procesos adminstrativos y contables para facilitar la participacion ciudadana. ',
-    href: '/soluciones/transformacion',
+    href: '/freebalance',
   },
 
   consultoria_ti: {
     title: 'Consultoría IT',
     description: 'Contrata ingenieros capacitados en área de Informática.',
-    href: '/soluciones/consultoria-ti',
+    href: '/consultoria',
   },
 
   analitica_avanzada: {
     title: 'Analítica Avanzada',
     description:
       'Aplica Inteligencia Artificial a tus procesos de analisis de datos para producir analisis predictivos, y tomar decisiones claves de tu negocio (de un tratamiento).',
-    href: '/soluciones/analitica-avanzada',
+    href: '/sas',
   },
 
   facturacion: {
     title: 'Facturación',
     description:
       'Lleva inventarios y factura de manera eficiente, asequible y amigable.',
-    href: '/soluciones/facturacion',
+    href: '/psk',
   },
 
   inventario: {
     title: 'Inventario',
     description:
       'Lleva inventarios y factura de manera eficiente, asequible y amigable.',
-    href: '/soluciones/inventario',
+    href: '/psk',
   },
 
   contabilidad: {
     title: 'Contabilidad',
     description:
       'Lleva tu contabilidad de manera eficiente, asequible y amigable.',
-    href: '/soluciones/contabilidad',
+    href: '/psk',
   },
 
   proteccion_de_hardware: {
     title: 'Protección de Hardware',
     description:
       'Lleva inventarios de tus activos dentro de tu red, para protegerlos de accesos indebidos.',
-    href: '/soluciones/proteccion-de-hardware',
+    href: '/jumpcloud',
   },
 
   identidad_digital: {
@@ -112,14 +112,14 @@ export const SOLUCIONES = Object.freeze({
     title: 'NIFF 9',
     description:
       'Entra en la nueva regulación IRFS 9 con el líder mundial de Analitica Avanzada.',
-    href: '/soluciones/niif9  ',
+    href: '/sas/niif9  ',
   },
 
   riesgos: {
     title: 'Riesgos',
     description:
       'Analiza los riesgos asociados a una variable, y toma decisiones inteligentes.',
-    href: '/soluciones/riesgos-financieros',
+    href: '/sas/riesgos',
   },
 
   cash_management: {
@@ -133,28 +133,28 @@ export const SOLUCIONES = Object.freeze({
     title: 'Ciberseguridad',
     description:
       'Asegura tus activos con nuestras soluciones de ciberseguridad automatizadas y asequibles.',
-    href: '/soluciones/ciberseguridad',
+    href: '/seguridad',
   },
 
   inteligencia_artificial: {
     title: 'Inteligencia Artificial',
     description:
       'Calcula y resuelve en segundos calculos complejos, y crea modelos predictivos para cualquier caso de uso financiero.',
-    href: '/soluciones/inteligencia-artificial',
+    href: '/sas',
   },
 
   crontrol_de_pacientes: {
     title: 'Control de Pacientes',
     description:
       'Mejora y analiza tu postura ante un caso médico llevando controles.',
-    href: '/soluciones/control-de-pacientes',
+    href: '/imedical',
   },
 
   inventario_de_farmacia: {
     title: 'Inventario de Farmacia',
     description:
       'Facilita la entrega de medicinas con sistemas automatizados e inteligentes.',
-    href: '/soluciones/inventario-farmacia',
+    href: '/imedical',
   },
 
   pasante: {
