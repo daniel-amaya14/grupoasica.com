@@ -34,7 +34,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/arpotecsa',
+        source: '/arprotecsa',
         destination: '/productos/arpotecsa',
         permanent: true,
       },
