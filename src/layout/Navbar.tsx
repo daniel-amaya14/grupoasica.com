@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white w-full border-b border-gray-200">
       {/* container */}
-      <div className="container flex flex-wrap items-center justify-between mx-auto sm:px-2">
+      <div className="flex flex-wrap items-center justify-between  mx-auto sm:px-2">
         {/* Logo */}
         <div className="flex items-center md:flex-1">
           <Link href="/">
