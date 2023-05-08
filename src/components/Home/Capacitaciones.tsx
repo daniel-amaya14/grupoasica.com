@@ -31,11 +31,11 @@ const capacitaciones = [
 export default function ContainerCapacitaciones() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="flex flex-wrap -m-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -m-4">
         {capacitaciones.map(({ title, image, description, href }) => {
           return (
             <div
-              className="p-4 md:w-1/3"
+              className="p-4"
               key={title}
             >
               <CardCursos
