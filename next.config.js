@@ -64,8 +64,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/spk',
-        destination: '/productos/spk',
+        source: '/psk',
+        destination: '/productos/psk',
         permanent: true,
       },
       {
