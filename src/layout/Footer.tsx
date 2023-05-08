@@ -14,13 +14,13 @@ const listaServicios = [
 ];
 
 const listaProductos = [
-  { name: 'Analítica Avanzada', href: '/soluciones/analitica-avanzada' },
-  { name: 'Ciberseguridad', href: '/soluciones/ciberseguridad' },
+  { name: 'Analítica Avanzada', href: '/sas' },
+  { name: 'Ciberseguridad', href: '/seguridad' },
   { name: 'Identidad Digital', href: '/soluciones/identidad-digital' },
   { name: 'Entrenamiento', href: '/soluciones/entrenamiento' },
   {
     name: 'Inteligencia Artificial',
-    href: '/soluciones/inteligencia-artificial',
+    href: '/soluciones/sas',
   },
   {
     name: 'Ver más',
