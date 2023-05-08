@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ImageHome from '@/public/images/imghero.webp';
@@ -9,6 +9,11 @@ import Capacitaciones from '@/components/Home/Capacitaciones';
 import Certificaciones from '@/components/Home/Certificaciones';
 
 export default function Home() {
+  useEffect(() => {
+    document.title =
+      'Grupo ASICA | Soluciones tecnológicas para un futuro exitoso';
+  }, []);
+
   return (
     <>
       {/* hero */}
