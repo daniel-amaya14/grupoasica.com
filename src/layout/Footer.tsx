@@ -40,11 +40,31 @@ const listaAyuda = [
 const listaRedes = [
   { name: 'WhatsApp', icon: 'ic:outline-whatsapp', href: '', color: '#25D366' },
   { name: 'GMail', icon: 'bxl:gmail', href: '', color: '#EA4335' },
-  { name: 'LinkedIn', icon: 'mdi:linkedin', href: '', color: '#0A66C2' },
+  {
+    name: 'LinkedIn',
+    icon: 'mdi:linkedin',
+    href: 'https://www.linkedin.com/company/grupoasicahn/',
+    color: '#0A66C2',
+  },
   { name: 'Twitter', icon: 'uil:twitter', href: '', color: '#1DA1F2' },
-  { name: 'Facebook', icon: 'ic:outline-facebook', href: '', color: '#1877F2' },
-  { name: 'Instagram', icon: 'mdi:instagram', href: '', color: '#E4405F' },
-  { name: 'YouTube', icon: 'bi:youtube', href: '', color: '#FF0000' },
+  {
+    name: 'Facebook',
+    icon: 'ic:outline-facebook',
+    href: 'https://www.facebook.com/Grupo.ASICA1',
+    color: '#1877F2',
+  },
+  {
+    name: 'Instagram',
+    icon: 'mdi:instagram',
+    href: 'https://www.instagram.com/grupo.asica1/',
+    color: '#E4405F',
+  },
+  {
+    name: 'YouTube',
+    icon: 'bi:youtube',
+    href: 'https://www.youtube.com/channel/UCOSYcdIKeAiX1wB09Jj6DyA',
+    color: '#FF0000',
+  },
 ];
 
 interface ListarItemsProps {
