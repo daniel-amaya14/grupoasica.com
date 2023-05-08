@@ -1,11 +1,9 @@
 import React from 'react';
 
 export interface IconProps {
-  props?: {
-    width?: number;
-    height?: number;
-    className?: string;
-  };
+  width?: number;
+  height?: number;
+  className?: string;
 }
 
 export const IconGovernment = (props: IconProps) => {
@@ -227,9 +225,9 @@ export const IconStudentGraduate = (props: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
       width="24"
       height="24"
-      viewBox="0 0 256 256"
       fill="currentColor"
       {...props}
     >
@@ -244,10 +242,12 @@ export const IconStudentGraduate = (props: IconProps) => {
 export const IconStudent = (props: IconProps) => {
   return (
     <svg
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      stroke="currentColor"
+      fill="none"
       {...props}
     >
       <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -258,6 +258,24 @@ export const IconStudent = (props: IconProps) => {
         strokeWidth={2}
         d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
       ></path>
+    </svg>
+  );
+};
+
+export const IconCommunications = (props: IconProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="24"
+      height="24"
+      fill="none"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="m11.854 6.434l-.413-.282a4.762 4.762 0 0 0 .282-4.878l-.084-.153l.436-.246l.09.167a5.262 5.262 0 0 1-.31 5.392Zm1.153 7.131V14h-11v-.435h2.488L6.044 6.4a.5.5 0 0 1 .489-.395h.725V4.602A1.14 1.14 0 0 1 6.376 3.5a1.157 1.157 0 1 1 2.313 0a1.14 1.14 0 0 1-.93 1.111v1.395h.721a.5.5 0 0 1 .49.394l1.547 7.165ZM8.454 8.751H6.56l-.323 1.493h2.541Zm-2.326 1.993l-.323 1.495h3.403l-.323-1.495Zm.808-3.738l-.27 1.245h1.68l-.269-1.245Zm-1.418 6.56h3.977l-.179-.827h-3.62ZM5.21 5.013a2.752 2.752 0 0 1 .016-3.052l-.414-.28a3.25 3.25 0 0 0-.019 3.607ZM10.757 3.5a3.243 3.243 0 0 0-.534-1.786l-.418.275a2.752 2.752 0 0 1-.018 3.05l.414.278a3.234 3.234 0 0 0 .556-1.817ZM3.534 6.118a4.764 4.764 0 0 1-.153-4.988L2.948.88a5.264 5.264 0 0 0 .17 5.514Z"
+      />
     </svg>
   );
 };
