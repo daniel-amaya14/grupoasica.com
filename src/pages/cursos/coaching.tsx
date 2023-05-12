@@ -411,7 +411,7 @@ export default function Coaching() {
             Solicitar Coaching Bienestar
           </h3>
 
-          <p className="text-gray-600 mt-10 mb-6 lg:mt-0">
+          <p className="text-gray-600 mt-10 mb-6 text-sm lg:mt-0">
             Campos marcados con <span className="text-red-600">*</span> son
             requeridos
           </p>
