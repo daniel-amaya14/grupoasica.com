@@ -58,7 +58,9 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
             href={href}
             key={name}
             className="hover:text-fontPrimary"
-          ></Link>
+          >
+            {name}
+          </Link>
         ))}
       </ul>
     </div>
