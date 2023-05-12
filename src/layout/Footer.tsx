@@ -1,8 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Icon } from '@iconify/react';
 import LogoASICA from '@/public/images/logo-asica.png';
+import {
+  IconYoutube,
+  IconInstagram,
+  IconLinkedin,
+  IconFacebook,
+  IconWhatsapp,
+} from '@/components/Icons';
 
 const listaServicios = [
   { name: 'Gobierno', href: '/gobierno' },
@@ -37,38 +43,8 @@ const listaAyuda = [
   { name: 'Legal', href: '/legal' },
 ];
 
-const listaRedes = [
-  { name: 'WhatsApp', icon: 'ic:outline-whatsapp', href: '', color: '#25D366' },
-  { name: 'GMail', icon: 'bxl:gmail', href: '', color: '#EA4335' },
-  {
-    name: 'LinkedIn',
-    icon: 'mdi:linkedin',
-    href: 'https://www.linkedin.com/company/grupoasicahn/',
-    color: '#0A66C2',
-  },
-  { name: 'Twitter', icon: 'uil:twitter', href: '', color: '#1DA1F2' },
-  {
-    name: 'Facebook',
-    icon: 'ic:outline-facebook',
-    href: 'https://www.facebook.com/Grupo.ASICA1',
-    color: '#1877F2',
-  },
-  {
-    name: 'Instagram',
-    icon: 'mdi:instagram',
-    href: 'https://www.instagram.com/grupo.asica1/',
-    color: '#E4405F',
-  },
-  {
-    name: 'YouTube',
-    icon: 'bi:youtube',
-    href: 'https://www.youtube.com/channel/UCOSYcdIKeAiX1wB09Jj6DyA',
-    color: '#FF0000',
-  },
-];
-
 interface ListarItemsProps {
-  listaItems: { name: string; href: string; icon?: string }[];
+  listaItems: { name: string; href: string }[];
   title: string;
 }
 
@@ -77,14 +53,12 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
     <div className="max-w-[20rem]">
       <h4 className="font-bold mb-6 text-[#404143] text-lg">{title}</h4>
       <ul className="flex flex-col gap-3 text-sm">
-        {listaItems.map(({ name, href, icon = '' }) => (
+        {listaItems.map(({ name, href = '' }) => (
           <Link
             href={href}
             key={name}
             className="hover:text-fontPrimary"
-          >
-            {icon ? <Icon icon={icon} /> : name}
-          </Link>
+          ></Link>
         ))}
       </ul>
     </div>
@@ -92,23 +66,21 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
 };
 
 export default function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <footer className="bg-[#f4f3ff] px-6 pt-16 pb-10 xl:px-20 xl:pt-16">
       <section>
         <div className="flex flex-col gap-10 mb-10 md:flex-row justify-between xl:gap-20">
           {/* lista información */}
           <div className="max-w-[20rem] -mt-4">
-            {/* <h4 className="font-bold mb-6 text-[#404143] text-lg">
-              Información
-            </h4> */}
             <Image
               src={LogoASICA}
               alt="Logo ASICA"
-              width={130}
-              height={100}
+              width={160}
               className="-ml-4"
             />
-            <ul className="flex flex-col gap-3 mt-4 mb-6 text-sm leading-relaxed">
+            <ul className="flex flex-col gap-3 mb-4 text-sm leading-relaxed">
               {/* email */}
               <li className="flex items-center gap-2">
                 <svg
@@ -174,19 +146,40 @@ export default function Footer() {
             </ul>
 
             <div className="flex flex-wrap items-center gap-3 md:gap-4">
-              {listaRedes.map(({ name, icon, href }) => (
-                <Link
-                  href={href}
-                  key={name.toLowerCase()}
-                  className="text-gray-500"
-                >
-                  <Icon
-                    icon={icon}
-                    className="h-6 w-6 hover:text-black"
-                    fill="currentColor"
-                  />
-                </Link>
-              ))}
+              <Link
+                href="https://www.linkedin.com/company/grupoasicahn/"
+                className="text-gray-500"
+              >
+                <IconWhatsapp className="h-6 w-6 hover:text-[#25D366]" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/grupoasicahn/"
+                target="_blank"
+                className="text-gray-500"
+              >
+                <IconLinkedin className="h-6 w-6 hover:text-[#0A66C2]" />
+              </Link>
+              <Link
+                href="https://www.youtube.com/channel/UCOSYcdIKeAiX1wB09Jj6DyA"
+                target="_blank"
+                className="text-gray-500"
+              >
+                <IconYoutube className="h-6 w-6 hover:text-[#FF0000]" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/Grupo.ASICA1"
+                target="_blank"
+                className="text-gray-500"
+              >
+                <IconFacebook className="h-6 w-6 hover:text-[#1877F2]" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/grupo.asica1/"
+                target="_blank"
+                className="text-gray-500"
+              >
+                <IconInstagram className="h-6 w-6 hover:text-[#E4405F]" />
+              </Link>
             </div>
           </div>
 
@@ -224,14 +217,14 @@ export default function Footer() {
 
               <Link
                 className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                href="/"
+                href="#"
               >
                 Privacy Policy
               </Link>
             </p>
 
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              &copy; 2023 Grupo ASICA
+              &copy; {year} Grupo ASICA
             </p>
           </div>
         </div>
