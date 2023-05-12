@@ -7,6 +7,12 @@ import PartnerSection from '@/components/Home/PartnerSection';
 import Aprende from '@/components/Home/Aprende';
 import Capacitaciones from '@/components/Home/Capacitaciones';
 import Certificaciones from '@/components/Home/Certificaciones';
+import {
+  IconFolderOpen,
+  IconStart,
+  IconBriefcase,
+  IconUsers,
+} from '@/components/Icons';
 
 export default function Home() {
   useEffect(() => {
@@ -108,75 +114,42 @@ export default function Home() {
           <div className="-mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {/* proyectos */}
             <div className="p-2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="text-white w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M248.23 112.31A20 20 0 0 0 232 104h-12V88a20 20 0 0 0-20-20h-68l-26.66-20a20.12 20.12 0 0 0-12-4H40a20 20 0 0 0-20 20v144a12 12 0 0 0 12 12h179.1a12 12 0 0 0 11.33-8l28.49-81.47l.06-.17a20 20 0 0 0-2.75-18.05ZM92 68l26.67 20a20.12 20.12 0 0 0 12 4H196v12H69.77a20 20 0 0 0-18.94 13.58L44 137.15V68Zm110.59 128H48.89l23.72-68h153.76Z"
-                  />
-                </svg>
-
-                <h2 className="title-font font-medium text-3xl">+400</h2>
-                <p className="leading-relaxed">Proyectos</p>
+              <div className="flex gap-3 border-2 border-gray-200 px-4 py-6 rounded-lg text-white sm:flex-col">
+                <IconFolderOpen className="w-12 h-12 inline-block" />
+                <div>
+                  <h2 className="title-font font-medium text-3xl">+400</h2>
+                  <p className="leading-relaxed">Proyectos</p>
+                </div>
               </div>
             </div>
             {/* clientes */}
             <div className="p-2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="text-white w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M12.3 12.22A4.92 4.92 0 0 0 14 8.5a5 5 0 0 0-10 0a4.92 4.92 0 0 0 1.7 3.72A8 8 0 0 0 1 19.5a1 1 0 0 0 2 0a6 6 0 0 1 12 0a1 1 0 0 0 2 0a8 8 0 0 0-4.7-7.28ZM9 11.5a3 3 0 1 1 3-3a3 3 0 0 1-3 3Zm9.74.32A5 5 0 0 0 15 3.5a1 1 0 0 0 0 2a3 3 0 0 1 3 3a3 3 0 0 1-1.5 2.59a1 1 0 0 0-.5.84a1 1 0 0 0 .45.86l.39.26l.13.07a7 7 0 0 1 4 6.38a1 1 0 0 0 2 0a9 9 0 0 0-4.23-7.68Z"
-                  />
-                </svg>
-                <h2 className="title-font font-medium text-3xl">+100</h2>
-                <p className="leading-relaxed">Clientes</p>
+              <div className="flex gap-3 border-2 border-gray-200 px-4 py-6 rounded-lg text-white sm:flex-col">
+                <IconUsers className="w-12 h-12 inline-block" />
+                <div>
+                  <h2 className="title-font font-medium text-3xl">+100</h2>
+                  <p className="leading-relaxed">Clientes</p>
+                </div>
               </div>
             </div>
             {/* experiencia */}
             <div className="p-2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="text-white w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="m19.65 9.04l-4.84-.42l-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73l3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27l1-4.28l-3.32-2.88l4.38-.38L12 6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28L12 15.4z"
-                  />
-                </svg>
-
-                <h2 className="title-font font-medium text-3xl">+28</h2>
-                <p className="leading-relaxed">Años de experiencia</p>
+              <div className="flex gap-3 border-2 border-gray-200 px-4 py-6 rounded-lg text-white sm:flex-col">
+                <IconStart className="w-12 h-12 inline-block" />
+                <div>
+                  <h2 className="title-font font-medium text-3xl">+28</h2>
+                  <p className="leading-relaxed">Años de experiencia</p>
+                </div>
               </div>
             </div>
             {/* partners */}
             <div className="p-2 w-full">
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="text-white w-12 h-12 mb-3 inline-block"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M216 56h-40v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H40a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16ZM96 48a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm120 24v41.61A184 184 0 0 1 128 136a184.07 184.07 0 0 1-88-22.38V72Zm0 128H40v-68.36A200.19 200.19 0 0 0 128 152a200.25 200.25 0 0 0 88-20.37V200Zm-112-88a8 8 0 0 1 8-8h32a8 8 0 0 1 0 16h-32a8 8 0 0 1-8-8Z"
-                  />
-                </svg>
-                <h2 className="title-font font-medium text-3xl">+37</h2>
-                <p className="leading-relaxed">Partners</p>
+              <div className="flex gap-3 border-2 border-gray-200 px-4 py-6 rounded-lg text-white sm:flex-col">
+                <IconBriefcase className="w-12 h-12 inline-block" />
+                <div>
+                  <h2 className="title-font font-medium text-3xl">+37</h2>
+                  <p className="leading-relaxed">Partners</p>
+                </div>
               </div>
             </div>
           </div>
