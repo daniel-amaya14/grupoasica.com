@@ -1,10 +1,15 @@
 import React from 'react';
-import AboutHome from './AboutHome';
 import ImageAbout from '@/public/images/imghero.webp';
 import Image from 'next/image';
 import ImgMision from '@/public/images/mision.webp';
 import ImgVision from '@/public/images/vision.webp';
 import ImgValores from '@/public/images/valores.webp';
+import {
+  IconBriefcase,
+  IconStart,
+  IconUsers,
+  IconFolderOpen,
+} from '@/components/Icons';
 
 const valores = [
   'Ética',
@@ -64,7 +69,68 @@ export default function About() {
         </section>
 
         {/* stats */}
-        <AboutHome />
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:px-0 lg:grid-cols-4 xl:gap-x-12">
+          {/*  */}
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <IconFolderOpen className="flex-shrink-0 w-10 h-10 -mt-1 text-fontPrimary" />
+                <div className="ml-4">
+                  <h4 className="text-base font-bold text-gray-900">+400</h4>
+                  <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
+                    Proyectos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <IconUsers className="flex-shrink-0 w-10 h-10 -mt-1 text-fontPrimary" />
+                <div className="ml-4">
+                  <h4 className="text-base font-bold text-gray-900">+100</h4>
+                  <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
+                    Clientes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <IconStart className="flex-shrink-0 w-10 h-10 -mt-1 text-fontPrimary" />
+                <div className="ml-4">
+                  <h4 className="text-base font-bold text-gray-900">
+                    +28 años
+                  </h4>
+                  <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
+                    Experiencia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <IconBriefcase className="flex-shrink-0 w-10 h-10 -mt-1 text-fontPrimary" />
+                <div className="ml-4">
+                  <h4 className="text-base font-bold text-gray-900">
+                    +37 partners
+                  </h4>
+                  <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
+                    A nivel mundial
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* mision y vision */}
         <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
