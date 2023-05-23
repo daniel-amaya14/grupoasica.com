@@ -10,11 +10,11 @@
     "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
-    "@types/node": "18.16.1",
-    "@types/react": "18.2.0",
-    "@types/react-dom": "18.2.1",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.1",
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
     "formik": "^2.2.9",
     "next": "13.3.1",
     "react": "18.2.0",
