@@ -53,39 +53,36 @@ interface InfoServicesProps {
 
 export default function InfoServices({ title, showBtn }: InfoServicesProps) {
   return (
-    <div className="max-w-screen-xl">
-      <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg lg:gap-x-6">
-        <div className=" max-w-lg lg:mx-0">
-          <h1 className="text-3xl font-bold xl:text-4xl">
-            {title ? title : 'Nuestros Servicios'}
-          </h1>
+    <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg lg:gap-x-6">
+      <div className=" max-w-lg lg:mx-0">
+        <h1 className="text-3xl font-bold xl:text-4xl">
+          {title ? title : 'Nuestros Servicios'}
+        </h1>
 
-          <p className="mt-4 text-gray-600 text-justify">
-            Ofrecemos soluciones informáticas y servicios especializados para
-            satisfacer las necesidades de nuestros clientes en distintos
-            ámbitos.
-          </p>
+        <p className="mt-4 text-gray-600 text-justify">
+          Ofrecemos soluciones informáticas y servicios especializados para
+          satisfacer las necesidades de nuestros clientes en distintos ámbitos.
+        </p>
 
-          {!showBtn ? (
-            <>
-              <Link
-                href="/servicios"
-                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring "
-              >
-                Más información
-              </Link>
-            </>
-          ) : null}
-        </div>
+        {!showBtn ? (
+          <>
+            <Link
+              href="/servicios"
+              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring "
+            >
+              Más información
+            </Link>
+          </>
+        ) : null}
+      </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {heroItems.links.map((link) => (
-            <LinkCard
-              key={link.href}
-              {...link}
-            />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        {heroItems.links.map((link) => (
+          <LinkCard
+            key={link.href}
+            {...link}
+          />
+        ))}
       </div>
     </div>
   );
