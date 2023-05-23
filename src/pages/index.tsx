@@ -240,20 +240,20 @@ export default function Home() {
       {/* cursos */}
       <section className="px-6 xl:px-16">
         <div className="flex flex-col gap-10">
-          {/* capacitaciones */}
-          <div>
-            <div className="mb-4">
-              <h3 className="text-2xl font-semibold">Capacitate</h3>
-            </div>
-            <Capacitaciones />
-          </div>
-
           {/* certificaciones */}
           <div>
             <div className="mb-4">
               <h3 className="text-2xl font-semibold">Certifícate</h3>
             </div>
             <Certificaciones />
+          </div>
+
+          {/* capacitaciones */}
+          <div>
+            <div className="mb-4">
+              <h3 className="text-2xl font-semibold">Capacitate</h3>
+            </div>
+            <Capacitaciones />
           </div>
         </div>
       </section>
