@@ -37,7 +37,7 @@ export default function About() {
               Sobre nosotros
             </h1>
             <p className="mt-6 text-base tracking-tight text-white text-justify">
-              Somo líder en la implementación de software propio y de terceros
+              Somos líder en la implementación de software propio y de terceros
               en Honduras y Centroamérica. Ofrecemos servicios de consultoría y
               asesoría en informática para organizaciones complejas y contamos
               con un equipo altamente especializado. Somos expertos en
