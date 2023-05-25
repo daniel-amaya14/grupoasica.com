@@ -23,7 +23,7 @@ export default function BannerHeader() {
       />
 
       {/* svg */}
-      <div className="text-primary w-full absolute bottom-[-2px]">
+      <div className="text-light w-full absolute bottom-[-2px]">
         <svg
           viewBox="0 0 1440 79"
           fill="currentColor"

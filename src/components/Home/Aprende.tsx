@@ -20,7 +20,7 @@ export default function Aprende() {
         <div className="flex flex-col justify-center rounded-sm mt-10 lg:mt-0 lg:max-w-md xl:max-w-xl">
           <h2 className="text-4xl font-bold leading-none sm:text-6xl">
             Estudia con {''}
-            <span className="text-fontPrimary">nosotros</span>
+            <span className="text-primary">nosotros</span>
           </h2>
           <p className="mt-6 text-lg text-justify">
             <span className="block mb-4 font-semibold">

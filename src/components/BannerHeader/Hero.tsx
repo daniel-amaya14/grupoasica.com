@@ -27,7 +27,7 @@ export default function Hero() {
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
             Desde 1994
           </p>
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-wide sm:leading-none text-fontPrimary text-justify">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-wide sm:leading-none text-primary text-justify">
             Tu socio confiable en soluciones tecnológicas{' '}
             <span className="text-gray-900">
               para un futuro exitoso

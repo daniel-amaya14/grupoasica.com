@@ -558,9 +558,7 @@ const LinkCard = ({ title, href, Icon }: LinkCardProps) => {
         />
       </span>
 
-      <p className="font-semibold text-fontPrimary text-xl sm:text-base">
-        {title}
-      </p>
+      <p className="font-semibold text-primary text-xl sm:text-base">{title}</p>
     </Link>
   );
 };

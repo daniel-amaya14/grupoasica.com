@@ -95,7 +95,7 @@ export default function Home() {
 
       {/* stats */}
       <section className="">
-        <div className="bg-fontPrimary relative z-10 overflow-hidden py-12 px-8 md:p-[70px]">
+        <div className="bg-primary relative z-10 overflow-hidden py-12 px-8 md:p-[70px]">
           {/* title */}
           <div className="mb-10">
             <h2 className="text-white text-3xl font-bold xl:text-4xl mb-5">

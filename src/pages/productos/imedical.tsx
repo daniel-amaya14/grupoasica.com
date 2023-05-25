@@ -58,7 +58,7 @@ export default function Imedical() {
           </h2>
           <div className="grid gap-10 lg:gap-8 lg:grid-cols-2 mt-3">
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Servicio de soporte 24/. Sin costo adicional
               </h3>
               <p className="mt-1 text-justify">
@@ -67,7 +67,7 @@ export default function Imedical() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Seguridad sobre tus datos
               </h3>
               <p className="mt-1 text-justify">
@@ -76,7 +76,7 @@ export default function Imedical() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Integraciones con los mejores
               </h3>
               <p className="mt-1 text-justify">
@@ -85,7 +85,7 @@ export default function Imedical() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Actualizaciones y mantenimiento
               </h3>
               <p className="mt-1 text-justify">
@@ -134,7 +134,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 304.31 207.02"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -157,7 +157,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 201.85 202.2"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -204,7 +204,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202 203.29"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -244,7 +244,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202 204.82"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -297,7 +297,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 194.58 202.81"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -330,7 +330,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 194.58 202.81"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <defs>
                     <style>
@@ -367,7 +367,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 188.24 203.11"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -386,7 +386,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 175.62 202.59"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -473,7 +473,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202.93 203"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -507,7 +507,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 199.78 215"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -553,7 +553,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 157.98 204.51"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -593,7 +593,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 187 190.93"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -637,7 +637,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202 195.65"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -681,7 +681,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202 193"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -705,7 +705,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 201.02 200.99"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -725,7 +725,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 176.41 205.07"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g fill="currentColor">
                     <g fill="currentColor">
@@ -760,7 +760,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 213.86 152.65"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -780,7 +780,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 175.65 198.85"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -800,7 +800,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 167.85 203.09"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -844,7 +844,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 196.06 189.3"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -873,7 +873,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202.93 202.83"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -901,7 +901,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 171.61 204.13"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -920,7 +920,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 183.92 184.13"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -952,7 +952,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 163.51 204"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -988,7 +988,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 194.58 202.81"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1008,7 +1008,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 143.15 203.71"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1028,7 +1028,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 164.18 203.94"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1064,7 +1064,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 179.85 179.42"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1112,7 +1112,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 214.19 159.59"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1134,7 +1134,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 162.36 197.09"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1154,7 +1154,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 269 374"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <path
                     d="M132 291.571C151.446 291.571 167.143 275.874 167.143 256.429V186.143C167.143 166.697 151.446 151 132 151C112.554 151 96.8571 166.697 96.8571 186.143V256.429C96.8571 275.874 112.554 291.571 132 291.571Z"
@@ -1186,7 +1186,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 208.6 211.49"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <defs>
                     <style>
@@ -1228,7 +1228,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 201.85 202.2"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1270,7 +1270,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 188.06 188.44"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1295,7 +1295,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202.93 172.48"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1313,7 +1313,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202.93 193.11"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1336,7 +1336,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 199.41 178.91"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1362,7 +1362,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 202.93 193.41"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1404,7 +1404,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 179.85 179.42"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1450,7 +1450,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 195.21 188.56"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1475,7 +1475,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 186.79 195.05"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1501,7 +1501,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 196.2 196.18"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1524,7 +1524,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 175.86 202.91"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1556,7 +1556,7 @@ export default function Imedical() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 192.49 192.51"
                   fill="currentColor"
-                  className="w-16 h-16 text-fontPrimary"
+                  className="w-16 h-16 text-primary"
                 >
                   <g>
                     <g>
@@ -1615,7 +1615,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -1652,7 +1652,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M1 4V10H7"
@@ -1691,7 +1691,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M1 1L23 23"
@@ -1754,7 +1754,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M12 20V10"
@@ -1791,7 +1791,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M21.21 15.89C20.5738 17.3945 19.5788 18.7202 18.3119 19.7513C17.0449 20.7824 15.5447 21.4874 13.9424 21.8048C12.3401 22.1221 10.6844 22.0421 9.12012 21.5718C7.55585 21.1014 6.1306 20.2551 4.969 19.1066C3.80739 17.9582 2.94479 16.5427 2.45661 14.9839C1.96843 13.4251 1.86954 11.7705 2.16857 10.1646C2.46761 8.55877 3.15547 7.05061 4.17202 5.77202C5.18857 4.49342 6.50286 3.4833 7.99998 2.82999"
@@ -1822,7 +1822,7 @@ export default function Imedical() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-16 h-16 text-fontPrimary"
+                className="w-16 h-16 text-primary"
               >
                 <path
                   d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
@@ -1871,7 +1871,7 @@ export default function Imedical() {
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
-              <span className="text-xs tracking-wider uppercase text-fontPrimary">
+              <span className="text-xs tracking-wider uppercase text-primary">
                 Paso 1
               </span>
               <h5 className="text-xl font-semibold">Direccionamiento</h5>
@@ -1883,7 +1883,7 @@ export default function Imedical() {
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
-              <span className="text-xs tracking-wider uppercase text-fontPrimary">
+              <span className="text-xs tracking-wider uppercase text-primary">
                 Paso 2
               </span>
               <h5 className="text-xl font-semibold">Programación</h5>
@@ -1895,7 +1895,7 @@ export default function Imedical() {
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
-              <span className="text-xs tracking-wider uppercase text-fontPrimary">
+              <span className="text-xs tracking-wider uppercase text-primary">
                 Paso 3
               </span>
               <h5 className="text-xl font-semibold">Entrega ámbito</h5>
@@ -1907,7 +1907,7 @@ export default function Imedical() {
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
-              <span className="text-xs tracking-wider uppercase text-fontPrimary">
+              <span className="text-xs tracking-wider uppercase text-primary">
                 Paso 4
               </span>
               <h5 className="text-xl font-semibold">Reporte de entrega</h5>
@@ -1919,7 +1919,7 @@ export default function Imedical() {
           {/*  */}
           <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
             <div>
-              <span className="text-xs tracking-wider uppercase text-fontPrimary">
+              <span className="text-xs tracking-wider uppercase text-primary">
                 Paso 4
               </span>
               <h5 className="text-xl font-semibold">Facturación</h5>

@@ -55,12 +55,12 @@ const Content = ({ title, description }: CardSolucionesProps) => {
             />
           </svg>
         </div>
-        <p className="mb-2 font-bold text-fontPrimary">{title}</p>
+        <p className="mb-2 font-bold text-primary">{title}</p>
         <p className="text-sm leading-5 text-gray-900 text-justify">
           {description}
         </p>
       </div>
-      <div className="w-full h-1 ml-auto duration-500 origin-left transform scale-x-0 bg-fontPrimary/70 group-hover:scale-x-100" />
+      <div className="w-full h-1 ml-auto duration-500 origin-left transform scale-x-0 bg-primary/70 group-hover:scale-x-100" />
     </>
   );
 };

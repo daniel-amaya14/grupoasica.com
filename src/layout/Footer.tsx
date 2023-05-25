@@ -57,7 +57,7 @@ const ListarItems = ({ listaItems, title }: ListarItemsProps) => {
           <Link
             href={href}
             key={name}
-            className="hover:text-fontPrimary"
+            className="hover:text-primary"
           >
             {name}
           </Link>

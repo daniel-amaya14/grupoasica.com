@@ -34,7 +34,7 @@ export default function ListItems({ items }: ListtItemsProps) {
               </svg>
             </span>
             <p>
-              <strong className="text-fontPrimary">{title}</strong>
+              <strong className="text-primary">{title}</strong>
               <br />
               <span className="max-w-lg inline-flex text-justify">
                 {description}

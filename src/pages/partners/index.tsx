@@ -61,7 +61,7 @@ export default function Partners() {
     <>
       <section className="flex flex-col gap-12 py-6 px-8 xl:px-40 xl:py-10">
         <div className="flex flex-col gap-6">
-          <h1 className="text-2xl font-bold text-fontPrimary text-center md:text-4xl">
+          <h1 className="text-2xl font-bold text-primary text-center md:text-4xl">
             ASICA Partners
           </h1>
           <p className="text-sm text-justify md:text-base sm:mx-14 md:mx-16 xl:mx-28">

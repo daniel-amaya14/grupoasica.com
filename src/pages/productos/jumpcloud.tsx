@@ -117,7 +117,7 @@ export default function jumpcloud() {
 
         <section className="flex flex-col gap-4 items-center lg:flex-row-reverse lg:items-start lg:gap-6">
           <div>
-            <span className="uppercase text-xs font-semibold text-fontPrimary tracking-widest">
+            <span className="uppercase text-xs font-semibold text-primary tracking-widest">
               plataforma
             </span>
             <h3 className="font-semibold text-xl leading-normal mb-2 md:mb-4 md:text-2xl">
@@ -185,7 +185,7 @@ export default function jumpcloud() {
 
         <section className="flex flex-col gap-4 items-center lg:flex-row lg:items-start lg:gap-6">
           <div>
-            <span className="uppercase text-xs font-semibold text-fontPrimary tracking-widest">
+            <span className="uppercase text-xs font-semibold text-primary tracking-widest">
               Identidad
             </span>
             <h3 className="font-semibold text-xl leading-normal mb-2 md:mb-4 md:text-2xl">
@@ -256,7 +256,7 @@ export default function jumpcloud() {
 
         <section className="flex flex-col gap-4 items-center lg:flex-row-reverse lg:items-start lg:gap-6">
           <div>
-            <span className="uppercase text-xs font-semibold text-fontPrimary tracking-widest">
+            <span className="uppercase text-xs font-semibold text-primary tracking-widest">
               Dispositivos
             </span>
             <h3 className="font-semibold text-xl leading-normal mb-2 md:mb-4 md:text-2xl">
@@ -327,7 +327,7 @@ export default function jumpcloud() {
 
         <section className="flex flex-col gap-4 items-center lg:flex-row lg:items-start lg:gap-6">
           <div>
-            <span className="uppercase text-xs font-semibold text-fontPrimary tracking-widest">
+            <span className="uppercase text-xs font-semibold text-primary tracking-widest">
               Acceso
             </span>
             <h3 className="font-semibold text-xl leading-normal mb-2 md:mb-4 md:text-2xl">

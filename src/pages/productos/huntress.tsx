@@ -56,7 +56,7 @@ export default function Huntress() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  className="w-12 h-12 text-fontPrimary"
+                  className="w-12 h-12 text-primary"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -65,7 +65,7 @@ export default function Huntress() {
                   />
                 </svg>
                 <div>
-                  <span className="text-xs tracking-wider uppercase text-fontPrimary">
+                  <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 1
                   </span>
                   <h5 className="text-xl font-semibold">Detectar</h5>
@@ -83,7 +83,7 @@ export default function Huntress() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   stroke="currentColor"
-                  className="w-12 h-12 text-fontPrimary"
+                  className="w-12 h-12 text-primary"
                   viewBox="0 0 24 24"
                 >
                   <g
@@ -98,7 +98,7 @@ export default function Huntress() {
                   </g>
                 </svg>
                 <div>
-                  <span className="text-xs tracking-wider uppercase text-fontPrimary">
+                  <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 2
                   </span>
                   <h5 className="text-xl font-semibold">Analice</h5>
@@ -115,7 +115,7 @@ export default function Huntress() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  className="w-12 h-12 text-fontPrimary"
+                  className="w-12 h-12 text-primary"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -124,7 +124,7 @@ export default function Huntress() {
                   />
                 </svg>
                 <div>
-                  <span className="text-xs tracking-wider uppercase text-fontPrimary">
+                  <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 3
                   </span>
                   <h5 className="text-xl font-semibold">Responder</h5>
@@ -143,7 +143,7 @@ export default function Huntress() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   stroke="currentColor"
-                  className="w-12 h-12 text-fontPrimary"
+                  className="w-12 h-12 text-primary"
                   viewBox="0 0 24 24"
                 >
                   <g
@@ -158,7 +158,7 @@ export default function Huntress() {
                   </g>
                 </svg>
                 <div>
-                  <span className="text-xs tracking-wider uppercase text-fontPrimary">
+                  <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 4
                   </span>
                   <h5 className="text-xl font-semibold">Informe</h5>
@@ -581,7 +581,7 @@ export default function Huntress() {
           </h2>
           <div className="grid gap-10 md:gap-8 md:grid-cols-2 mt-3">
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Despliegue su Red de seguridad
               </h3>
               <p className="mt-1 text-justify">
@@ -591,7 +591,7 @@ export default function Huntress() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Añada ThreatOps a su arsenal
               </h3>
               <p className="mt-1 text-justify">
@@ -601,9 +601,7 @@ export default function Huntress() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
-                Elimine el ruido
-              </h3>
+              <h3 className="font-semibold text-primary">Elimine el ruido</h3>
               <p className="mt-1 text-justify">
                 Revisamos toda la actividad sospechosa y sólo enviamos una
                 alerta cuando se verifica una amenaza o se requiere una acción,
@@ -612,7 +610,7 @@ export default function Huntress() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Capacite a su personal
               </h3>
               <p className="mt-1 text-justify">

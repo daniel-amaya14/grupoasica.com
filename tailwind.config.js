@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#F9F9F9',
-        fontPrimary: '#0069b5',
+        primary: '#0069b5',
+        light: '#F9F9F9',
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',

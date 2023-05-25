@@ -57,7 +57,7 @@ export default function Psk() {
           </h2>
           <div className="grid gap-10 md:gap-8 md:grid-cols-3 mt-3">
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Interfaz amigable y funcional para el usuario
               </h3>
               <p className="mt-1 text-justify">
@@ -68,7 +68,7 @@ export default function Psk() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Importación y exportación de datos fácil y rápida
               </h3>
               <p className="mt-1 text-justify">
@@ -76,7 +76,7 @@ export default function Psk() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-fontPrimary">
+              <h3 className="font-semibold text-primary">
                 Acceso seguro y configurable para los usuarios
               </h3>
               <p className="mt-1 text-justify">
