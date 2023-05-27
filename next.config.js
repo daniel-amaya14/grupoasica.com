@@ -35,57 +35,57 @@ const nextConfig = {
       },
       {
         source: '/arprotecsa',
-        destination: '/productos/arprotecsa',
+        destination: '/servicios/gobierno/arprotecsa',
         permanent: true,
       },
       {
         source: '/freebalance',
-        destination: '/productos/freebalance',
+        destination: '/servicios/gobierno/freebalance',
         permanent: true,
       },
       {
         source: '/seguridad',
-        destination: '/productos/seguridad',
+        destination: '/servicios/seguridad',
         permanent: true,
       },
       {
         source: '/huntress',
-        destination: '/productos/huntress',
+        destination: '/servicios/huntress',
         permanent: true,
       },
       {
         source: '/consultoria',
-        destination: '/productos/consultoria',
+        destination: '/servicios/consultoria',
         permanent: true,
       },
       {
         source: '/sas',
-        destination: '/productos/sas',
+        destination: '/servicios/sas',
         permanent: true,
       },
       {
         source: '/psk',
-        destination: '/productos/psk',
+        destination: '/servicios/pymes/psk',
         permanent: true,
       },
       {
         source: '/jumpcloud',
-        destination: '/productos/jumpcloud',
+        destination: '/servicios/pymes/jumpcloud',
         permanent: true,
       },
       {
         source: '/imedical',
-        destination: '/productos/imedical',
+        destination: '/servicios/salud/imedical',
         permanent: true,
       },
       {
         source: '/riesgos',
-        destination: '/productos/riesgos',
+        destination: '/servicios/riesgos',
         permanent: true,
       },
       {
         source: '/niff9',
-        destination: '/productos/niff9',
+        destination: '/servicios/niff9',
         permanent: true,
       },
     ];
