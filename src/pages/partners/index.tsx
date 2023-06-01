@@ -1,5 +1,5 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 // import IconCATO from '@/public/partners/cato-networks.svg';
@@ -13,45 +13,45 @@ import IconGremlin from '@/public/partners/gremlin.svg';
 
 const partners = [
   {
-    name: 'SAS',
-    src: IconSAS,
-    url: 'https://www.sas.com/es_mx/home.html',
+    title: 'SAS',
+    img: IconSAS,
+    href: 'https://www.sas.com/es_mx/home.html',
     alt: 'Logo SAS',
   },
   {
-    name: 'Hack The Box',
-    src: IconHTB,
-    url: 'https://www.hackthebox.com/',
+    title: 'Hack The Box',
+    img: IconHTB,
+    href: 'https://www.hackthebox.com/',
     alt: 'Logo Hack The Box',
   },
   {
-    name: 'CATO Networks',
-    src: IconCATO,
-    url: 'https://www.catonetworks.com/',
+    title: 'CATO Networks',
+    img: IconCATO,
+    href: 'https://www.catonetworks.com/',
     alt: 'Logo CATO Networks',
   },
   {
-    name: 'JumpCloud',
-    src: IconJumpcloud,
-    url: 'https://jumpcloud.com/',
+    title: 'JumpCloud',
+    img: IconJumpcloud,
+    href: 'https://jumpcloud.com/',
     alt: 'Logo JumpCloud',
   },
   {
-    name: 'Huntress',
-    src: IconHuntress,
-    url: 'https://www.huntress.com/',
+    title: 'Huntress',
+    img: IconHuntress,
+    href: 'https://www.huntress.com/',
     alt: 'Logo Huntress',
   },
   {
-    name: 'DATADOG',
-    src: IconDATADOG,
-    url: 'https://www.datadoghq.com/',
+    title: 'DATADOG',
+    img: IconDATADOG,
+    href: 'https://www.datadoghq.com/',
     alt: 'Logo DATADOG',
   },
   {
-    name: 'Gremlin',
-    src: IconGremlin,
-    url: 'https://www.gremlin.com/',
+    title: 'Gremlin',
+    img: IconGremlin,
+    href: 'https://www.gremlin.com/',
     alt: 'Logo Gremlin',
   },
 ];
@@ -59,53 +59,57 @@ const partners = [
 export default function Partners() {
   return (
     <>
-      <section className="flex flex-col gap-12 py-6 px-8 xl:px-40 xl:py-10">
-        <div className="flex flex-col gap-6">
-          <h1 className="text-2xl font-bold text-primary text-center md:text-4xl">
-            ASICA Partners
-          </h1>
-          <p className="text-sm text-justify md:text-base sm:mx-14 md:mx-16 xl:mx-28">
-            Contamos con la mejor red de colaboradores. Nuestros partners nos
-            ayudan a ofrecer soluciones integrales a nuestros clientes. Si
-            quieres ser parte de nuestra red de colaboradores, contáctanos.
-          </p>
+      <div className="relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute -top-96 left-1/2 flex -translate-x-1/2 transform"
+        >
+          <div className="h-[44rem] w-[25rem] -translate-x-[10rem] rotate-[-60deg] transform bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl"></div>
+          <div className="rounded-fulls h-[50rem] w-[90rem] origin-top-left -translate-x-[15rem] -rotate-12 bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl"></div>
         </div>
-      </section>
-      <section>
-        <div className="relative w-full mx-auto md:px-12 lg:px-16 max-w-7xl pb-14">
-          <div className="grid grid-cols-2 gap-0.5 md:grid-cols-3 overflow-hidden rounded-md">
-            {partners.map(({ src, alt }) => (
-              <Card
-                key={alt}
-                src={src}
-                alt={alt}
-              />
-            ))}
+
+        <div className="relative z-10">
+          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-28 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mt-5 max-w-2xl">
+                <h1 className="block text-4xl font-semibold text-gray-800 md:text-5xl lg:text-6xl">
+                  Conoce a nuestros partners
+                </h1>
+              </div>
+              <div className="mt-5 max-w-3xl">
+                <p className="text-lg text-gray-600">
+                  Contamos con la mejor red de colaboradores. Nuestros partners
+                  nos ayudan a ofrecer soluciones integrales a nuestros
+                  clientes. Si quieres ser parte de nuestra red de
+                  colaboradores, contáctanos.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <section className="max-w-7xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5 lg:gap-6">
+          {partners.map(({ title, img, href, alt }) => {
+            return (
+              <Link
+                key={title}
+                href={href}
+              >
+                <div className="rounded-lg bg-gray-100 p-4 md:p-7 border-[1px] shadow-sm transition-all hover:shadow-lg">
+                  <Image
+                    src={img}
+                    alt={alt}
+                    width={100}
+                    height={100}
+                    className="mx-auto h-12 w-16 text-gray-800 md:w-20 lg:w-24 "
+                  />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </>
   );
 }
-
-interface CardProps {
-  src: StaticImageData;
-  alt: string;
-}
-
-const Card = ({ src, alt }: CardProps) => {
-  return (
-    <Link
-      href="#"
-      className="group flex justify-center col-span-1 p-8 bg-gray-100 transition-all duration-200 ease-in-out hover:bg-white hover:shadow-sm"
-    >
-      <Image
-        className="max-h-12 aspect-square contrast-0 group-hover:contrast-100"
-        src={src}
-        alt={alt}
-        width={120}
-        height={110}
-      />
-    </Link>
-  );
-};
