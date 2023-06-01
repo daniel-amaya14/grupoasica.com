@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { Tab, initTE } from 'tw-elements';
-import ListItems from '@/components/productos/ListItems';
 import ImgGPM from '@/public/images/software/freebalance/GPM.svg';
 import ImgPFM from '@/public/images/software/freebalance/PFM.svg';
 import ImgPEM from '@/public/images/software/freebalance/PEM.svg';
@@ -557,364 +555,383 @@ const modulos = {
   },
 };
 
-export default function ProductsFreebalance() {
-  useEffect(() => {
-    initTE({ Tab });
-  }, []);
+interface ListtItemsProps {
+  items: { title: string; description: string }[];
+}
+
+const ListItems = ({ items }: ListtItemsProps) => {
   return (
-    <div>
-      {/* Tabs navigation */}
+    <ul className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      {items.map(({ title, description }) => {
+        return (
+          <li
+            key={title}
+            className="flex gap-2 items-start"
+          >
+            <span>
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="currentColor"
+                strokeWidth={2}
+                className="w-5 h-5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  stroke="none"
+                ></path>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                <path d="M9 12l2 2l4 -4"></path>
+              </svg>
+            </span>
+            <p>
+              <strong className="text-primary">{title}</strong>
+              <br />
+              <span className="max-w-lg inline-flex text-justify">
+                {description}
+              </span>
+            </p>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+export default function Tab() {
+  return (
+    <section className="">
       <ul
-        className="mb-5 flex list-none flex-row flex-wrap p-0"
+        className="relative z-0 flex overflow-hidden rounded-xl border"
+        aria-label="Tabs"
         role="tablist"
-        data-te-nav-ref
       >
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-1"
+          data-hs-tab="#gpm"
+          aria-controls="gpm"
+          role="tab"
         >
-          <a
-            href="#tabs-gpm"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-gpm"
-            data-te-nav-active
-            role="tab"
-            aria-controls="tabs-gpm"
-            aria-selected="true"
-          >
-            GPM
-          </a>
-        </li>
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+          GPM
+        </button>
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-2"
+          data-hs-tab="#pfm"
+          aria-controls="pfm"
+          role="tab"
         >
-          <a
-            href="#tabs-pfm"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparen data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-pfm"
-            role="tab"
-            aria-controls="tabs-pfm"
-            aria-selected="false"
-          >
-            PFM
-          </a>
-        </li>
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+          PFM
+        </button>
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-3"
+          data-hs-tab="#pem"
+          aria-controls="pem"
+          role="tab"
         >
-          <a
-            href="#tabs-pem"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-pem"
-            role="tab"
-            aria-controls="tabs-pem"
-            aria-selected="false"
-          >
-            PEM
-          </a>
-        </li>
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+          PEM
+        </button>
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-3"
+          data-hs-tab="#gtm"
+          aria-controls="gtm"
+          role="tab"
         >
-          <a
-            href="#tabs-gtm"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-gtm"
-            role="tab"
-            aria-controls="tabs-gtm"
-            aria-selected="false"
-          >
-            GTM
-          </a>
-        </li>
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+          GTM
+        </button>
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-3"
+          data-hs-tab="#grm"
+          aria-controls="grm"
+          role="tab"
         >
-          <a
-            href="#tabs-grm"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-grm"
-            role="tab"
-            aria-controls="tabs-grm"
-            aria-selected="false"
-          >
-            GRM
-          </a>
-        </li>
-        <li
-          role="presentation"
-          className="flex-auto text-center"
+          GRM
+        </button>
+        <button
+          type="button"
+          className="hs-tab-active:border-b-blue-600 hs-tab-active:text-gray-900 relative min-w-0 flex-1 overflow-hidden border-b-2 border-l bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 first:border-l-0 hover:bg-gray-50 hover:text-gray-700 focus:z-10"
+          id="bar-with-underline-item-3"
+          data-hs-tab="#csm"
+          aria-controls="csm"
+          role="tab"
         >
-          <a
-            href="#tabs-csm"
-            className="my-0 block border-x-0 border-b-2 transition-all border-t-0 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-blue-600 data-[te-nav-active]:text-blue-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-csm"
-            role="tab"
-            aria-controls="tabs-csm"
-            aria-selected="false"
-          >
-            CSM
-          </a>
-        </li>
+          CSM
+        </button>
       </ul>
-
-      {/* Tabs content */}
-      <div className="mb-6">
-        {/* GPM */}
+      <div className="mt-3">
+        {/* gpm */}
         <div
-          className="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-gpm"
+          id="gpm"
           role="tabpanel"
-          aria-labelledby="tabs-gpm-tab"
-          data-te-tab-active
+          aria-labelledby="bar-with-underline-item-1"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgGPM}
-              alt="GPM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">
-              Gestión del rendimiento de la Administración
-            </h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              (GPM) permite a las administraciones públicas obtener mejores
-              resultados gracias al acceso a datos y métricas. La capacidad de
-              vincular el rendimiento directamente a la presupuestación permite
-              mejorar los resultados de los departamentos del sector público.
-            </p>
-            <p>
-              <strong>Algunos de los beneficios</strong> de una solución
-              unificada de Gestión del Desempeño Gubernamental como FreeBalance
-              Accountability Suite™ incluyen:
-            </p>
-            <ListItems items={modulos.gpm.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.gpm.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgGPM}
+                alt="GPM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">
+                Gestión del rendimiento de la Administración
+              </h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                (GPM) permite a las administraciones públicas obtener mejores
+                resultados gracias al acceso a datos y métricas. La capacidad de
+                vincular el rendimiento directamente a la presupuestación
+                permite mejorar los resultados de los departamentos del sector
+                público.
+              </p>
+              <p>
+                <strong>Algunos de los beneficios</strong> de una solución
+                unificada de Gestión del Desempeño Gubernamental como
+                FreeBalance Accountability Suite™ incluyen:
+              </p>
+              <ListItems items={modulos.gpm.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.gpm.modulos} />
+            </div>
           </div>
         </div>
 
-        {/* PFM */}
+        {/* pfm */}
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-pfm"
+          id="pfm"
+          className="hidden"
           role="tabpanel"
-          aria-labelledby="tabs-pfm-tab"
+          aria-labelledby="bar-with-underline-item-2"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgPFM}
-              alt="PFM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">
-              Gestión de las finanzas públicas
-            </h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              (PFM) apoya los requisitos presupuestarios específicos del sector
-              público y ofrece funciones como la contabilidad de compromisos y
-              la gestión presupuestaria. Los módulos pueden combinarse y
-              configurarse de cualquier manera y pueden activarse
-              progresivamente de acuerdo con un programa secuenciado de reforma
-              de la PFM.
-            </p>
-            <p>
-              <strong>Algunas de las características y ventajas son:</strong>
-            </p>
-            <ListItems items={modulos.pfm.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.pfm.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgPFM}
+                alt="PFM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">
+                Gestión de las finanzas públicas
+              </h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                (PFM) apoya los requisitos presupuestarios específicos del
+                sector público y ofrece funciones como la contabilidad de
+                compromisos y la gestión presupuestaria. Los módulos pueden
+                combinarse y configurarse de cualquier manera y pueden activarse
+                progresivamente de acuerdo con un programa secuenciado de
+                reforma de la PFM.
+              </p>
+              <p>
+                <strong>Algunas de las características y ventajas son:</strong>
+              </p>
+              <ListItems items={modulos.pfm.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.pfm.modulos} />
+            </div>
           </div>
         </div>
 
-        {/* PEM */}
+        {/* pem */}
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-pem"
+          id="pem"
+          className="hidden"
           role="tabpanel"
-          aria-labelledby="tabs-pem-tab"
+          aria-labelledby="bar-with-underline-item-3"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgPEM}
-              alt="PEM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">Gestión del gasto público</h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              (PEM) Gestión del Gasto Público gestiona todas las funciones
-              relacionadas con el gasto público y el control del gasto público.
-              Debido a las necesidades exclusivas de las administraciones
-              públicas -incluidos los controles presupuestarios y de
-              compromisos-, esta función supera las funciones típicas de las
-              cuentas por pagar habituales en el sector privado.
-            </p>
-            <p>
-              <strong>Algunas de las características y ventajas</strong> de una
-              solución unificada de Gestión del Gasto Público como FreeBalance
-              Accountability Suite™ son:
-            </p>
-            <ListItems items={modulos.pem.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.pem.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgPEM}
+                alt="PEM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">Gestión del gasto público</h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                (PEM) Gestión del Gasto Público gestiona todas las funciones
+                relacionadas con el gasto público y el control del gasto
+                público. Debido a las necesidades exclusivas de las
+                administraciones públicas -incluidos los controles
+                presupuestarios y de compromisos-, esta función supera las
+                funciones típicas de las cuentas por pagar habituales en el
+                sector privado.
+              </p>
+              <p>
+                <strong>Algunas de las características y ventajas</strong> de
+                una solución unificada de Gestión del Gasto Público como
+                FreeBalance Accountability Suite™ son:
+              </p>
+              <ListItems items={modulos.pem.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.pem.modulos} />
+            </div>
           </div>
         </div>
 
-        {/* GTM */}
+        {/* gtm */}
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-gtm"
+          id="gtm"
+          className="hidden"
           role="tabpanel"
-          aria-labelledby="tabs-gtm-tab"
+          aria-labelledby="bar-with-underline-item-4"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgGTM}
-              alt="GTM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">Gestión del Tesoro público</h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              (GTM) apoya la conciliación bancaria y gestiona el efectivo, la
-              deuda y las inversiones. El sistema armoniza las operaciones de
-              tesorería en todos los niveles de la Administración, mitiga el
-              riesgo fiscal y maximiza los fondos públicos mediante una
-              previsión eficaz.
-            </p>
-            <p>
-              Una solución integrada y unificada de gestión de la tesorería del
-              sector público como la FreeBalance Accountability Suite™ permite a
-              un gobierno armonizar eficazmente todas sus operaciones de
-              tesorería en todos los niveles de gobierno, mitigar el riesgo
-              fiscal y maximizar el gasto mediante una previsión eficaz.{' '}
-              <strong>Entre las ventajas se incluyen:</strong>
-            </p>
-            <ListItems items={modulos.gtm.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.gtm.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgGTM}
+                alt="GTM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">Gestión del Tesoro público</h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                (GTM) apoya la conciliación bancaria y gestiona el efectivo, la
+                deuda y las inversiones. El sistema armoniza las operaciones de
+                tesorería en todos los niveles de la Administración, mitiga el
+                riesgo fiscal y maximiza los fondos públicos mediante una
+                previsión eficaz.
+              </p>
+              <p>
+                Una solución integrada y unificada de gestión de la tesorería
+                del sector público como la FreeBalance Accountability Suite™
+                permite a un gobierno armonizar eficazmente todas sus
+                operaciones de tesorería en todos los niveles de gobierno,
+                mitigar el riesgo fiscal y maximizar el gasto mediante una
+                previsión eficaz.{' '}
+                <strong>Entre las ventajas se incluyen:</strong>
+              </p>
+              <ListItems items={modulos.gtm.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.gtm.modulos} />
+            </div>
           </div>
         </div>
 
-        {/* GRM */}
+        {/* grm */}
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-grm"
+          id="grm"
+          className="hidden"
           role="tabpanel"
-          aria-labelledby="tabs-grm-tab"
+          aria-labelledby="bar-with-underline-item-5"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgGRM}
-              alt="GRM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">Gestión de ingresos públicos</h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              El programa informático de gestión de ingresos públicos (GRM)
-              permite utilizar los mecanismos exclusivos de recaudación de
-              ingresos públicos, como los impuestos. Los módulos pueden
-              combinarse y configurarse de cualquier manera y pueden activarse
-              progresivamente de acuerdo con un programa secuenciado de reforma
-              de la gestión de las finanzas públicas.
-            </p>
-            <p>
-              Muchas administraciones públicas disponen de sistemas de gestión
-              de ingresos para gestionar la recaudación de impuestos y otros
-              ingresos. Sin embargo, los programas informáticos de gestión de
-              ingresos autónomos presentan numerosos retos y la importancia de
-              contar con todas las funciones de gestión financiera integradas en
-              un único sistema unificado es primordial.{' '}
-              <strong>
-                Entre las ventajas de los módulos de gestión de ingresos
-                públicos de FreeBalance se incluyen:
-              </strong>
-            </p>
-            <ListItems items={modulos.grm.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.grm.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgGRM}
+                alt="GRM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">Gestión de ingresos públicos</h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                El programa informático de gestión de ingresos públicos (GRM)
+                permite utilizar los mecanismos exclusivos de recaudación de
+                ingresos públicos, como los impuestos. Los módulos pueden
+                combinarse y configurarse de cualquier manera y pueden activarse
+                progresivamente de acuerdo con un programa secuenciado de
+                reforma de la gestión de las finanzas públicas.
+              </p>
+              <p>
+                Muchas administraciones públicas disponen de sistemas de gestión
+                de ingresos para gestionar la recaudación de impuestos y otros
+                ingresos. Sin embargo, los programas informáticos de gestión de
+                ingresos autónomos presentan numerosos retos y la importancia de
+                contar con todas las funciones de gestión financiera integradas
+                en un único sistema unificado es primordial.{' '}
+                <strong>
+                  Entre las ventajas de los módulos de gestión de ingresos
+                  públicos de FreeBalance se incluyen:
+                </strong>
+              </p>
+              <ListItems items={modulos.grm.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.grm.modulos} />
+            </div>
           </div>
         </div>
 
-        {/* CSM */}
+        {/* csm */}
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block pt-4 md:px-10"
-          id="tabs-csm"
+          id="csm"
+          className="hidden"
           role="tabpanel"
-          aria-labelledby="tabs-csm-tab"
+          aria-labelledby="bar-with-underline-item-6"
         >
-          <div className="flex items-center gap-4">
-            <Image
-              src={ImgCSM}
-              alt="CSM"
-              className="w-14 aspect-square object-cover"
-            />
-            <h2 className="text-xl max-w-xs">Gestión de la Función Pública</h2>
-          </div>
-          <div className="mt-6 flex flex-col gap-6">
-            <p className="text-justify">
-              (CSM) Civil Service Management ofrece un sistema web totalmente
-              integrado de gestión de la información sobre recursos humanos y
-              nóminas diseñado exclusivamente para las administraciones
-              públicas. Desde la contratación hasta la jubilación, Civil Service
-              Management ofrece una solución completa de recursos humanos para
-              la administración pública.
-            </p>
-            <p>
-              Utilización de programas informáticos específicos para la
-              administración pública, como FreeBalance (CSM) los módulos de
-              Gestión de la Función Pública ofrecen las siguientes{' '}
-              <strong>características y ventajas al sector público:</strong>
-            </p>
-            <ListItems items={modulos.csm.beneficios} />
-            <p>
-              <strong> Se compone de una serie de módulos</strong> que pueden
-              implantarse individualmente o como parte de una solución
-              unificada:
-            </p>
-            <ListItems items={modulos.csm.modulos} />
+          <div className="py-3 md:p-4 lg:p-6">
+            <div className="flex items-center gap-4">
+              <Image
+                src={ImgCSM}
+                alt="CSM"
+                className="w-14 aspect-square object-cover"
+              />
+              <h2 className="text-xl max-w-xs">
+                Gestión de la Función Pública
+              </h2>
+            </div>
+            <div className="mt-6 flex flex-col gap-6">
+              <p className="text-justify">
+                (CSM) Civil Service Management ofrece un sistema web totalmente
+                integrado de gestión de la información sobre recursos humanos y
+                nóminas diseñado exclusivamente para las administraciones
+                públicas. Desde la contratación hasta la jubilación, Civil
+                Service Management ofrece una solución completa de recursos
+                humanos para la administración pública.
+              </p>
+              <p>
+                Utilización de programas informáticos específicos para la
+                administración pública, como FreeBalance (CSM) los módulos de
+                Gestión de la Función Pública ofrecen las siguientes{' '}
+                <strong>características y ventajas al sector público:</strong>
+              </p>
+              <ListItems items={modulos.csm.beneficios} />
+              <p>
+                <strong> Se compone de una serie de módulos</strong> que pueden
+                implantarse individualmente o como parte de una solución
+                unificada:
+              </p>
+              <ListItems items={modulos.csm.modulos} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

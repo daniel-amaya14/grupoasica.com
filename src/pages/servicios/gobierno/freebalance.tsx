@@ -1,14 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import ImgProductList from '@/public/images/software/freebalance/product-library-freebalance.webp';
-
-const DynamicProductsFreebalance = dynamic(
-  () => import('@/components/productos/ProductsFreebalance'),
-  {
-    ssr: false,
-  }
-);
+import Tab from '@/components/TabFreebalance';
 
 export default function Freebalance() {
   return (
@@ -104,7 +97,7 @@ export default function Freebalance() {
           />
         </section>
 
-        <DynamicProductsFreebalance />
+        <Tab />
       </div>
     </>
   );
