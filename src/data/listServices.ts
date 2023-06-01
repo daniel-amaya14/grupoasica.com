@@ -28,153 +28,133 @@ export const SERVICIOS = Object.freeze({
 export const SOLUCIONES = Object.freeze({
   digitalizar: {
     title: 'Digitalizar',
-    description:
-      '¿Estas cansado de tener todo en papel? ¿Necesitas recuperar y sanear documentos?',
+    description: 'Recupera y sanear documentos de manera digital.',
     href: '/arprotecsa',
   },
 
   automatizacion: {
     title: 'Automatización',
-    description:
-      '¿Deseas eliminar burocracia apostandole a la eficiencia de procesos?',
+    description: 'Elimina burocracia con procesos eficientes.',
     href: '/freebalance',
   },
 
   proteccion_de_activos: {
     title: 'Protección de Activos',
     description:
-      'Deten la exfiltarción de datos con nuestras soluciones de ciberseguridad',
+      'Soluciones de ciberseguridad para detener la exfiltración de datos.',
     href: '/seguridad',
   },
 
   endpoint_detection_and_response: {
     title: 'Endpoint Detection and Response',
-    description:
-      'EDR y Windows Defender Administrado, contrata nuestros especialistas de seguridad IT de detección y respuesta a nivel de punto final, para que tengas defensa de última generación contra todo tipo de Malware.',
+    description: 'Detección y respuesta avanzada contra todo tipo de Malware.',
     href: '/huntress',
   },
 
   transformacion: {
     title: 'Transformación',
     description:
-      'Implementa eficiencia en los procesos adminstrativos y contables para facilitar la participacion ciudadana. ',
+      'Eficiencia en procesos administrativos y contables para participación ciudadana.',
     href: '/freebalance',
   },
 
   consultoria_ti: {
     title: 'Consultoría IT',
-    description: 'Contrata ingenieros capacitados en área de Informática.',
+    description: 'Contrata ingenieros capacitados en Informática.',
     href: '/consultoria',
   },
 
   analitica_avanzada: {
     title: 'Analítica Avanzada',
-    description:
-      'Aplica Inteligencia Artificial a tus procesos de analisis de datos para producir analisis predictivos, y tomar decisiones claves de tu negocio (de un tratamiento).',
+    description: 'Aplica Inteligencia Artificial a análisis de datos.',
     href: '/sas',
   },
 
   facturacion: {
     title: 'Facturación',
-    description:
-      'Lleva inventarios y factura de manera eficiente, asequible y amigable.',
+    description: 'Gestión eficiente y amigable de inventarios y facturas.',
     href: '/psk',
   },
 
   inventario: {
     title: 'Inventario',
-    description:
-      'Lleva inventarios y factura de manera eficiente, asequible y amigable.',
+    description: 'Gestión eficiente y amigable de inventarios y facturas.',
     href: '/psk',
   },
 
   contabilidad: {
     title: 'Contabilidad',
-    description:
-      'Lleva tu contabilidad de manera eficiente, asequible y amigable.',
+    description: 'Gestión eficiente, asequible y amigable de contabilidad.',
     href: '/psk',
   },
 
   proteccion_de_hardware: {
     title: 'Protección de Hardware',
-    description:
-      'Lleva inventarios de tus activos dentro de tu red, para protegerlos de accesos indebidos.',
+    description: 'Controla el acceso indebido a activos dentro de tu red.',
     href: '/jumpcloud',
   },
 
   identidad_digital: {
     title: 'Identidad Digital',
-    description: 'Identifica a tus clientes con tecnología de punta.',
+    description: 'Identificación de clientes con tecnología de punta.',
     href: '/soluciones/identidad-digital',
   },
 
   niif9: {
     title: 'NIFF 9',
     description:
-      'Entra en la nueva regulación IRFS 9 con el líder mundial de Analitica Avanzada.',
+      'Cumple con la nueva regulación IRFS 9 con Analítica Avanzada.',
     href: '/sas/niif9  ',
   },
 
   riesgos: {
     title: 'Riesgos',
-    description:
-      'Analiza los riesgos asociados a una variable, y toma decisiones inteligentes.',
+    description: 'Análisis de riesgos y toma de decisiones inteligentes.',
     href: '/sas/riesgos',
   },
 
   cash_management: {
     title: 'Cash management',
     description:
-      'Controla el manejo de efectivo, y modela predictivamente como se comportan tus ATMs.',
+      'Control del manejo de efectivo y modelado predictivo de ATMs.',
     href: '/soluciones/cash-management',
   },
 
   ciberseguridad: {
     title: 'Ciberseguridad',
     description:
-      'Asegura tus activos con nuestras soluciones de ciberseguridad automatizadas y asequibles.',
+      'Asegura tus activos con soluciones automatizadas y asequibles.',
     href: '/seguridad',
   },
 
   inteligencia_artificial: {
     title: 'Inteligencia Artificial',
     description:
-      'Calcula y resuelve en segundos calculos complejos, y crea modelos predictivos para cualquier caso de uso financiero.',
+      'Cálculos complejos y modelos predictivos para casos financieros.',
     href: '/sas',
   },
 
   crontrol_de_pacientes: {
     title: 'Control de Pacientes',
-    description:
-      'Mejora y analiza tu postura ante un caso médico llevando controles.',
+    description: 'Mejora y analiza tu postura ante casos médicos.',
     href: '/imedical',
   },
 
   inventario_de_farmacia: {
     title: 'Inventario de Farmacia',
-    description:
-      'Facilita la entrega de medicinas con sistemas automatizados e inteligentes.',
+    description: 'Entrega de medicinas con sistemas inteligentes.',
     href: '/imedical',
   },
 
-  pasante: {
-    title: 'Pasante',
-    description:
-      'Buscamos estudiantes apasionados que quieran ganar experiencia práctica en la industria tecnológica. Únete a nuestro equipo como pasante y trabaja en proyectos desafiantes mientras aprendes de expertos en la industria.',
-    href: '/servicios/educacion',
-  },
-
-  practicante: {
-    title: 'Practicante',
-    description:
-      'Si eres un estudiante interesado en la tecnología y en busca de oportunidades de realizar tu práctica profesional, Grupo ASICA es el lugar perfecto para ti.',
+  practica_pasantia: {
+    title: 'Practicante y Pasante',
+    description: 'Realiza tu práctica profesional en Grupo ASICA.',
     href: '/servicios/educacion',
   },
 
   entrenamiento: {
     title: 'Entrenamiento',
-    description:
-      'En Grupo ASICA, ofrecemos programas de entrenamiento prácticos y significativos para aquellos que buscan mejorar sus habilidades técnicas y profesionales.',
+    description: 'Programas de entrenamiento prácticos y significativos.',
     href: '/soluciones/entrenamiento',
   },
 });
@@ -224,7 +204,6 @@ export const solucionesSalud = [
 ];
 
 export const solucionesEducacion = [
-  { ...SOLUCIONES.practicante },
-  { ...SOLUCIONES.pasante },
+  { ...SOLUCIONES.practica_pasantia },
   { ...SOLUCIONES.entrenamiento },
 ];
