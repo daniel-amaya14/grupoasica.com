@@ -1,17 +1,16 @@
+import React, { useEffect } from 'react';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Poppins } from 'next/font/google';
 import RootLayout from '@/layout/RootLayout';
 
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '900'],
-  subsets: ['latin'],
-  variable: '--poppins-font',
-});
-
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    // @ts-ignore
+    import('preline');
+  }, []);
+
   return (
-    <div className={poppins.className}>
+    <div>
       <RootLayout>
         <Component {...pageProps} />
       </RootLayout>
