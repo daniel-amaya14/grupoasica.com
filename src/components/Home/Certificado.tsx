@@ -1,32 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ImgOffice from '@/public/images/logo-office.png';
-import ImgWellness from '@/public/images/wellness.jpg';
+import ImgPrueba from '@/public/images/empresa.webp';
 
 const itemsCertificados = [
   {
-    title: 'Gestión (Diplomado)',
-    description:
-      'Mejora gestión y liderazgo con nuestro diplomado especializado. Lidera equipos exitosamente.',
-    href: '/cursos/gestion',
-    img: ImgWellness,
+    title: 'Certificado de Bug Bounty Hunter',
+    description: '',
+    href: '/cursos/bug-bounty-hunter',
   },
   {
-    title: 'Microsoft Office',
-    description:
-      'Domina Word, Excel, PowerPoint y Outlook para crear documentos profesionales y organizar datos eficientemente.',
-    href: '/cursos/office',
-    img: ImgOffice,
+    title: 'Certificado de Penetration Testing Specialist',
+    description: '',
+    href: '/cursos/penetration-testing-specialist',
   },
 ];
 
-export default function Capacitaciones() {
+export default function Certificado() {
   return (
     <section className="max-w-7xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
-      <h2 className="text-4xl font-bold leading-tight mb-6">Capacitate</h2>
+      <h2 className="text-4xl font-bold leading-tight mb-6">Certifícate</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {itemsCertificados.map(({ title, description, img, href }) => {
+        {itemsCertificados.map(({ title, href }) => {
           return (
             <Link
               href={href}
@@ -39,11 +34,11 @@ export default function Capacitaciones() {
               >
                 <Image
                   className="w-full h-64 rounded-t-lg object-cover lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg"
-                  src={img}
+                  src={ImgPrueba}
                   alt=""
                 />
                 <div className="flex flex-col justify-start p-6">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="flex gap-2 mb-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="icon icon-tabler icon-tabler-bookmark"
@@ -65,7 +60,11 @@ export default function Capacitaciones() {
                       {title}
                     </h3>
                   </div>
-                  <p className="mb-4 text-sm text-neutral-600">{description}</p>
+                  <p className="mb-4 text-sm text-neutral-600">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
                   {/* py-2 px-3 rounded-md font-semibold text-neutral-500
                   group-hover:text-blue-500 transition-all text-xs max-w-min
                   flex gap-2 items-center mt-auto */}
