@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/tw-elements/dist/js/**/*.js',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', './node_modules/preline/dist/*.js'],
   theme: {
     extend: {
       colors: {
@@ -30,8 +27,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('tw-elements/dist/plugin.cjs'),
-  ],
+  plugins: [require('preline/plugin'), require('@tailwindcss/forms')],
 };

@@ -10,16 +10,18 @@
     "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
+    "@preline/dropdown": "1.3.0",
+    "@preline/tabs": "1.3.1",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
-    "formik": "^2.2.9",
+    "formik": "2.2.9",
     "next": "13.3.1",
+    "preline": "1.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tw-elements": "^1.0.0-beta2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
