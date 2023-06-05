@@ -300,6 +300,15 @@ export default function Navbar() {
                   </div>
                 </div>
 
+                {/* cursos */}
+                <Link
+                  className="font-medium text-gay-800 py-3 md:py-6 hover:text-gray-400"
+                  href="/cursos"
+                  aria-current="page"
+                >
+                  Cursos
+                </Link>
+
                 {/* nosotros */}
                 <div className="group hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-6">
                   <button
