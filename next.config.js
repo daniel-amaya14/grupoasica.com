@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ['images.pexels.com', 'images.unsplash.com'],
+  },
   async redirects() {
     return [
       {
@@ -79,13 +82,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/riesgos',
-        destination: '/servicios/riesgos',
+        source: '/sas/riesgos',
+        destination: '/servicios/sas/riesgos',
         permanent: true,
       },
       {
-        source: '/niff9',
-        destination: '/servicios/niff9',
+        source: '/sas/niif9',
+        destination: '/servicios/sas/niif9',
         permanent: true,
       },
     ];
