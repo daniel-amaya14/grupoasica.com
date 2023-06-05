@@ -135,7 +135,7 @@ export default function Cursos() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Diplomado en Gestión
                   </h2>
                   <p className="text-gray-500 tracking-wide">
@@ -154,12 +154,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-one"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-one"
                     >
                       Proceso de Organización Documental
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -174,7 +174,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -194,7 +194,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-one"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprenderás las mejores prácticas para organizar y
                         gestionar documentos de manera eficiente. Obtendrás
                         habilidades en clasificación, almacenamiento y
@@ -209,12 +209,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-two"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-two"
                     >
                       Identificación de Documentos Relevantes
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -229,7 +229,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -249,7 +249,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-two"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Adquirirás la capacidad de identificar y evaluar
                         documentos relevantes para el funcionamiento de tu
                         empresa. Aprenderás a distinguir entre documentos
@@ -264,12 +264,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-three"
                     >
                       Creación de Documentos Efectivos
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -284,7 +284,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -304,7 +304,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-three"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprenderás técnicas y principios para crear documentos
                         claros, concisos y efectivos. Ganarás habilidades en
                         redacción, estructuración de contenido y presentación
@@ -319,12 +319,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-four"
                     >
                       Cumplimiento de la Normativa ISO 9001
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -339,7 +339,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -359,7 +359,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-four"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Obtendrás una comprensión profunda de los requisitos y
                         principios de la normativa ISO 9001, un estándar
                         reconocido internacionalmente para la gestión de la
@@ -375,12 +375,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-five"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-five"
                     >
                       Herramientas y Tecnologías para la Gestión Documental
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -395,7 +395,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -415,7 +415,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-five"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Explorarás diversas herramientas y tecnologías
                         utilizadas en la gestión documental. Conocerás sistemas
                         de gestión electrónica de documentos (GED), software de
@@ -431,12 +431,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-gestion-heading-six"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-gestion-collapse-six"
                     >
                       Mejores Prácticas de Gestión Documental
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -451,7 +451,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -471,7 +471,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-gestion-heading-six"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Obtendrás una visión integral de las mejores prácticas
                         de gestión documental utilizadas en diferentes
                         industrias. Aprenderás de casos de estudio y ejemplos
@@ -503,7 +503,7 @@ export default function Cursos() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Certificado en Microsoft Office
                   </h2>
                   <p className="text-gray-500 tracking-wide">
@@ -521,12 +521,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-one"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-one"
                     >
                       Microsoft Word Avanzado
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -541,7 +541,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -561,7 +561,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300  "
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-one"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprende a utilizar Word de manera avanzada, dominando
                         funciones como el formato de texto y párrafos, creación
                         de estilos, inserción de tablas y gráficos, generación
@@ -576,12 +576,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-two"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-two"
                     >
                       Microsoft Excel Profesional
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -596,7 +596,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -616,7 +616,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-two"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Adquiere habilidades avanzadas en Excel para el análisis
                         y manejo de datos. Aprenderás a utilizar fórmulas y
                         funciones avanzadas, crear tablas dinámicas, realizar
@@ -631,12 +631,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-three"
                     >
                       Microsoft PowerPoint Creativo
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -651,7 +651,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -671,7 +671,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-three"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Descubre cómo crear presentaciones impactantes y
                         profesionales con PowerPoint. Aprenderás a utilizar las
                         funciones avanzadas de diseño y formato, trabajar con
@@ -687,12 +687,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-four"
                     >
                       Herramientas de Office 365
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -707,7 +707,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -727,7 +727,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-four"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Explora el resto de herramientas disponibles en Office
                         365, como Outlook, OneNote, Teams y SharePoint.
                         Aprenderás a utilizar estas herramientas de manera
@@ -743,12 +743,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-five"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-five"
                     >
                       Integración y Automatización
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -763,7 +763,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -783,7 +783,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-five"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Descubre cómo integrar y automatizar las herramientas de
                         Office para maximizar tu eficiencia. Aprenderás a
                         vincular datos entre aplicaciones, utilizar complementos
@@ -798,12 +798,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-office-heading-six"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-office-collapse-six"
                     >
                       Trucos y Consejos Profesionales
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -818,7 +818,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -838,7 +838,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-office-heading-six"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprende consejos y trucos profesionales para utilizar
                         las herramientas de Office de manera más eficiente.
                         Descubrirás atajos de teclado, funciones ocultas y
@@ -869,7 +869,7 @@ export default function Cursos() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Certificado de Bug Bounty Hunting
                   </h2>
                   <p className="text-gray-500 tracking-wide">
@@ -888,12 +888,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-one"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-one"
                     >
                       Conceptos Fundamentales de Seguridad
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -908,7 +908,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -928,7 +928,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300  "
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-one"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprenderás los principios básicos de seguridad
                         informática y las metodologías utilizadas en el mundo
                         del bug bounty hunting. Comprenderás los fundamentos de
@@ -943,12 +943,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-two"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-two"
                     >
                       Metodologías de Caza de Bugs
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -963,7 +963,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -983,7 +983,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-two"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Explorarás diferentes metodologías y enfoques utilizados
                         por los cazadores de errores profesionales. Aprenderás a
                         identificar y analizar activamente posibles
@@ -998,12 +998,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-three"
                     >
                       Pruebas de Penetración y Escaneo de Vulnerabilidades
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1018,7 +1018,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1038,7 +1038,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-three"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Obtendrás habilidades prácticas en pruebas de
                         penetración y escaneo de vulnerabilidades. Aprenderás a
                         utilizar herramientas y técnicas para identificar
@@ -1054,12 +1054,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-four"
                     >
                       Identificación y Explotación de Vulnerabilidades Web
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1074,7 +1074,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1094,7 +1094,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-four"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Te familiarizarás con las vulnerabilidades comunes en
                         aplicaciones web, como inyecciones SQL, ataques de
                         cross-site scripting (XSS), manipulación de sesiones y
@@ -1109,12 +1109,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-five"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-five"
                     >
                       Reporte de Vulnerabilidades
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1129,7 +1129,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1149,7 +1149,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-five"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprenderás a documentar y comunicar de manera efectiva
                         las vulnerabilidades encontradas. Desarrollarás
                         habilidades para elaborar informes claros y concisos,
@@ -1166,12 +1166,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-six"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-collapse-six"
                     >
                       Ética y Responsabilidad en el Bug Bounty Hunting
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1186,7 +1186,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1206,7 +1206,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-bug-bounty-hunting-heading-six"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Comprenderás la importancia de la ética y la
                         responsabilidad en el campo del bug bounty hunting.
                         Aprenderás a operar de manera legal y ética, respetando
@@ -1238,7 +1238,7 @@ export default function Cursos() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Certificado de Penetration Testing Specialist
                   </h2>
                   <p className="text-gray-500 tracking-wide">
@@ -1257,12 +1257,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-one"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-one"
                     >
                       Conceptos Fundamentales de Seguridad
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1277,7 +1277,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1297,7 +1297,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300  "
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-one"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Adquirirás una comprensión sólida de los conceptos
                         básicos de seguridad informática y las metodologías
                         utilizadas en las pruebas de penetración. Conocerás las
@@ -1313,12 +1313,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-two"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-two"
                     >
                       Técnicas de Enumeración y Escaneo
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1333,7 +1333,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1353,7 +1353,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-two"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Aprenderás a utilizar herramientas y técnicas de
                         enumeración y escaneo para descubrir información sobre
                         sistemas y servicios en una red. Conocerás las mejores
@@ -1368,12 +1368,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-three"
                     >
                       Identificación y Explotación de Vulnerabilidades
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1388,7 +1388,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1408,7 +1408,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-three"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Obtendrás habilidades prácticas en la identificación y
                         explotación de vulnerabilidades comunes en sistemas y
                         aplicaciones. Aprenderás a utilizar herramientas
@@ -1424,12 +1424,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-three"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-four"
                     >
                       Pruebas de Penetración Web y de Red
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1444,7 +1444,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1464,7 +1464,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-four"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Explorarás las técnicas y metodologías utilizadas en las
                         pruebas de penetración web y de red. Aprenderás a
                         realizar pruebas de intrusión en aplicaciones web,
@@ -1480,13 +1480,13 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-five"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-five"
                     >
                       Análisis de Vulnerabilidades y Explotación de Escenarios
                       Complejos
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1501,7 +1501,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1521,7 +1521,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-five"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Desarrollarás habilidades avanzadas en el análisis de
                         vulnerabilidades y la explotación de escenarios
                         complejos. Aprenderás a utilizar técnicas avanzadas para
@@ -1538,12 +1538,12 @@ export default function Cursos() {
                     id="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-six"
                   >
                     <button
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition"
                       aria-controls="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-collapse-six"
                     >
                       Reporte y Recomendaciones de Seguridad
                       <svg
-                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1558,7 +1558,7 @@ export default function Cursos() {
                         />
                       </svg>
                       <svg
-                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -1578,7 +1578,7 @@ export default function Cursos() {
                       className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                       aria-labelledby="hs-basic-with-title-and-arrow-stretched-penetration-testing-specialist-heading-six"
                     >
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-gray-800">
                         Dominarás la creación de informes de seguridad
                         profesionales y efectivos. Aprenderás a documentar y
                         comunicar los resultados de tus pruebas de manera clara

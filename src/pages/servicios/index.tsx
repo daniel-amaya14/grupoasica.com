@@ -43,7 +43,7 @@ const Card = ({
             </svg>
 
             <div className="grow ml-5">
-              <h3 className="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
+              <h3 className="group-hover:text-blue-600 font-semibold text-gray-800">
                 {title}
               </h3>
               <p className="text-sm text-gray-500">{description}</p>

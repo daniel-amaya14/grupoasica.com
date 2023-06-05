@@ -36,7 +36,7 @@ export default function IdentidadDigital() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Destaque en el Mundo Digital
                   </h2>
                   <p className="text-gray-500 tracking-wide">
@@ -84,7 +84,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Diseño de Logotipo
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -117,7 +117,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Diseño de Sitio Web
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -150,7 +150,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Estrategia de Redes Sociales
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -186,7 +186,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Marketing de Contenidos
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -219,7 +219,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Estrategia de SEO (Optimización de Motores de Búsqueda)
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -254,7 +254,7 @@ export default function IdentidadDigital() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Gestión de Campañas de Publicidad en Línea
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">

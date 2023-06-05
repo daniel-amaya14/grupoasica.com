@@ -36,7 +36,7 @@ export default function Niif9() {
             <div className="mt-5 sm:mt-10 lg:mt-0">
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                     Soluciones Avanzadas para la Gestión Financiera Conforme a
                     Normas Internacionales
                   </h2>
@@ -84,7 +84,7 @@ export default function Niif9() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Evaluación y Diagnóstico
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -117,7 +117,7 @@ export default function Niif9() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Implementación y Actualización de NIIF
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -153,7 +153,7 @@ export default function Niif9() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Capacitación y Asesoramiento
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
@@ -186,7 +186,7 @@ export default function Niif9() {
                   />
                 </svg>
                 <div className="ml-5 sm:ml-8">
-                  <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 sm:text-lg">
+                  <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
                     Análisis y Optimización de Informes Financieros
                   </h3>
                   <p className="mt-1 text-gray-600 tracking-wide">
