@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ImgPskloud from '@/public/images/software/psk/pskloud.webp';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Psk() {
   return (
@@ -366,6 +367,9 @@ export default function Psk() {
             </ul>
           </div>
         </section>
+
+        {/*  */}
+        <BannerContacto href="/servicios/formulario" />
       </div>
     </>
   );

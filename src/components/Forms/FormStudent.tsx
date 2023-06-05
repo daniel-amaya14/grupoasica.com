@@ -1,179 +1,425 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 const initialValues = {
   name: '',
   email: '',
-  telefono: '',
-  universidad: '',
-  mensaje: '',
+  phone: '',
+  university: '',
+  message: '',
 };
 
-const validate = (values: any) => {
-  const errors: any = {};
-  if (!values.name) {
-    errors.name = 'El campo es requerido';
-  } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.name)) {
-    errors.name = ' El nombre solo puede contener letras y espacios';
-  }
+const validationSchema = Yup.object().shape({
+  name: Yup.string()
+    .matches(
+      /^[a-zA-ZÀ-ÿ\s]+$/,
+      'El nombre solo puede contener letras y espacios'
+    )
+    .max(40, 'El nombre es demasiado largo')
+    .required('El campo es requerido'),
 
-  if (!values.email) {
-    errors.email = 'El campo es requerido';
-  } else if (
-    !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(values.email)
-  ) {
-    errors.email = 'El email no es válido';
-  }
+  email: Yup.string()
+    .matches(
+      /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+      'El email no es válido'
+    )
+    .email('El email no es válido')
+    .required('El campo es requerido'),
 
-  if (!values.telefono) errors.telefono = 'El campo es requerido';
-  if (!values.universidad) errors.universidad = 'El campo es requerido';
+  phone: Yup.string()
+    .matches(
+      /^(\+\d{1,3})?\s*\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
+      'El número de teléfono no es válido'
+    )
+    .required('El campo es requerido'),
 
-  return errors;
-};
+  university: Yup.string()
+    .matches(
+      /^[a-zA-ZÀ-ÿ\s]+$/,
+      'El nombre solo puede contener letras y espacios'
+    )
+    .required('El campo es requerido'),
 
-export default function FormStudent() {
+  message: Yup.string().required('El campo es requerido'),
+});
+
+export default function FormContacto() {
   return (
     <Formik
       initialValues={initialValues}
-      validate={validate}
+      initialErrors={initialValues}
+      validationSchema={validationSchema}
       onSubmit={(values, { resetForm }) => {
         return new Promise((resolve) => {
           setTimeout(() => {
             alert('Formulario enviado con éxito');
             resetForm();
+            console.log(values);
             resolve(true);
           }, 3000);
           clearTimeout(3000);
         });
       }}
     >
-      {({ isSubmitting }) => (
-        <Form className="grid grid-cols-10 gap-6">
-          {/* input - nombre contacto */}
-          <div className="col-span-full">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-white"
-            >
-              Nombre completo
-              <span className="text-red-600">*</span>
-            </label>
-            <Field
-              type="text"
-              id="name"
-              name="name"
-              className="form-input mt-1 w-full rounded-md border-gray-200 text-sm shadow-sm bg-gray-100 focus:bg-white"
-            />
-            <ErrorMessage
-              name="name"
-              component="small"
-              className="text-red-600"
-            />
+      {({ errors, touched, isValid, isSubmitting }) => (
+        <Form>
+          <div className="grid gap-4">
+            <div>
+              <label
+                htmlFor="name"
+                className="sr-only"
+              >
+                Nombre
+              </label>
+              <div className="relative">
+                <Field
+                  type="text"
+                  name="name"
+                  id="name"
+                  className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                    errors.name && touched.name
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                      : !errors.name && touched.name
+                      ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                      : ''
+                  }`}
+                  placeholder="Nombre"
+                />
+                <ErrorMessage
+                  name="name"
+                  component={() => (
+                    <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                      <div className="hs-tooltip inline-block">
+                        <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                          <svg
+                            className="h-5 w-5 text-red-500"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                          </svg>
+                        </button>
+                        <div
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                          role="tooltip"
+                        >
+                          {errors.name}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                />
+                {!errors.name && touched.name ? (
+                  <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label
+                  htmlFor="email"
+                  className="sr-only"
+                >
+                  Correo electrónico
+                </label>
+                <div className="relative">
+                  <Field
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                      errors.email && touched.email
+                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                        : !errors.email && touched.email
+                        ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                        : ''
+                    }`}
+                    placeholder=" Correo electrónico"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component={() => (
+                      <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                        <div className="hs-tooltip inline-block">
+                          <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                            <svg
+                              className="h-5 w-5 text-red-500"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                              aria-hidden="true"
+                            >
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                          </button>
+                          <div
+                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                            role="tooltip"
+                          >
+                            {errors.email}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  />
+                  {!errors.email && touched.email ? (
+                    <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                      <svg
+                        className="h-5 w-5 text-green-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                      </svg>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="sr-only"
+                >
+                  Teléfono
+                </label>
+                <div className="relative">
+                  <Field
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                      errors.phone && touched.phone
+                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                        : !errors.phone && touched.phone
+                        ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                        : ''
+                    }`}
+                    placeholder="Teléfono"
+                  />
+                  <ErrorMessage
+                    name="phone"
+                    component={() => (
+                      <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                        <div className="hs-tooltip inline-block">
+                          <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                            <svg
+                              className="h-5 w-5 text-red-500"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                              aria-hidden="true"
+                            >
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                          </button>
+                          <div
+                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                            role="tooltip"
+                          >
+                            {errors.phone}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  />
+                  {!errors.phone && touched.phone ? (
+                    <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                      <svg
+                        className="h-5 w-5 text-green-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                      </svg>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="name"
+                className="sr-only"
+              >
+                Universidad
+              </label>
+              <div className="relative">
+                <Field
+                  type="text"
+                  name="university"
+                  id="university"
+                  className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                    errors.university && touched.university
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                      : !errors.university && touched.university
+                      ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                      : ''
+                  }`}
+                  placeholder="Universidad"
+                />
+                <ErrorMessage
+                  name="university"
+                  component={() => (
+                    <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                      <div className="hs-tooltip inline-block">
+                        <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                          <svg
+                            className="h-5 w-5 text-red-500"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                          </svg>
+                        </button>
+                        <div
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                          role="tooltip"
+                        >
+                          {errors.university}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                />
+                {!errors.university && touched.university ? (
+                  <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="sr-only"
+              >
+                Mensaje
+              </label>
+              <div className="relative">
+                <Field
+                  as="textarea"
+                  id="message"
+                  name="message"
+                  rows={4}
+                  className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                    errors.message && touched.message
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                      : !errors.message && touched.message
+                      ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                      : ''
+                  }`}
+                  placeholder="Mensaje"
+                ></Field>
+                <ErrorMessage
+                  name="message"
+                  component={() => (
+                    <div className="absolute top-3 right-0 flex items-center select-none pr-3">
+                      <div className="hs-tooltip inline-block ">
+                        <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                          <svg
+                            className="h-5 w-5 text-red-500"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                          </svg>
+                        </button>
+                        <div
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                          role="tooltip"
+                        >
+                          {errors.message}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                />
+                {!errors.message && touched.message ? (
+                  <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg>
+                  </div>
+                ) : null}
+              </div>
+            </div>
           </div>
 
-          {/* input - correo */}
-          <div className="col-span-full">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-white"
-            >
-              Correo Electrónico
-              <span className="text-red-600">*</span>
-            </label>
-            <Field
-              type="email"
-              id="email"
-              name="email"
-              className="form-input mt-1 w-full rounded-md border-gray-200 text-sm shadow-sm bg-gray-100 focus:bg-white"
-            />
-            <ErrorMessage
-              name="email"
-              component="small"
-              className="text-red-600"
-            />
-          </div>
-
-          {/* input - telefono */}
-          <div className="col-span-full">
-            <label
-              htmlFor="telefono"
-              className="block text-sm font-medium text-white"
-            >
-              Teléfono/Celular
-              <span className="text-red-600">*</span>
-            </label>
-            <Field
-              type="tel"
-              id="telefono"
-              name="telefono"
-              className="form-input mt-1 w-full rounded-md border-gray-200 text-sm shadow-sm bg-gray-100 focus:bg-white"
-            />
-            <ErrorMessage
-              name="telefono"
-              component="small"
-              className="text-red-600"
-            />
-          </div>
-
-          {/* input - nombre contacto */}
-          <div className="col-span-full">
-            <label
-              htmlFor="universidad"
-              className="block text-sm font-medium text-white"
-            >
-              Universidad / Colegio
-              <span className="text-red-600">*</span>
-            </label>
-            <Field
-              type="text"
-              id="universidad"
-              name="universidad"
-              className="form-input mt-1 w-full rounded-md border-gray-200 text-sm shadow-sm bg-gray-100 focus:bg-white"
-            />
-            <ErrorMessage
-              name="universidad"
-              component="small"
-              className="text-red-600"
-            />
-          </div>
-
-          {/* input - mensaje */}
-          <div className="col-span-10">
-            <label
-              htmlFor="mensaje"
-              className="block text-sm font-medium text-white"
-            >
-              Mensaje
-            </label>
-            <Field
-              as="textarea"
-              id="mensaje"
-              name="mensaje"
-              cols={30}
-              rows={10}
-              className="form-textarea mt-1 w-full rounded-md border-gray-200 text-sm shadow-sm bg-gray-100 focus:bg-white"
-            />
-          </div>
-
-          {/* button */}
-          <div className="col-span-full sm:flex sm:items-center sm:gap-4">
+          <div className="mt-4 grid">
             <button
-              className="inline-flex justify-center items-center gap-1 shrink-0 rounded-md border border-blue-600 bg-blue-600 px-9 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none"
               type="submit"
-              disabled={isSubmitting}
+              className={`inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none active:bg-blue-400 transition py-3 px-4 ${
+                isSubmitting || !isValid
+                  ? 'cursor-not-allowed !bg-blue-200 hover:!bg-blue-200'
+                  : ''
+              }`}
+              disabled={!isValid}
+              title={
+                !isValid
+                  ? 'Complete el formulario'
+                  : isSubmitting
+                  ? 'Enviando...'
+                  : 'Enviar mensaje'
+              }
             >
               Enviar
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="currentColor"
-                  d="M27.71 4.29a1 1 0 0 0-1.05-.23l-22 8a1 1 0 0 0 0 1.87l9.6 3.84l3.84 9.6a1 1 0 0 0 .9.63a1 1 0 0 0 .92-.66l8-22a1 1 0 0 0-.21-1.05ZM19 24.2l-2.79-7L21 12.41L19.59 11l-4.83 4.83L7.8 13l17.53-6.33Z"
-                />
-              </svg>
+              {isSubmitting ? (
+                <span
+                  className="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full"
+                  role="status"
+                  aria-label="loading"
+                ></span>
+              ) : null}
             </button>
           </div>
         </Form>

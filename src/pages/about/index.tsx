@@ -11,6 +11,13 @@ import {
   IconFolderOpen,
 } from '@/components/Icons';
 
+const stats = [
+  { title: '+400', span: 'Proyectos', icon: IconFolderOpen },
+  { title: '+100', span: 'Clientes', icon: IconUsers },
+  { title: '+28', span: 'Años de experiencia', icon: IconStart },
+  { title: '+37', span: 'Partners', icon: IconBriefcase },
+];
+
 const valores = [
   'Ética',
   'Respeto',
@@ -31,7 +38,7 @@ export default function About() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40 bg-gradient-to-r from-black/40 to-black/40"></div>
-        <div className="relative py-20 px-8 xl:px-36 xl:py-28">
+        <div className="relative max-w-7xl px-4 py-16 mx-auto sm:px-6 md:py-24 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Sobre nosotros
@@ -80,66 +87,34 @@ export default function About() {
 
           {/* stats */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:px-0 lg:grid-cols-4 xl:gap-x-12">
-            {/*  */}
-            <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
-              <div className="px-4 py-6">
-                <div className="flex items-start">
-                  <IconFolderOpen className="flex-shrink-0 w-10 h-10 -mt-1 text-primary" />
-                  <div className="ml-4">
-                    <h4 className="text-base font-bold text-gray-900">+400</h4>
-                    <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
-                      Proyectos
-                    </p>
+            {stats.map(({ title, span, icon }) => {
+              return (
+                <div
+                  key={title}
+                  className="flex flex-col rounded-lg border shadow-sm bg-white"
+                >
+                  <div className="flex gap-x-4 p-4 md:p-5">
+                    <div className="flex h-[46px] w-[46px] flex-shrink-0 items-center justify-center rounded-md bg-gray-100">
+                      {React.createElement(icon, {
+                        className: 'h-6 w-6 text-gray-600',
+                      })}
+                    </div>
+
+                    <div className="grow">
+                      <p className="text-xs uppercase tracking-wide text-gray-700">
+                        {span}
+                      </p>
+
+                      <div className="mt-1 flex items-center gap-x-2">
+                        <h3 className="text-xl font-medium text-gray-800 sm:text-2xl">
+                          {title}
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
-              <div className="px-4 py-6">
-                <div className="flex items-start">
-                  <IconUsers className="flex-shrink-0 w-10 h-10 -mt-1 text-primary" />
-                  <div className="ml-4">
-                    <h4 className="text-base font-bold text-gray-900">+100</h4>
-                    <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
-                      Clientes
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
-              <div className="px-4 py-6">
-                <div className="flex items-start">
-                  <IconStart className="flex-shrink-0 w-10 h-10 -mt-1 text-primary" />
-                  <div className="ml-4">
-                    <h4 className="text-base font-bold text-gray-900">
-                      +28 años
-                    </h4>
-                    <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
-                      Experiencia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
-              <div className="px-4 py-6">
-                <div className="flex items-start">
-                  <IconBriefcase className="flex-shrink-0 w-10 h-10 -mt-1 text-primary" />
-                  <div className="ml-4">
-                    <h4 className="text-base font-bold text-gray-900">
-                      +37 partners
-                    </h4>
-                    <p className="mt-1 text-sm font-medium leading-tight text-gray-500">
-                      A nivel mundial
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
 
           {/* mision y vision */}

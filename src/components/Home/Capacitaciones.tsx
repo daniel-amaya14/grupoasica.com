@@ -9,14 +9,14 @@ const itemsCertificados = [
     title: 'Gestión (Diplomado)',
     description:
       'Mejora gestión y liderazgo con nuestro diplomado especializado. Lidera equipos exitosamente.',
-    href: '/cursos/gestion',
+    href: '/cursos',
     img: ImgWellness,
   },
   {
     title: 'Microsoft Office',
     description:
       'Domina Word, Excel, PowerPoint y Outlook para crear documentos profesionales y organizar datos eficientemente.',
-    href: '/cursos/office',
+    href: '/cursos',
     img: ImgOffice,
   },
 ];

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ImgArprotecsa from '@/public/images/software/arpotecsa/arprotecsa.png';
 import ImgAdmon from '@/public/images/software/arpotecsa/administracion-documental.jpg';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Arprotecsa() {
   return (
@@ -23,7 +24,7 @@ export default function Arprotecsa() {
       </section>
 
       {/* Content */}
-      <div className="py-8 px-6 md:py-12 md:px-20">
+      <div className="max-w-7xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
         <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
@@ -202,6 +203,11 @@ export default function Arprotecsa() {
             </article>
           </div>
         </section>
+
+        {/*  */}
+        <div className="py-20">
+          <BannerContacto href="/servicios/formulario" />
+        </div>
       </div>
     </>
   );

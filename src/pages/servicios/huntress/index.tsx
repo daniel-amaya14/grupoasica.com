@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ImgHuntress from '@/public/images/software/huntress/huntress.png';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Huntress() {
   return (
@@ -622,6 +623,9 @@ export default function Huntress() {
             </div>
           </div>
         </section>
+
+        {/*  */}
+        <BannerContacto href="/servicios/formulario" />
       </div>
     </>
   );

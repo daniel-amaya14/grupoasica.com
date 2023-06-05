@@ -97,7 +97,7 @@ export const SOLUCIONES = Object.freeze({
   identidad_digital: {
     title: 'Identidad Digital',
     description: 'Identificación de clientes con tecnología de punta.',
-    href: '/soluciones/identidad-digital',
+    href: '/servicios/identidad-digital',
   },
 
   niif9: {
@@ -111,13 +111,6 @@ export const SOLUCIONES = Object.freeze({
     title: 'Riesgos',
     description: 'Análisis de riesgos y toma de decisiones inteligentes.',
     href: '/sas/riesgos',
-  },
-
-  cash_management: {
-    title: 'Cash management',
-    description:
-      'Control del manejo de efectivo y modelado predictivo de ATMs.',
-    href: '/soluciones/cash-management',
   },
 
   ciberseguridad: {
@@ -155,7 +148,7 @@ export const SOLUCIONES = Object.freeze({
   entrenamiento: {
     title: 'Entrenamiento',
     description: 'Programas de entrenamiento prácticos y significativos.',
-    href: '/soluciones/entrenamiento',
+    href: '/servicios/entrenamientos',
   },
 });
 
@@ -188,7 +181,6 @@ export const solucionesPymes = [
 export const solucionesBanca = [
   { ...SOLUCIONES.niif9 },
   { ...SOLUCIONES.riesgos },
-  { ...SOLUCIONES.cash_management },
   { ...SOLUCIONES.ciberseguridad },
   { ...SOLUCIONES.inteligencia_artificial },
   { ...SOLUCIONES.entrenamiento },

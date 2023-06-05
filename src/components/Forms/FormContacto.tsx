@@ -3,15 +3,14 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const initialValues = {
-  userName: '',
-  userEmail: '',
-  userPhone: '',
-  userCompany: '',
-  userMessage: '',
+  inputName: '',
+  inputEmail: '',
+  inputPhone: '',
+  inputMessage: '',
 };
 
 const validationSchema = Yup.object().shape({
-  userName: Yup.string()
+  inputName: Yup.string()
     .matches(
       /^[a-zA-ZÀ-ÿ\s]+$/,
       'El nombre solo puede contener letras y espacios'
@@ -19,7 +18,7 @@ const validationSchema = Yup.object().shape({
     .max(40, 'El nombre es demasiado largo')
     .required('El campo es requerido'),
 
-  userEmail: Yup.string()
+  inputEmail: Yup.string()
     .matches(
       /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
       'El email no es válido'
@@ -27,24 +26,17 @@ const validationSchema = Yup.object().shape({
     .email('El email no es válido')
     .required('El campo es requerido'),
 
-  userPhone: Yup.string()
+  inputPhone: Yup.string()
     .matches(
       /^(\+\d{1,3})?\s*\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
       'El número de teléfono no es válido'
     )
     .required('El campo es requerido'),
 
-  userCompany: Yup.string()
-    .matches(
-      /^[a-zA-ZÀ-ÿ\s]+$/,
-      'El nombre solo puede contener letras y espacios'
-    )
-    .required('El campo es requerido'),
-
-  userMessage: Yup.string().required('El campo es requerido'),
+  inputMessage: Yup.string().required('El campo es requerido'),
 });
 
-export default function FormServices() {
+export default function FormContacto() {
   return (
     <Formik
       initialValues={initialValues}
@@ -66,7 +58,7 @@ export default function FormServices() {
           <div className="grid gap-4">
             <div>
               <label
-                htmlFor="userName"
+                htmlFor="inputName"
                 className="sr-only"
               >
                 Nombre
@@ -74,19 +66,19 @@ export default function FormServices() {
               <div className="relative">
                 <Field
                   type="text"
-                  name="userName"
-                  id="userName"
+                  name="inputName"
+                  id="inputName"
                   className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                    errors.userName && touched.userName
+                    errors.inputName && touched.inputName
                       ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                      : !errors.userName && touched.userName
+                      : !errors.inputName && touched.inputName
                       ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
                       : ''
                   }`}
                   placeholder="Nombre"
                 />
                 <ErrorMessage
-                  name="userName"
+                  name="inputName"
                   component={() => (
                     <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
                       <div className="hs-tooltip inline-block">
@@ -106,13 +98,13 @@ export default function FormServices() {
                           className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
                           role="tooltip"
                         >
-                          {errors.userName}
+                          {errors.inputName}
                         </div>
                       </div>
                     </div>
                   )}
                 />
-                {!errors.userName && touched.userName ? (
+                {!errors.inputName && touched.inputName ? (
                   <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
                     <svg
                       className="h-5 w-5 text-green-500"
@@ -129,162 +121,95 @@ export default function FormServices() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="userEmail"
-                  className="sr-only"
-                >
-                  Correo electrónico
-                </label>
-                <div className="relative">
-                  <Field
-                    type="email"
-                    name="userEmail"
-                    id="userEmail"
-                    autoComplete="email"
-                    className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                      errors.userEmail && touched.userEmail
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                        : !errors.userEmail && touched.userEmail
-                        ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
-                        : ''
-                    }`}
-                    placeholder=" Correo electrónico"
-                  />
-                  <ErrorMessage
-                    name="userEmail"
-                    component={() => (
-                      <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
-                        <div className="hs-tooltip inline-block">
-                          <button className="hs-tooltip-toggle block text-center pointer-events-none">
-                            <svg
-                              className="h-5 w-5 text-red-500"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              aria-hidden="true"
-                            >
-                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-                            </svg>
-                          </button>
-                          <div
-                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
-                            role="tooltip"
+            <div>
+              <label
+                htmlFor="inputEmail"
+                className="sr-only"
+              >
+                Correo electrónico
+              </label>
+              <div className="relative">
+                <Field
+                  type="email"
+                  name="inputEmail"
+                  id="inputEmail"
+                  autoComplete="email"
+                  className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                    errors.inputEmail && touched.inputEmail
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                      : !errors.inputEmail && touched.inputEmail
+                      ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                      : ''
+                  }`}
+                  placeholder=" Correo electrónico"
+                />
+                <ErrorMessage
+                  name="inputEmail"
+                  component={() => (
+                    <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                      <div className="hs-tooltip inline-block">
+                        <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                          <svg
+                            className="h-5 w-5 text-red-500"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
                           >
-                            {errors.userEmail}
-                          </div>
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                          </svg>
+                        </button>
+                        <div
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                          role="tooltip"
+                        >
+                          {errors.inputEmail}
                         </div>
                       </div>
-                    )}
-                  />
-                  {!errors.userEmail && touched.userEmail ? (
-                    <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
-                      <svg
-                        className="h-5 w-5 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                      </svg>
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="userPhone"
-                  className="sr-only"
-                >
-                  Teléfono
-                </label>
-                <div className="relative">
-                  <Field
-                    type="text"
-                    name="userPhone"
-                    id="userPhone"
-                    className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                      errors.userPhone && touched.userPhone
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                        : !errors.userPhone && touched.userPhone
-                        ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
-                        : ''
-                    }`}
-                    placeholder="Teléfono"
-                  />
-                  <ErrorMessage
-                    name="userPhone"
-                    component={() => (
-                      <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
-                        <div className="hs-tooltip inline-block">
-                          <button className="hs-tooltip-toggle block text-center pointer-events-none">
-                            <svg
-                              className="h-5 w-5 text-red-500"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              aria-hidden="true"
-                            >
-                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-                            </svg>
-                          </button>
-                          <div
-                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
-                            role="tooltip"
-                          >
-                            {errors.userPhone}
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  />
-                  {!errors.userPhone && touched.userPhone ? (
-                    <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
-                      <svg
-                        className="h-5 w-5 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                      </svg>
-                    </div>
-                  ) : null}
-                </div>
+                  )}
+                />
+                {!errors.inputEmail && touched.inputEmail ? (
+                  <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg>
+                  </div>
+                ) : null}
               </div>
             </div>
 
             <div>
               <label
-                htmlFor="userCompany"
+                htmlFor="inputPhone"
                 className="sr-only"
               >
-                Empresa/Institución
+                Teléfono
               </label>
               <div className="relative">
                 <Field
                   type="text"
-                  name="userCompany"
-                  id="userCompany"
+                  name="inputPhone"
+                  id="inputPhone"
                   className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                    errors.userCompany && touched.userCompany
+                    errors.inputPhone && touched.inputPhone
                       ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                      : !errors.userCompany && touched.userCompany
+                      : !errors.inputPhone && touched.inputPhone
                       ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
                       : ''
                   }`}
-                  placeholder="Empresa/Institución"
+                  placeholder="Teléfono"
                 />
                 <ErrorMessage
-                  name="userCompany"
+                  name="inputPhone"
                   component={() => (
                     <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
                       <div className="hs-tooltip inline-block">
@@ -304,13 +229,13 @@ export default function FormServices() {
                           className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
                           role="tooltip"
                         >
-                          {errors.userCompany}
+                          {errors.inputPhone}
                         </div>
                       </div>
                     </div>
                   )}
                 />
-                {!errors.userCompany && touched.userCompany ? (
+                {!errors.inputPhone && touched.inputPhone ? (
                   <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
                     <svg
                       className="h-5 w-5 text-green-500"
@@ -329,7 +254,7 @@ export default function FormServices() {
 
             <div>
               <label
-                htmlFor="userMessage"
+                htmlFor="inputMessage"
                 className="sr-only"
               >
                 Mensaje
@@ -337,20 +262,20 @@ export default function FormServices() {
               <div className="relative">
                 <Field
                   as="textarea"
-                  id="userMessage"
-                  name="userMessage"
+                  id="inputMessage"
+                  name="inputMessage"
                   rows={4}
                   className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                    errors.userMessage && touched.userMessage
+                    errors.inputMessage && touched.inputMessage
                       ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                      : !errors.userMessage && touched.userMessage
+                      : !errors.inputMessage && touched.inputMessage
                       ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
                       : ''
                   }`}
                   placeholder="Mensaje"
                 ></Field>
                 <ErrorMessage
-                  name="userMessage"
+                  name="inputMessage"
                   component={() => (
                     <div className="absolute top-3 right-0 flex items-center select-none pr-3">
                       <div className="hs-tooltip inline-block ">
@@ -370,13 +295,13 @@ export default function FormServices() {
                           className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
                           role="tooltip"
                         >
-                          {errors.userMessage}
+                          {errors.inputMessage}
                         </div>
                       </div>
                     </div>
                   )}
                 />
-                {!errors.userMessage && touched.userMessage ? (
+                {!errors.inputMessage && touched.inputMessage ? (
                   <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
                     <svg
                       className="h-5 w-5 text-green-500"
@@ -420,6 +345,12 @@ export default function FormServices() {
                 ></span>
               ) : null}
             </button>
+          </div>
+
+          <div className="mt-3 text-center">
+            <p className="text-sm text-gray-500">
+              Le responderemos en 1-2 días laborables.
+            </p>
           </div>
         </Form>
       )}

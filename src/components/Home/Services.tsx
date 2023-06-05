@@ -82,14 +82,22 @@ export default function Services() {
           Ofrecemos soluciones informáticas y servicios especializados para
           satisfacer las necesidades de nuestros clientes en distintos ámbitos.
         </p>
-        <Link
-          href="/servicios"
-          className="mt-4 inline-block"
-        >
-          <div className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
-            Más información
-          </div>
-        </Link>
+        <div className="space-x-2">
+          <Link
+            href="/servicios"
+            className="mt-4 inline-block"
+          >
+            <div className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white text-sm transition-all hover:bg-blue-600 focus:outline-none active:bg-blue-400">
+              Más información
+            </div>
+          </Link>
+          <Link
+            href="/servicios/formulario"
+            className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-blue-500 hover:bg-blue-100 focus:outline-none transition-all text-sm"
+          >
+            Solicitar servicio
+          </Link>
+        </div>
       </div>
       <div className="lg:col-span-4">
         <div className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -99,7 +107,7 @@ export default function Services() {
                 href={href}
                 key={title}
               >
-                <div className="w-full h-full bg-white rounded-lg p-4 transition-all duration-300 border-[1px] border-blue-100 border-opacity-0 hover:shadow-lg hover:border-opacity-100 hover:scale-105">
+                <div className="w-full h-[8.375rem] bg-white rounded-lg p-4 transition-all duration-300 border-[1px] border-blue-100 border-opacity-0 hover:shadow-lg hover:border-opacity-100 hover:scale-105 active:border-blue-200 lg:h-[9.625rem]">
                   <div className="flex items-center gap-x-2 mb-3">
                     <div
                       className={`inline-flex justify-center items-center w-12 h-12 aspect-square rounded-full border-4 ${color}`}

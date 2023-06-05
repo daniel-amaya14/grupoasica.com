@@ -1,44 +1,72 @@
 import React from 'react';
 import Image from 'next/image';
-import FormStudent from '@/components/Forms/FormStudent';
+import BannerContacto from '@/components/BannerContacto';
 
-export default function Estudiante() {
+export default function Consultoria() {
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-16 space-y-24 sm:px-6 md:pt-6 md:pb-24 lg:px-8">
-      {/*  */}
-      <div className="grid gap-4 md:grid-cols-2 md:items-center md:gap-8 xl:gap-20">
-        <div>
-          <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">
-            Impulasa tu{' '}
-            <span className="text-blue-600">Carrera Profesional</span>
+    <>
+      {/* Hero */}
+      <section className="bg-gray-100 py-8 px-6 md:py-12 md:px-20">
+        <div className="container mx-auto flex flex-col items-center">
+          <h1 className="font-bold text-3xl leading-normal md:text-4xl text-center">
+            Consultoría TI
           </h1>
-          <p className="mt-3 text-lg text-gray-800 tracking-wide">
-            En Grupo Asica, creemos en la importancia de brindar oportunidades
-            de prácticas y pasantías a estudiantes y jóvenes profesionales para
-            que adquieran experiencia práctica y desarrollen habilidades
-            relevantes en su campo de estudio. Nuestras oportunidades de
-            prácticas y pasantías ofrecen un entorno de aprendizaje enriquecedor
-            y apoyo para el crecimiento profesional.
+          <p className="text-center tracking-wide mt-3 max-w-2xl">
+            Optimiza tu negocio con nuestra consultoría de TI. Diseñamos
+            estrategias tecnológicas, optimizamos infraestructuras, gestionamos
+            proyectos, fortalecemos la seguridad de la información y facilitamos
+            la transformación digital. Confía en nuestros expertos para impulsar
+            tu crecimiento y maximizar el potencial de la tecnología en tu
+            empresa.
           </p>
         </div>
+      </section>
+      {/* Content */}
+      <section className="mx-auto max-w-7xl px-4 py-16 space-y-20 sm:px-6 md:py-28 lg:px-8">
+        {/*  */}
+        <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+          <div className="md:order-2">
+            <Image
+              className="rounded-xl h-full w-full"
+              width={1260}
+              height={750}
+              src="https://images.pexels.com/photos/8439682/pexels-photo-8439682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image Description"
+            />
+          </div>
 
-        <div className="relative ml-4">
-          <Image
-            className="w-full rounded-md"
-            src="https://images.pexels.com/photos/8199622/pexels-photo-8199622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            width={1260}
-            height={750}
-            alt="Image Description"
-          />
-          <div className="absolute inset-0 -z-[1] -mb-4 -ml-4 mr-4 mt-4 h-full w-full rounded-md bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 lg:-mb-6 lg:-ml-6 lg:mr-6 lg:mt-6"></div>
+          <div className="mt-5 sm:mt-10 md:order-1 lg:mt-0">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-2 md:space-y-4">
+                <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
+                  Consultoría de TI personalizada para el crecimiento
+                  empresarial
+                </h2>
+                <p className="text-gray-500">
+                  En Grupo Asica, ofrecemos servicios de consultoría de TI
+                  diseñados para ayudar a las empresas a optimizar sus
+                  operaciones, mejorar su eficiencia y aprovechar al máximo la
+                  tecnología. Nuestro equipo de consultores expertos en
+                  tecnología trabaja de la mano con nuestros clientes para
+                  comprender sus desafíos y ofrecer soluciones personalizadas
+                  que impulsen su crecimiento y éxito.
+                </p>
+                <p className="text-gray-500">
+                  Nuestro equipo de consultores de TI altamente capacitados y
+                  con amplia experiencia se dedica a comprender las necesidades
+                  únicas de su empresa y a desarrollar soluciones personalizadas
+                  que impulsen la eficiencia, la productividad y el crecimiento.
+                  Ya sea que necesite optimizar sus sistemas actuales,
+                  implementar nuevas tecnologías o diseñar una estrategia de
+                  transformación digital, estamos aquí para guiarlo en cada paso
+                  del camino.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/*  */}
-      <div>
-        <h2 className="text-2xl font-bold text-gray-800 mb-10 md:text-3xl">
-          ¿Qué obtendrás con nosotros?
-        </h2>
+        {/*  */}
         <div className="grid gap-6 md:grid-cols-2 lg:gap-12">
           <div className="space-y-6 lg:space-y-10">
             <div className="flex">
@@ -62,14 +90,14 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Experiencia Real en el Campo
+                  Estrategia y Planificación Tecnológica
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Nuestras prácticas y pasantías te permitirán aplicar los
-                  conocimientos teóricos adquiridos en tu carrera en un entorno
-                  profesional. Trabajarás en proyectos reales, colaborarás con
-                  profesionales experimentados y aprenderás de primera mano cómo
-                  se aplica la teoría en la práctica.
+                  Analizamos las necesidades y objetivos de tu empresa para
+                  desarrollar una estrategia tecnológica sólida y un plan de
+                  implementación eficiente. Te ayudamos a alinear la tecnología
+                  con tus metas empresariales y a identificar las mejores
+                  oportunidades para impulsar la innovación.
                 </p>
               </div>
             </div>
@@ -95,15 +123,15 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Desarrollo de Habilidades Profesionales
+                  Optimización de Infraestructura
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Durante tu tiempo con nosotros, tendrás la oportunidad de
-                  desarrollar habilidades clave para tu futura carrera. Desde
-                  habilidades de comunicación y trabajo en equipo hasta
-                  liderazgo y resolución de problemas, nuestras oportunidades de
-                  prácticas y pasantías te brindarán una base sólida para tu
-                  desarrollo profesional.
+                  Evaluamos tu infraestructura tecnológica existente y
+                  realizamos recomendaciones para optimizarla en términos de
+                  rendimiento, seguridad y costo. Nos aseguramos de que tu
+                  infraestructura esté adecuadamente dimensionada y actualizada
+                  para satisfacer las necesidades actuales y futuras de tu
+                  negocio.
                 </p>
               </div>
             </div>
@@ -129,15 +157,15 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Mentoría y Orientación
+                  Gestión de Proyectos de TI
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Nuestro equipo de profesionales estará a tu disposición para
-                  brindarte orientación y mentoría durante tu tiempo con
-                  nosotros. Te ayudaremos a establecer metas profesionales,
-                  ofreceremos retroalimentación constructiva y compartiremos
-                  consejos y conocimientos para ayudarte a crecer y prosperar en
-                  tu trayectoria profesional.
+                  Nuestros consultores te brindan soporte en la gestión de
+                  proyectos de TI, desde la planificación inicial hasta la
+                  implementación y seguimiento posterior. Aplicamos las mejores
+                  prácticas en gestión de proyectos para asegurar que tus
+                  iniciativas tecnológicas se entreguen a tiempo y dentro del
+                  presupuesto.
                 </p>
               </div>
             </div>
@@ -165,17 +193,15 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Aprendizaje Continuo
+                  Seguridad de la Información
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  En Grupo Asica, fomentamos el aprendizaje continuo y el
-                  crecimiento personal. Durante tu programa de prácticas y
-                  pasantías, tendrás acceso a recursos de aprendizaje
-                  adicionales, como capacitaciones internas, talleres y
-                  seminarios, que te permitirán ampliar tus conocimientos y
-                  habilidades en tu campo de interés. Estamos comprometidos a
-                  brindarte una experiencia enriquecedora que impulse tu
-                  desarrollo profesional a largo plazo.
+                  Te ayudamos a proteger tus activos más valiosos a través de
+                  soluciones de seguridad de la información robustas. Realizamos
+                  evaluaciones de riesgos, implementamos políticas y
+                  procedimientos de seguridad, y proporcionamos soluciones de
+                  vanguardia para salvaguardar tus datos y sistemas contra
+                  amenazas internas y externas.
                 </p>
               </div>
             </div>
@@ -201,15 +227,15 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Exposición a Diversas Áreas Profesionales
+                  Transformación Digital
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Como practicante o pasante en Grupo Asica, tendrás la
-                  oportunidad de explorar diferentes áreas y departamentos de
-                  nuestra organización. Esto te brindará una perspectiva más
-                  amplia de la industria y te permitirá descubrir tus fortalezas
-                  e intereses específicos, lo que puede ayudarte a tomar
-                  decisiones más informadas sobre tu futuro profesional.
+                  Guiamos a las empresas en su viaje de transformación digital,
+                  identificando oportunidades para adoptar tecnologías
+                  emergentes que impulsen la eficiencia, la productividad y la
+                  innovación. Te asesoramos en la implementación de soluciones
+                  como la inteligencia artificial, el aprendizaje automático, la
+                  nube y la analítica de datos.
                 </p>
               </div>
             </div>
@@ -235,54 +261,28 @@ export default function Estudiante() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Red de Contactos Profesionales
+                  Soporte y Mantenimiento
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Durante tu experiencia con Grupo Asica, tendrás la oportunidad
-                  de establecer contactos con profesionales en tu campo de
-                  interés. Estas conexiones pueden ser invaluables para tu
-                  futura carrera, ya sea para obtener recomendaciones,
-                  oportunidades de empleo o simplemente para ampliar tu red
-                  profesional.
+                  Brindamos servicios de soporte técnico continuo y
+                  mantenimiento de tus sistemas para garantizar un
+                  funcionamiento sin problemas. Nuestro equipo está disponible
+                  para resolver problemas, realizar actualizaciones, aplicar
+                  parches de seguridad y brindar asistencia técnica cuando más
+                  lo necesites.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/*  */}
-      <div
-        className="grid gap-12 md:grid-cols-2"
-        id="formulario"
-      >
-        <div>
-          <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">
-            Únete a nuestro equipo
-          </h1>
-          <p className="mt-4 text-gray-800 tracking-wide md:text-lg">
-            En Grupo Asica, estamos comprometidos con tu desarrollo profesional
-            y queremos brindarte las mejores oportunidades para que adquieras
-            experiencia práctica y te prepares para tu carrera.
-          </p>
-        </div>
-
-        <div className="relative">
-          <div className="flex flex-col rounded-xl border p-4 sm:p-6 lg:p-10">
-            <h2 className="text-xl font-semibold text-gray-800 mb-3">
-              Rellene el formulario
-            </h2>
-
-            <FormStudent />
-
-            <div className="mt-3 text-center">
-              <p className="text-sm text-gray-500">
-                Le responderemos en 1-2 días laborables.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        {/*  */}
+        <BannerContacto
+          description="para conocer cómo nuestra consultoría de TI puede ayudarlo a
+              alcanzar sus objetivos empresariales!."
+          href="/servicios/formulario"
+        />
+      </section>
+    </>
   );
 }

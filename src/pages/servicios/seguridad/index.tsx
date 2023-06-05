@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ImgSeguridadInformacion from '@/public/images/software/seguridad-informacion/seguridad-informacion.webp';
 import ImgWhiteHat from '@/public/images/software/seguridad-informacion/white-hat.webp';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Seguridad() {
   return (
@@ -120,6 +121,9 @@ export default function Seguridad() {
             className="w-full h-fit object-cover rounded md:w-1/3 md:hidden lg:block"
           />
         </section>
+
+        {/*  */}
+        <BannerContacto href="/servicios/formulario" />
       </div>
     </>
   );

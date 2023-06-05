@@ -96,7 +96,7 @@ export default function Partners() {
                 key={title}
                 href={href}
               >
-                <div className="rounded-lg bg-gray-100 p-4 md:p-7 border-[1px] shadow-sm transition-all hover:shadow-lg">
+                <div className="rounded-lg bg-gray-100 p-4 md:p-7 border shadow-sm transition-all hover:shadow-lg hover:border-blue-300">
                   <Image
                     src={img}
                     alt={alt}

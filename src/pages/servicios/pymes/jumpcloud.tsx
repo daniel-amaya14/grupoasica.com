@@ -6,6 +6,7 @@ import ImgPlatform from '@/public/images/software/jumpcloud/platform.png';
 import ImgIdentity from '@/public/images/software/jumpcloud/identity.png';
 import ImgDevices from '@/public/images/software/jumpcloud/devices.png';
 import ImgAccess from '@/public/images/software/jumpcloud/access.png';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function jumpcloud() {
   return (
@@ -394,6 +395,9 @@ export default function jumpcloud() {
             className="w-full md:w-1/2 h-fit object-cover shadow rounded"
           />
         </section>
+
+        {/*  */}
+        <BannerContacto href="/servicios/formulario" />
       </div>
     </>
   );

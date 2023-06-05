@@ -1,18 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ImgPrueba from '@/public/images/empresa.webp';
+import ImgBugBountryHuntre from '@/public/images/cursos/bug-bounty-hunter.svg';
+import ImgPenetrationTestingSpecialist from '@/public/images/cursos/penetration-testing-specialist.png';
 
 const itemsCertificados = [
   {
     title: 'Certificado de Bug Bounty Hunter',
     description: '',
-    href: '/cursos/bug-bounty-hunter',
+    image: ImgBugBountryHuntre,
+    href: '/cursos',
   },
   {
     title: 'Certificado de Penetration Testing Specialist',
     description: '',
-    href: '/cursos/penetration-testing-specialist',
+    image: ImgPenetrationTestingSpecialist,
+    href: '/cursos',
   },
 ];
 
@@ -21,7 +24,7 @@ export default function Certificado() {
     <section className="max-w-7xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
       <h2 className="text-4xl font-bold leading-tight mb-6">Certifícate</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {itemsCertificados.map(({ title, href }) => {
+        {itemsCertificados.map(({ title, image, href }) => {
           return (
             <Link
               href={href}
@@ -33,8 +36,8 @@ export default function Certificado() {
                 key={title}
               >
                 <Image
-                  className="w-full h-64 rounded-t-lg object-cover lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg"
-                  src={ImgPrueba}
+                  className="w-full h-64 bg-gray-100 rounded-t-lg object-cover lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg"
+                  src={image}
                   alt=""
                 />
                 <div className="flex flex-col justify-start p-6">

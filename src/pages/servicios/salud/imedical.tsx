@@ -4,6 +4,7 @@ import ImgImedical from '@/public/images/software/imedical/imedical.png';
 import ImgImedicalCloud from '@/public/images/software/imedical/imedical-cloud.png';
 import ImgImedicalAnalytics from '@/public/images/software/imedical/imedical-analytics.png';
 import ImgImdecialMipres from '@/public/images/software/imedical/imedical-mipres.png';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Imedical() {
   return (
@@ -1929,6 +1930,11 @@ export default function Imedical() {
             </p>
           </div>
         </section>
+
+        {/*  */}
+        <div className="py-10">
+          <BannerContacto href="/servicios/formulario" />
+        </div>
       </div>
     </>
   );

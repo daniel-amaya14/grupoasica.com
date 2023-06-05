@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ImgProductList from '@/public/images/software/freebalance/product-library-freebalance.webp';
 import Tab from '@/components/TabFreebalance';
+import BannerContacto from '@/components/BannerContacto';
 
 export default function Freebalance() {
   return (
@@ -46,7 +47,7 @@ export default function Freebalance() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-8 h-8 dark:text-violet-400"
+                    className="w-8 h-8"
                   >
                     <path
                       fillRule="evenodd"
@@ -61,7 +62,7 @@ export default function Freebalance() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-8 h-8 dark:text-violet-400"
+                    className="w-8 h-8"
                   >
                     <path
                       fillRule="evenodd"
@@ -76,7 +77,7 @@ export default function Freebalance() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-8 h-8 dark:text-violet-400"
+                    className="w-8 h-8"
                   >
                     <path
                       fillRule="evenodd"
@@ -98,6 +99,9 @@ export default function Freebalance() {
         </section>
 
         <Tab />
+
+        {/*  */}
+        <BannerContacto href="/servicios/formulario" />
       </div>
     </>
   );

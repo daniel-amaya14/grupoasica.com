@@ -6,7 +6,7 @@ const initialValues = {
   userName: '',
   userEmail: '',
   userPhone: '',
-  userCompany: '',
+  userCourse: '',
   userMessage: '',
 };
 
@@ -34,17 +34,12 @@ const validationSchema = Yup.object().shape({
     )
     .required('El campo es requerido'),
 
-  userCompany: Yup.string()
-    .matches(
-      /^[a-zA-ZÀ-ÿ\s]+$/,
-      'El nombre solo puede contener letras y espacios'
-    )
-    .required('El campo es requerido'),
+  userCourse: Yup.string().required('El campo es requerido'),
 
   userMessage: Yup.string().required('El campo es requerido'),
 });
 
-export default function FormServices() {
+export default function FormCursos() {
   return (
     <Formik
       initialValues={initialValues}
@@ -264,27 +259,44 @@ export default function FormServices() {
 
             <div>
               <label
-                htmlFor="userCompany"
+                htmlFor="userCourse"
                 className="sr-only"
               >
                 Empresa/Institución
               </label>
               <div className="relative">
                 <Field
-                  type="text"
-                  name="userCompany"
-                  id="userCompany"
+                  as="select"
+                  name="userCourse"
+                  id="userCourse"
                   className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
-                    errors.userCompany && touched.userCompany
+                    errors.userCourse && touched.userCourse
                       ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-                      : !errors.userCompany && touched.userCompany
+                      : !errors.userCourse && touched.userCourse
                       ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
                       : ''
                   }`}
                   placeholder="Empresa/Institución"
-                />
+                >
+                  <option
+                    hidden
+                    label="Seleccione el tipo de servicio que desea..."
+                  ></option>
+                  <option value="Diplomado en Gestión">
+                    Diplomado en Gestión
+                  </option>
+                  <option value="Certificado de Microsoft Office">
+                    Certificado de Microsoft Office
+                  </option>
+                  <option value="Certificado de Bug Bounty Hunting">
+                    Certificado de Bug Bounty Hunting
+                  </option>
+                  <option value="Certificado de Penetration Testing Specialist">
+                    Certificado de Penetration Testing Specialist
+                  </option>
+                </Field>
                 <ErrorMessage
-                  name="userCompany"
+                  name="userCourse"
                   component={() => (
                     <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
                       <div className="hs-tooltip inline-block">
@@ -304,13 +316,13 @@ export default function FormServices() {
                           className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
                           role="tooltip"
                         >
-                          {errors.userCompany}
+                          {errors.userCourse}
                         </div>
                       </div>
                     </div>
                   )}
                 />
-                {!errors.userCompany && touched.userCompany ? (
+                {!errors.userCourse && touched.userCourse ? (
                   <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
                     <svg
                       className="h-5 w-5 text-green-500"
