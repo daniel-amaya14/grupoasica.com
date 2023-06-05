@@ -78,7 +78,7 @@ export default function Hola() {
         <div className="flex flex-col md:flex-row">
           <div className="border-b border-gray-200 md:border-0 md:border-r">
             <ul
-              className="flex space-x-2 md:flex-col md:space-x-0 md:space-y-2"
+              className="flex space-x-2 overflow-auto overscroll-y-auto md:flex-col md:space-x-0 md:space-y-2 md:overscroll-none"
               aria-label="Tabs"
               role="tablist"
               data-hs-tabs-vertical="true"
