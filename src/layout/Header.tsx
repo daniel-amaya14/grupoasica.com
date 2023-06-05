@@ -145,8 +145,8 @@ export default function Navbar() {
 
                 {/* servicios */}
                 <div className="group hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-4">
-                  <Link
-                    href="/servicios"
+                  <button
+                    type="button"
                     className="flex items-center w-full text-gray-800 group-hover:text-gray-400 font-medium"
                   >
                     Servicios
@@ -165,7 +165,7 @@ export default function Navbar() {
                         strokeLinecap="round"
                       ></path>
                     </svg>
-                  </Link>
+                  </button>
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-white md:shadow-2xl rounded-xl before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
                     <div className="md:grid md:grid-cols-2 lg:grid-cols-10">
