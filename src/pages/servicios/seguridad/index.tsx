@@ -100,7 +100,7 @@ export default function Seguridad() {
           </div>
         </section>
 
-        <section className="flex felx-col gap-10 md:flex-row">
+        <section className="flex flex-col gap-10 md:flex-row">
           <div>
             <h3 className="font-semibold text-2xl text-justify leading-normal mb-2 md:mb-4 md:text-3xl md:text-left">
               White-Hat como servicio
