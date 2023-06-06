@@ -7,6 +7,7 @@ const initialValues = {
   userEmail: '',
   userPhone: '',
   userCompany: '',
+  userCompanyPosition: '',
   userMessage: '',
 };
 
@@ -16,7 +17,7 @@ const validationSchema = Yup.object().shape({
       /^[a-zA-ZÀ-ÿ\s]+$/,
       'El nombre solo puede contener letras y espacios'
     )
-    .max(40, 'El nombre es demasiado largo')
+    .max(60, 'El nombre es demasiado largo')
     .required('El campo es requerido'),
 
   userEmail: Yup.string()
@@ -35,6 +36,13 @@ const validationSchema = Yup.object().shape({
     .required('El campo es requerido'),
 
   userCompany: Yup.string()
+    .matches(
+      /^[a-zA-ZÀ-ÿ\s]+$/,
+      'El nombre solo puede contener letras y espacios'
+    )
+    .required('El campo es requerido'),
+
+  userCompanyPosition: Yup.string()
     .matches(
       /^[a-zA-ZÀ-ÿ\s]+$/,
       'El nombre solo puede contener letras y espacios'
@@ -69,7 +77,7 @@ export default function FormServices() {
                 htmlFor="userName"
                 className="sr-only"
               >
-                Nombre
+                Nombre completo
               </label>
               <div className="relative">
                 <Field
@@ -83,7 +91,7 @@ export default function FormServices() {
                       ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
                       : ''
                   }`}
-                  placeholder="Nombre"
+                  placeholder="Nombre completo"
                 />
                 <ErrorMessage
                   name="userName"
@@ -311,6 +319,72 @@ export default function FormServices() {
                   )}
                 />
                 {!errors.userCompany && touched.userCompany ? (
+                  <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="userCompanyPosition"
+                className="sr-only"
+              >
+                Puesto
+              </label>
+              <div className="relative">
+                <Field
+                  type="text"
+                  name="userCompanyPosition"
+                  id="userCompanyPosition"
+                  className={`py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 ${
+                    errors.userCompanyPosition && touched.userCompanyPosition
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
+                      : !errors.userCompanyPosition &&
+                        touched.userCompanyPosition
+                      ? 'border-green-500 focus:border-green-500 focus:ring-green-500'
+                      : ''
+                  }`}
+                  placeholder="Puesto"
+                />
+                <ErrorMessage
+                  name="userCompanyPosition"
+                  component={() => (
+                    <div className="absolute inset-y-0 right-0 flex items-center select-none pr-3">
+                      <div className="hs-tooltip inline-block">
+                        <button className="hs-tooltip-toggle block text-center pointer-events-none">
+                          <svg
+                            className="h-5 w-5 text-red-500"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                          </svg>
+                        </button>
+                        <div
+                          className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md"
+                          role="tooltip"
+                        >
+                          {errors.userCompanyPosition}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                />
+                {!errors.userCompanyPosition && touched.userCompanyPosition ? (
                   <div className="absolute inset-y-0 right-0 flex items-center pointer-events-none pr-3">
                     <svg
                       className="h-5 w-5 text-green-500"
