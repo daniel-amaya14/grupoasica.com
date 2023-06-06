@@ -1,20 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import ImgArprotecsa from '@/public/images/software/arpotecsa/arprotecsa.png';
-import ImgAdmon from '@/public/images/software/arpotecsa/administracion-documental.jpg';
+import ImgArprotecsa from '@/public/images/software/aprotecsa/aprotecsa.png';
+import ImgAdmon from '@/public/images/software/aprotecsa/administracion-documental.jpg';
 import BannerContacto from '@/components/BannerContacto';
 
-export default function Arprotecsa() {
+export default function Aprotecsa() {
   return (
     <>
       {/* Hero */}
       <section className="bg-gray-100 py-8 px-6 md:py-12 md:px-20">
         <div className="container mx-auto flex flex-col items-center">
           <h1 className="font-bold text-3xl leading-normal md:text-4xl text-center">
-            Arprotecsa
+            APROTECSA
           </h1>
           <p className="text-center mt-3 max-w-2xl">
-            Arprotecsa esta diseñada para ayudar y acompañar a las empresas en
+            APROTECSA, esta diseñada para ayudar y acompañar a las empresas en
             la optimización y automatización de sus procesos de consulta de la
             memoria institucional. Con las soluciones que ofrecen, podrán lograr
             una mayor rapidez y eficiencia en estos procesos, lo que les

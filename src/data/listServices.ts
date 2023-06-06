@@ -29,7 +29,7 @@ export const SOLUCIONES = Object.freeze({
   digitalizar: {
     title: 'Digitalizar',
     description: 'Recupera y sanear documentos de manera digital.',
-    href: '/arprotecsa',
+    href: '/aprotecsa',
   },
 
   automatizacion: {

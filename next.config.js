@@ -37,8 +37,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/arprotecsa',
-        destination: '/servicios/gobierno/arprotecsa',
+        source: '/aprotecsa',
+        destination: '/servicios/gobierno/aprotecsa',
         permanent: true,
       },
       {
