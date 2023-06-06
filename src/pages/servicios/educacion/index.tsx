@@ -9,11 +9,14 @@ export default function Estudiante() {
       <div className="grid gap-4 md:grid-cols-2 md:items-center md:gap-8 xl:gap-20">
         <div>
           <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">
-            Impulasa tu{' '}
+            Impulsa tu{' '}
             <span className="text-blue-600">Carrera Profesional</span>
           </h1>
-          <p className="mt-3 text-lg text-gray-800 tracking-wide">
-            En Grupo Asica, creemos en la importancia de brindar oportunidades
+          <p
+            className="mt-3 text-lg text-gray-800 tracking-wide"
+            style={{ textWrap: 'balance' }}
+          >
+            En Grupo ASICA, creemos en la importancia de brindar oportunidades
             de prácticas y pasantías a estudiantes y jóvenes profesionales para
             que adquieran experiencia práctica y desarrollen habilidades
             relevantes en su campo de estudio. Nuestras oportunidades de
@@ -168,7 +171,7 @@ export default function Estudiante() {
                   Aprendizaje Continuo
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  En Grupo Asica, fomentamos el aprendizaje continuo y el
+                  En Grupo ASICA, fomentamos el aprendizaje continuo y el
                   crecimiento personal. Durante tu programa de prácticas y
                   pasantías, tendrás acceso a recursos de aprendizaje
                   adicionales, como capacitaciones internas, talleres y
@@ -204,7 +207,7 @@ export default function Estudiante() {
                   Exposición a Diversas Áreas Profesionales
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Como practicante o pasante en Grupo Asica, tendrás la
+                  Como practicante o pasante en Grupo ASICA, tendrás la
                   oportunidad de explorar diferentes áreas y departamentos de
                   nuestra organización. Esto te brindará una perspectiva más
                   amplia de la industria y te permitirá descubrir tus fortalezas
@@ -238,7 +241,7 @@ export default function Estudiante() {
                   Red de Contactos Profesionales
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Durante tu experiencia con Grupo Asica, tendrás la oportunidad
+                  Durante tu experiencia con Grupo ASICA, tendrás la oportunidad
                   de establecer contactos con profesionales en tu campo de
                   interés. Estas conexiones pueden ser invaluables para tu
                   futura carrera, ya sea para obtener recomendaciones,
@@ -261,7 +264,7 @@ export default function Estudiante() {
             Únete a nuestro equipo
           </h1>
           <p className="mt-4 text-gray-800 tracking-wide md:text-lg">
-            En Grupo Asica, estamos comprometidos con tu desarrollo profesional
+            En Grupo ASICA, estamos comprometidos con tu desarrollo profesional
             y queremos brindarte las mejores oportunidades para que adquieras
             experiencia práctica y te prepares para tu carrera.
           </p>

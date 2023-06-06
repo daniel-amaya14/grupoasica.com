@@ -387,7 +387,7 @@ export default function Entrenamientos() {
                   Experiencia y Conocimiento Aplicados
                 </h2>
                 <p className="text-gray-500">
-                  Elige Grupo Asica para tus necesidades de entrenamiento y
+                  Elige Grupo ASICA para tus necesidades de entrenamiento y
                   obtendrás beneficios significativos. Nuestra amplia
                   experiencia en diversas áreas garantiza conocimiento
                   especializado y actualizado. Nuestros entrenadores, expertos

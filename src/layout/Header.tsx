@@ -484,7 +484,7 @@ export default function Navbar() {
                             </div>
                             <div className="mt-2">
                               <p className="text-gray-800">
-                                En Grupo Asica, nuestra misión es innovar y
+                                En Grupo ASICA, nuestra misión es innovar y
                                 ofrecer soluciones tecnológicas y consultoría
                                 empresarial eficientes.
                               </p>

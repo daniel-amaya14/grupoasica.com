@@ -1602,7 +1602,7 @@ export default function Cursos() {
                 Solicitar
               </h1>
               <p className="mt-4 text-gray-800 tracking-wide md:text-lg">
-                En Grupo Asica, estamos comprometidos con tu desarrollo
+                En Grupo ASICA, estamos comprometidos con tu desarrollo
                 profesional y queremos brindarte las mejores oportunidades para
                 que adquieras experiencia práctica y te prepares para tu
                 carrera.

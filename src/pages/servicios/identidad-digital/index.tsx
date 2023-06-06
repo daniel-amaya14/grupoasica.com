@@ -41,7 +41,7 @@ export default function IdentidadDigital() {
                   </h2>
                   <p className="text-gray-500 tracking-wide">
                     En el entorno empresarial actual, la identidad digital es
-                    esencial para el éxito de cualquier empresa. En Grupo Asica,
+                    esencial para el éxito de cualquier empresa. En Grupo ASICA,
                     entendemos la importancia de tener una presencia en línea
                     sólida y coherente que refleje la esencia de su negocio y
                     conecte con su audiencia. Nuestra experiencia en identidad

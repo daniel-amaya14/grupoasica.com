@@ -41,7 +41,7 @@ export default function Riesgos() {
                     Empresariales
                   </h2>
                   <p className="text-gray-500 tracking-wide">
-                    En Grupo Asica, entendemos que la gestión de riesgos
+                    En Grupo ASICA, entendemos que la gestión de riesgos
                     efectiva es fundamental para el éxito y la sostenibilidad de
                     cualquier empresa. Con SAS Riesgos, ofrecemos soluciones
                     avanzadas que le permitirán identificar, evaluar y mitigar

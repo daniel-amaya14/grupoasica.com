@@ -41,7 +41,7 @@ export default function Niif9() {
                     Normas Internacionales
                   </h2>
                   <p className="text-gray-500 tracking-wide">
-                    En Grupo Asica, comprendemos la importancia de una gestión
+                    En Grupo ASICA, comprendemos la importancia de una gestión
                     financiera precisa y cumplimiento normativo. Con SAS NIIF9,
                     ofrecemos soluciones avanzadas que le permiten cumplir con
                     las Normas Internacionales de Información Financiera (NIIF)

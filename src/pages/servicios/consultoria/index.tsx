@@ -43,7 +43,7 @@ export default function Consultoria() {
                   empresarial
                 </h2>
                 <p className="text-gray-500">
-                  En Grupo Asica, ofrecemos servicios de consultoría de TI
+                  En Grupo ASICA, ofrecemos servicios de consultoría de TI
                   diseñados para ayudar a las empresas a optimizar sus
                   operaciones, mejorar su eficiencia y aprovechar al máximo la
                   tecnología. Nuestro equipo de consultores expertos en
