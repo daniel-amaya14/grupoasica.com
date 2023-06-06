@@ -27,8 +27,8 @@ export const SERVICIOS = Object.freeze({
 
 export const SOLUCIONES = Object.freeze({
   digitalizar: {
-    title: 'Digitalizar',
-    description: 'Recupera y sanear documentos de manera digital.',
+    title: 'Digitalización',
+    description: 'Estandariza el proceso de gestión de documentos.',
     href: '/aprotecsa',
   },
 
