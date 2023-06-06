@@ -271,11 +271,7 @@ export default function IdentidadDigital() {
           </div>
 
           {/*  */}
-          <BannerContacto
-            description="y descubre cómo nuestra identidad digital puede impulsar tu
-                presencia en línea."
-            href="/servicios/formulario"
-          />
+          <BannerContacto href="/servicios/formulario" />
         </div>
       </div>
     </>

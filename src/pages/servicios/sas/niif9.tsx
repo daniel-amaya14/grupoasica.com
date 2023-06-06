@@ -202,10 +202,7 @@ export default function Niif9() {
           </div>
 
           {/*  */}
-          <BannerContacto
-            description="y descubra cómo SAS NIIF9 puede mejorar la gestión financiera de su empresa, en conformidad con normas internacionales."
-            href="/servicios/formulario"
-          />
+          <BannerContacto href="/servicios/formulario" />
         </div>
       </div>
     </>

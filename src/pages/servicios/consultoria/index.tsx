@@ -277,11 +277,7 @@ export default function Consultoria() {
         </div>
 
         {/*  */}
-        <BannerContacto
-          description="para conocer cómo nuestra consultoría de TI puede ayudarlo a
-              alcanzar sus objetivos empresariales!."
-          href="/servicios/formulario"
-        />
+        <BannerContacto href="/servicios/formulario" />
       </section>
     </>
   );

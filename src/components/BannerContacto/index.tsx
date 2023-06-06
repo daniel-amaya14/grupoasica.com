@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function BannerContacto({
-  description,
   href = '/contacto',
 }: {
   description?: string;
@@ -12,11 +11,11 @@ export default function BannerContacto({
     <div className="max-w-xl text-center mx-auto">
       <div className="space-y-2">
         <h2 className="text-2xl font-bold md:text-3xl md:leading-tight">
-          Contactanos hoy mismo
+          Contactanos
         </h2>
-        <p className="text-gray-600 tracking-wide max-w-lg mx-auto">
-          {'para obtener más información sobre nuestros servicios y cómo podemos ayudarte en tu negocio.' ??
-            description}
+        <p className="text-gray-600 tracking-wide max-w-md mx-auto">
+          Para obtener más información, da clic en el botón de abajo, y llena la
+          información solicitada.
         </p>
       </div>
       <div className="max-w-xs mx-auto mt-5">

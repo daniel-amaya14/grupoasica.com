@@ -205,10 +205,7 @@ export default function Riesgos() {
           </div>
 
           {/*  */}
-          <BannerContacto
-            description="y descubra cómo SAS Riesgos puede fortalecer su capacidad para gestionar riesgos empresariales de manera eficiente."
-            href="/servicios/formulario"
-          />
+          <BannerContacto href="/servicios/formulario" />
         </div>
       </div>
     </>
