@@ -69,7 +69,7 @@ export default function Huntress() {
                   <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 1
                   </span>
-                  <h5 className="text-xl font-semibold">Detectar</h5>
+                  <h5 className="text-xl font-semibold">Detección</h5>
                 </div>
               </div>
               <p className="text-justify">
@@ -102,11 +102,11 @@ export default function Huntress() {
                   <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 2
                   </span>
-                  <h5 className="text-xl font-semibold">Analice</h5>
+                  <h5 className="text-xl font-semibold">Análisis</h5>
                 </div>
               </div>
               <p className="text-justify">
-                Nuestros cazadores de amenazas revisan las actividades
+                Nuestros equipo de amenazas (ThreatOps) revisan las actividades
                 sospechosas y le envían informes de incidentes fáciles de
                 entender que explican el alcance y la gravedad de una amenaza.
               </p>
@@ -128,14 +128,13 @@ export default function Huntress() {
                   <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 3
                   </span>
-                  <h5 className="text-xl font-semibold">Responder</h5>
+                  <h5 className="text-xl font-semibold">Respuesta</h5>
                 </div>
               </div>
               <p className="text-justify">
-                Aísle los puntos finales, repare las amenazas y eche a los
-                atacantes a la calle, con aprobación de un solo clic para las
-                acciones automatizadas e instrucciones claras para las tareas
-                manuales.
+                Automáticamente se ejecutan en los puntos finales la reparación
+                de amenazas, echando a los atacantes. Todo esto con el poder y
+                alcance de un clic.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
@@ -162,13 +161,12 @@ export default function Huntress() {
                   <span className="text-xs tracking-wider uppercase text-primary">
                     Paso 4
                   </span>
-                  <h5 className="text-xl font-semibold">Informe</h5>
+                  <h5 className="text-xl font-semibold">Reportes</h5>
                 </div>
               </div>
               <p className="text-justify">
-                Informe Con resúmenes detallados e informes personalizables,
-                puede medir con precisión (y articular) el valor que está
-                obteniendo de Huntress.
+                Reciba informes detallados y personalizables para que pueda
+                medir a detalle la precisión de Huntress.
               </p>
             </div>
           </div>
@@ -211,7 +209,7 @@ export default function Huntress() {
               </div>
               <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                 <span className="text-xl font-bold md:text-2xl">
-                  Puntos de apoyo persistentes
+                  Puntos de Apoyo Persistentes
                 </span>
                 <span className="mt-4 text-justify">
                   Elimine a los atacantes que se esconden a plena vista en
@@ -286,7 +284,7 @@ export default function Huntress() {
               </div>
               <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                 <span className="text-xl font-bold md:text-2xl">
-                  Canarios de ransomware
+                  Canarios de Ransomware
                 </span>
                 <span className="mt-4 text-justify">
                   Permiten detectar antes posibles incidentes de ransomware.
@@ -321,7 +319,7 @@ export default function Huntress() {
               </div>
               <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                 <span className="text-xl font-bold md:text-2xl">
-                  Antivirus administrado
+                  Antivirus Administrado
                 </span>
                 <span className="mt-4 text-justify">
                   Aproveche al máximo su protección de primera línea con
@@ -374,7 +372,7 @@ export default function Huntress() {
               </div>
               <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                 <span className="text-xl font-bold md:text-2xl">
-                  Reconocimiento externo
+                  Reconocimiento Externo
                 </span>
                 <span className="mt-4 text-justify">
                   Resalte las vulnerabilidades externas para reforzar las
@@ -491,7 +489,7 @@ export default function Huntress() {
               </div>
               <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                 <span className="text-xl font-bold md:text-2xl">
-                  Perspectivas del proceso
+                  Reconocimiento de Procesos
                 </span>
                 <span className="mt-4 text-justify">
                   Desaloje a los piratas informáticos más rápidamente con
@@ -583,7 +581,7 @@ export default function Huntress() {
           <div className="grid gap-10 md:gap-8 md:grid-cols-2 mt-3">
             <div>
               <h3 className="font-semibold text-primary">
-                Despliegue su Red de seguridad
+                Despliegue su red de seguridad
               </h3>
               <p className="mt-1 text-justify">
                 Huntress protege a su empresa durante todo el ciclo de vida de
@@ -593,7 +591,7 @@ export default function Huntress() {
             </div>
             <div>
               <h3 className="font-semibold text-primary">
-                Añada ThreatOps a su arsenal
+                Añada threatops a su arsenal
               </h3>
               <p className="mt-1 text-justify">
                 Nuestros expertos en seguridad se encargan del trabajo pesado
