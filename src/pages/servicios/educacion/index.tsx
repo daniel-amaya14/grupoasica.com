@@ -12,10 +12,7 @@ export default function Estudiante() {
             Impulsa tu{' '}
             <span className="text-blue-600">Carrera Profesional</span>
           </h1>
-          <p
-            className="mt-3 text-lg text-gray-800 tracking-wide"
-            style={{ textWrap: 'balance' }}
-          >
+          <p className="mt-3 text-lg text-gray-800 tracking-wide">
             En Grupo ASICA, creemos en la importancia de brindar oportunidades
             de prácticas y pasantías a estudiantes y jóvenes profesionales para
             que adquieran experiencia práctica y desarrollen habilidades
