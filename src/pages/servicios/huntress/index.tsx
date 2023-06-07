@@ -174,7 +174,7 @@ export default function Huntress() {
 
         <section>
           <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
-            Funciones Principales
+            Funciones principales
           </h2>
           <div className="grid divide-y-[1px] divide-gray-300 md:divide-y-0 md:grid-cols-2">
             {/*  */}

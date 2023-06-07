@@ -42,7 +42,7 @@ export default function Consultoria() {
                   Consultoría de TI personalizada para el crecimiento
                   empresarial
                 </h2>
-                <p className="text-gray-500">
+                <p>
                   En Grupo ASICA, ofrecemos servicios de consultoría de TI
                   diseñados para ayudar a las empresas a optimizar sus
                   operaciones, mejorar su eficiencia y aprovechar al máximo la
@@ -51,7 +51,7 @@ export default function Consultoria() {
                   comprender sus desafíos y ofrecer soluciones personalizadas
                   que impulsen su crecimiento y éxito.
                 </p>
-                <p className="text-gray-500">
+                <p>
                   Nuestro equipo de consultores de TI altamente capacitados y
                   con amplia experiencia se dedica a comprender las necesidades
                   únicas de su empresa y a desarrollar soluciones personalizadas
@@ -90,9 +90,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Estrategia y Planificación Tecnológica
+                  Estrategia y planificación tecnológica
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Analizamos las necesidades y objetivos de tu empresa para
                   desarrollar una estrategia tecnológica sólida y un plan de
                   implementación eficiente. Te ayudamos a alinear la tecnología
@@ -123,9 +123,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Optimización de Infraestructura
+                  Optimización de infraestructura
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Evaluamos tu infraestructura tecnológica existente y
                   realizamos recomendaciones para optimizarla en términos de
                   rendimiento, seguridad y costo. Nos aseguramos de que tu
@@ -157,9 +157,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Gestión de Proyectos de TI
+                  Gestión de proyectos de TI
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Nuestros consultores te brindan soporte en la gestión de
                   proyectos de TI, desde la planificación inicial hasta la
                   implementación y seguimiento posterior. Aplicamos las mejores
@@ -193,9 +193,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Seguridad de la Información
+                  Seguridad de la información
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Te ayudamos a proteger tus activos más valiosos a través de
                   soluciones de seguridad de la información robustas. Realizamos
                   evaluaciones de riesgos, implementamos políticas y
@@ -227,9 +227,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Transformación Digital
+                  Transformación digital
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Guiamos a las empresas en su viaje de transformación digital,
                   identificando oportunidades para adoptar tecnologías
                   emergentes que impulsen la eficiencia, la productividad y la
@@ -261,9 +261,9 @@ export default function Consultoria() {
               </svg>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                  Soporte y Mantenimiento
+                  Soporte y mantenimiento
                 </h3>
-                <p className="mt-1 text-gray-600">
+                <p className="mt-1">
                   Brindamos servicios de soporte técnico continuo y
                   mantenimiento de tus sistemas para garantizar un
                   funcionamiento sin problemas. Nuestro equipo está disponible

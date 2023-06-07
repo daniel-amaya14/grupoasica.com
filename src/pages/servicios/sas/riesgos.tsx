@@ -37,10 +37,10 @@ export default function Riesgos() {
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
                   <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
-                    Soluciones Avanzadas para la Gestión Integral de Riesgos
-                    Empresariales
+                    Soluciones avanzadas para la gestión integral de riesgos
+                    empresariales
                   </h2>
-                  <p className="text-gray-500 tracking-wide">
+                  <p className="tracking-wide">
                     En Grupo ASICA, entendemos que la gestión de riesgos
                     efectiva es fundamental para el éxito y la sostenibilidad de
                     cualquier empresa. Con SAS Riesgos, ofrecemos soluciones
@@ -84,9 +84,9 @@ export default function Riesgos() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Identificación y Evaluación de Riesgos
+                    Identificación y evaluación de riesgos
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Nuestros consultores expertos en riesgos trabajarán
                     estrechamente con su empresa para identificar y evaluar los
                     riesgos específicos que enfrenta. Utilizaremos metodologías
@@ -118,9 +118,9 @@ export default function Riesgos() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Diseño de Estrategias de Mitigación
+                    Diseño de estrategias de mitigación
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Desarrollaremos estrategias de mitigación personalizadas
                     para abordar los riesgos identificados. Estas estrategias
                     estarán diseñadas para minimizar la exposición a los riesgos
@@ -154,9 +154,9 @@ export default function Riesgos() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Implementación de SAS Riesgos
+                    Implementación de SAS riesgos
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Nuestros expertos en SAS Riesgos se encargarán de
                     implementar la plataforma en su empresa, adaptándola a sus
                     necesidades y objetivos específicos. Proporcionaremos
@@ -189,9 +189,9 @@ export default function Riesgos() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Monitoreo y Actualización Continua
+                    Monitoreo y actualización continua
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     La gestión de riesgos es un proceso continuo. Nuestro equipo
                     realizará un seguimiento constante de los riesgos,
                     utilizando indicadores clave de rendimiento y métricas

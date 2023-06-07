@@ -22,7 +22,7 @@ export default function Entrenamientos() {
             </h1>
           </div>
           <div className="mt-5 max-w-3xl">
-            <p className="text-lg text-gray-600">
+            <p className="text-lg">
               Grupo ASICA ha forjado el futuro tecnológico de Centroamérica con
               su programa de entrenamientos y practicas. Aprende a ser un gran
               profesional de la informática, con nuestros cursos y métodos de
@@ -100,9 +100,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
-                    Gobierno
-                  </span>
+                  <span className="text-sm sm:text-base">Gobierno</span>
                 </li>
 
                 <li className="flex space-x-3">
@@ -125,9 +123,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
-                    Corporación
-                  </span>
+                  <span className="text-sm sm:text-base">Corporación</span>
                 </li>
 
                 <li className="flex space-x-3">
@@ -150,9 +146,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
-                    Pymes
-                  </span>
+                  <span className="text-sm sm:text-base">Pymes</span>
                 </li>
 
                 <li className="flex space-x-3">
@@ -175,9 +169,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
-                    Salud
-                  </span>
+                  <span className="text-sm sm:text-base">Salud</span>
                 </li>
 
                 <li className="flex space-x-3 md:col-span-2">
@@ -200,9 +192,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
-                    Banca y Finanas
-                  </span>
+                  <span className="text-sm sm:text-base">Banca y Finanas</span>
                 </li>
               </ul>
             </div>
@@ -226,7 +216,7 @@ export default function Entrenamientos() {
               <h2 className="text-2xl font-bold text-gray-800 md:text-3xl">
                 Entrenamientos personalizados
               </h2>
-              <p className="mt-2 text-gray-500 md:mt-4">
+              <p className="mt-2 md:mt-4">
                 Nuestros servicios de entrenamiento se adaptan a tus necesidades
                 específicas. Con un enfoque práctico y centrado en el cliente,
                 trabajamos de cerca contigo para comprender tus desafíos y
@@ -260,7 +250,7 @@ export default function Entrenamientos() {
                     <h3 className="text-lg font-semibold text-gray-800">
                       Flexibilidad adaptativa
                     </h3>
-                    <p className="mt-1 text-gray-600">
+                    <p className="mt-1">
                       Nuestros servicios de entrenamiento se ajustan a tus
                       necesidades cambiantes, brindando opciones flexibles para
                       adaptarse a tu horario y requisitos específicos.
@@ -291,7 +281,7 @@ export default function Entrenamientos() {
                     <h3 className="text-lg font-semibold text-gray-800">
                       Enfoque práctico
                     </h3>
-                    <p className="mt-1 text-gray-600">
+                    <p className="mt-1">
                       Nuestros programas de entrenamiento se centran en la
                       aplicación práctica de conocimientos y habilidades, para
                       que puedas aplicar lo aprendido de inmediato en tu entorno
@@ -323,7 +313,7 @@ export default function Entrenamientos() {
                     <h3 className="text-lg font-semibold text-gray-800">
                       Personalización integral
                     </h3>
-                    <p className="mt-1 text-gray-600">
+                    <p className="mt-1">
                       Creamos programas de entrenamiento personalizados que se
                       adaptan a tus desafíos y objetivos específicos, brindando
                       una experiencia de aprendizaje individualizada y
@@ -355,7 +345,7 @@ export default function Entrenamientos() {
                     <h3 className="text-lg font-semibold text-gray-800">
                       Colaboración cercana
                     </h3>
-                    <p className="mt-1 text-gray-600">
+                    <p className="mt-1">
                       Trabajamos de cerca contigo, colaborando estrechamente
                       para comprender tus necesidades y diseñar soluciones de
                       entrenamiento efectivas que impulsen tu crecimiento y
@@ -386,7 +376,7 @@ export default function Entrenamientos() {
                 <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                   Experiencia y Conocimiento Aplicados
                 </h2>
-                <p className="text-gray-500">
+                <p>
                   Elige Grupo ASICA para tus necesidades de entrenamiento y
                   obtendrás beneficios significativos. Nuestra amplia
                   experiencia en diversas áreas garantiza conocimiento
@@ -417,7 +407,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
+                  <span className="text-sm sm:text-base">
                     Enfoque interactivo y práctico
                   </span>
                 </li>
@@ -442,7 +432,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
+                  <span className="text-sm sm:text-base">
                     Programas de entrenamiento de alto nivel
                   </span>
                 </li>
@@ -467,7 +457,7 @@ export default function Entrenamientos() {
                     />
                   </svg>
 
-                  <span className="text-sm text-gray-500 sm:text-base">
+                  <span className="text-sm sm:text-base">
                     Compromiso con el éxito del cliente
                   </span>
                 </li>
@@ -489,7 +479,7 @@ export default function Entrenamientos() {
             <div className="py-8 first:pt-0 last:pb-0">
               <div className="flex gap-x-5">
                 <svg
-                  className="mt-1 h-6 w-6 flex-shrink-0 text-gray-500"
+                  className="mt-1 h-6 w-6 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -504,7 +494,7 @@ export default function Entrenamientos() {
                   <h3 className="font-semibold text-gray-800 md:text-lg">
                     ¿Por qué con nosotros?
                   </h3>
-                  <p className="mt-1 text-gray-500">
+                  <p className="mt-1">
                     Con 29 años de experiencia, ofrecemos entrenamiento
                     profesional de calidad. Nuestros métodos de estudio
                     innovadores se adaptan a todos los niveles estudiantiles y
@@ -520,7 +510,7 @@ export default function Entrenamientos() {
             <div className="py-8 first:pt-0 last:pb-0">
               <div className="flex gap-x-5">
                 <svg
-                  className="mt-1 h-6 w-6 flex-shrink-0 text-gray-500"
+                  className="mt-1 h-6 w-6 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -535,7 +525,7 @@ export default function Entrenamientos() {
                   <h3 className="font-semibold text-gray-800 md:text-lg">
                     ¿Cómo solicito el entrenamiento?
                   </h3>
-                  <p className="mt-1 text-gray-500">
+                  <p className="mt-1">
                     Primero,{' '}
                     <span className="font-semibold">
                       <Link href="/contacto">completa el formulario</Link>
@@ -555,7 +545,7 @@ export default function Entrenamientos() {
             <div className="py-8 first:pt-0 last:pb-0">
               <div className="flex gap-x-5">
                 <svg
-                  className="mt-1 h-6 w-6 flex-shrink-0 text-gray-500"
+                  className="mt-1 h-6 w-6 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -570,7 +560,7 @@ export default function Entrenamientos() {
                   <h3 className="font-semibold text-gray-800 md:text-lg">
                     ¿Requisitos?
                   </h3>
-                  <p className="mt-1 text-gray-500">
+                  <p className="mt-1">
                     <span className="font-semibold">Ganas de aprender</span> y
                     de crecer profesionalmente. No importa si eres principiante
                     o experto, nuestros entrenamientos y cursos están diseñados
@@ -584,7 +574,7 @@ export default function Entrenamientos() {
             <div className="py-8 first:pt-0 last:pb-0">
               <div className="flex gap-x-5">
                 <svg
-                  className="mt-1 h-6 w-6 flex-shrink-0 text-gray-500"
+                  className="mt-1 h-6 w-6 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -599,7 +589,7 @@ export default function Entrenamientos() {
                   <h3 className="font-semibold text-gray-800 md:text-lg">
                     ¿Qué precio tienen los entrenamientos?
                   </h3>
-                  <p className="mt-1 text-gray-500">
+                  <p className="mt-1">
                     Para consultar los precios de nuestros entrenamientos y
                     cursos deberás de contactarnos por medio de nuestro{' '}
                     <span className="font-semibold">

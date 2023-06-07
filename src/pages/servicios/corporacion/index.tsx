@@ -24,7 +24,7 @@ export default function Corporacion() {
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             Corporación
           </h2>
-          <p className="text-gray-600 font-medium tracking-wide md:text-lg">
+          <p className="text-gray-600 text-center font-medium tracking-wide md:text-lg">
             Nuestras soluciones cubren todas los objetivos tecnológicos que las
             empresas desean lograr.
           </p>

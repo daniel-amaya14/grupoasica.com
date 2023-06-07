@@ -23,7 +23,7 @@ export default function Gobierno() {
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             Gobierno
           </h2>
-          <p className="text-gray-600 font-medium tracking-wide md:text-lg">
+          <p className="text-gray-600 text-center font-medium tracking-wide md:text-lg">
             Grupo ASICA tiene soluciones para automatizar, inventariar activos,
             manejar presupuestos. ¿Eres funcionario, dinos que deseas lograr?
           </p>

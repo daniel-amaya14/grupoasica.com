@@ -37,9 +37,9 @@ export default function IdentidadDigital() {
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
                   <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
-                    Destaque en el Mundo Digital
+                    Destaque en el mundo digital
                   </h2>
-                  <p className="text-gray-500 tracking-wide">
+                  <p className="tracking-wide">
                     En el entorno empresarial actual, la identidad digital es
                     esencial para el éxito de cualquier empresa. En Grupo ASICA,
                     entendemos la importancia de tener una presencia en línea
@@ -85,9 +85,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Diseño de Logotipo
+                    Diseño de logotipo
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Un logotipo bien diseñado es la piedra angular de su
                     identidad de marca. Nuestro equipo de diseñadores gráficos
                     expertos creará un logotipo distintivo y memorable que
@@ -118,9 +118,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Diseño de Sitio Web
+                    Diseño de sitio web
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Su sitio web es su carta de presentación en línea. Nuestro
                     equipo de desarrolladores web y diseñadores creará un sitio
                     web moderno, intuitivo y responsive que refleje la identidad
@@ -151,9 +151,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Estrategia de Redes Sociales
+                    Estrategia de redes sociales
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Las redes sociales son una herramienta poderosa para
                     interactuar con su audiencia y promover su marca. Nuestros
                     especialistas en redes sociales desarrollarán una estrategia
@@ -187,9 +187,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Marketing de Contenidos
+                    Marketing de contenidos
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     El contenido relevante y de calidad es fundamental para
                     captar y retener la atención de su audiencia. Nuestros
                     expertos en marketing de contenidos crearán estrategias y
@@ -220,9 +220,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Estrategia de SEO (Optimización de Motores de Búsqueda)
+                    Estrategia de SEO (Optimización de motores de búsqueda)
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Una estrategia de SEO sólida es fundamental para mejorar la
                     visibilidad de su sitio web en los motores de búsqueda.
                     Nuestros expertos en SEO realizarán análisis de palabras
@@ -255,9 +255,9 @@ export default function IdentidadDigital() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Gestión de Campañas de Publicidad en Línea
+                    Gestión de campañas de publicidad en línea
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Para aumentar la visibilidad de su marca y atraer a su
                     audiencia objetivo, ofrecemos servicios de gestión de
                     campañas de publicidad en línea. Nuestro equipo se encargará

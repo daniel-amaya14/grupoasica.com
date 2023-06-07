@@ -28,7 +28,7 @@ export default function Aprotecsa() {
         <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
-              Administración Documental
+              Administración documental
             </h2>
             <p className="text-justify">
               Optimizamos la gestión documental de su empresa para ahorrar
@@ -52,7 +52,7 @@ export default function Aprotecsa() {
                     ❖
                   </div>
                   <p className="mt-2 text-justify">
-                    <strong>Consultorías & Asesorías Especializada </strong>—
+                    <strong>Consultorías & asesorías especializada </strong>—
                     Comienza con un diagnóstico detallado de las necesidades de
                     cada cliente. A partir de allí, aplicamos herramientas
                     específicas como las tablas de retención y las tablas de
@@ -72,7 +72,7 @@ export default function Aprotecsa() {
                   </div>
                   <p className="mt-2 text-justify">
                     <strong>
-                      Organización, Administración y Digitalización de Archivos{' '}
+                      Organización, administración y digitalización de archivos{' '}
                     </strong>
                     — Mejorar la gestión documental en cualquier organización.
                     Nos enfocamos en tres áreas principales: Archivos de
@@ -102,7 +102,7 @@ export default function Aprotecsa() {
                     ❖
                   </div>
                   <p className="mt-2 text-justify">
-                    <strong>Custodia de Archivo </strong>— Cuando se trata de la
+                    <strong>Custodia de archivo </strong>— Cuando se trata de la
                     Custodia de Archivo, la seguridad y protección son
                     fundamentales. Por eso, ofrecemos una ubicación topográfica
                     segura para la conservación de documentos valiosos. Además,
@@ -122,7 +122,7 @@ export default function Aprotecsa() {
                     ❖
                   </div>
                   <p className="mt-2 text-justify">
-                    <strong>Gestión de Correspondencia </strong>— La
+                    <strong>Gestión de correspondencia </strong>— La
                     automatización de procesos es clave para mejorar la
                     eficiencia y productividad. A través de tecnología avanzada,
                     reducimos errores y aumentamos la velocidad de respuesta,
@@ -139,7 +139,7 @@ export default function Aprotecsa() {
           {/*  */}
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
-              Transformación Digital
+              Transformación digital
             </h2>
             <p>
               Implementamos soluciones digitales para mejorar la eficiencia y

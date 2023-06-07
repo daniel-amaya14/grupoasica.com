@@ -27,7 +27,7 @@ export default function Freebalance() {
         <section className="flex flex-col gap-4 justify-center items-center md:flex-row">
           <div>
             <h2 className="font-semibold text-2xl leading-normal mb-2 md:mb-4 md:text-3xl">
-              Diseñado con el Gobierno. Para el Gobierno.
+              Diseñado con el gobierno. Para el gobierno.
             </h2>
             <p className="text-justify">
               <strong>FreeBalance Accountability Suite™</strong>, proporciona

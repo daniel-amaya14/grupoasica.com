@@ -37,10 +37,10 @@ export default function Niif9() {
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
                   <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
-                    Soluciones Avanzadas para la Gestión Financiera Conforme a
-                    Normas Internacionales
+                    Soluciones avanzadas para la gestión financiera conforme a
+                    normas internacionales
                   </h2>
-                  <p className="text-gray-500 tracking-wide">
+                  <p className="tracking-wide">
                     En Grupo ASICA, comprendemos la importancia de una gestión
                     financiera precisa y cumplimiento normativo. Con SAS NIIF9,
                     ofrecemos soluciones avanzadas que le permiten cumplir con
@@ -85,9 +85,9 @@ export default function Niif9() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Evaluación y Diagnóstico
+                    Evaluación y diagnóstico
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Realizaremos una evaluación detallada de sus prácticas
                     contables actuales y analizaremos el cumplimiento de las
                     NIIF. Identificaremos las áreas de mejora y proporcionaremos
@@ -118,9 +118,9 @@ export default function Niif9() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Implementación y Actualización de NIIF
+                    Implementación y actualización de NIIF
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Nuestros consultores expertos en NIIF trabajarán en estrecha
                     colaboración con su equipo contable para implementar las
                     normas de SAS NIIF9 en su organización. Aseguraremos que sus
@@ -154,9 +154,9 @@ export default function Niif9() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Capacitación y Asesoramiento
+                    Capacitación y asesoramiento
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Proporcionamos capacitación personalizada sobre las NIIF y
                     asesoramiento continuo para su equipo contable. Nuestros
                     expertos compartirán su conocimiento y experiencia en la
@@ -187,9 +187,9 @@ export default function Niif9() {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
-                    Análisis y Optimización de Informes Financieros
+                    Análisis y optimización de informes financieros
                   </h3>
-                  <p className="mt-1 text-gray-600 tracking-wide">
+                  <p className="mt-1 tracking-wide">
                     Analizaremos sus informes financieros actuales y ofreceremos
                     recomendaciones para mejorar su calidad y cumplir con las
                     NIIF. Trabajaremos en conjunto para optimizar la

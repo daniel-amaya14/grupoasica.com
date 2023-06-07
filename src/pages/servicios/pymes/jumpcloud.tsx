@@ -122,7 +122,7 @@ export default function jumpcloud() {
               plataforma
             </span>
             <h3 className="font-semibold text-xl leading-normal mb-2 md:mb-4 md:text-2xl">
-              Plataforma de Open Directory
+              Plataforma de open directory
             </h3>
             <p className="text-justify">
               La plataforma de directorio abierto de JumpCloud hace posible

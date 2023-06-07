@@ -91,11 +91,11 @@ export default function Psk() {
         <section>
           <div>
             <h2 className="font-semibold text-2xl text-justify leading-normal mb-2 md:mb-4 md:text-3xl lg:text-left">
-              Sistema Administrativo PSKloud: Gestión y Control Integral
-              Empresarial
+              Sistema administrativo PSKloud: Gestión y control integral
+              empresarial
             </h2>
             <p className="text-justify">
-              Adaptable a cualquier tipo de empresa, el sistema Administrativo
+              Adaptable a cualquier tipo de empresa, el sistema administrativo
               PSKloud permite la gestión y el control de todas las operaciones
               de tu empresa,{' '}
               <strong>

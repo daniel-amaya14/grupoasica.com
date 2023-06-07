@@ -22,13 +22,7 @@ export default function Hero() {
             Tu socio confiable en soluciones tecnológicas para un futuro exitoso
             <br className="hidden md:block" />
           </h1>
-          {/* <p className="mb-6 text-base text-white md:text-lg">
-            Confía en Grupo ASICA, con más de 28 años liderando soluciones
-            tecnológicas de calidad para impulsar el crecimiento de tu empresa
-            con responsabilidad y visión a futuro.
-          </p> */}
-
-          <p className="mb-10 max-w-md text-xs tracking-wide text-gray-200 sm:mx-auto sm:text-sm md:mb-16">
+          <p className="mb-10 max-w-md text-xs text-center tracking-wide text-gray-200 sm:mx-auto sm:text-sm md:mb-16">
             Confía en Grupo ASICA, con más de 28 años liderando soluciones
             tecnológicas de calidad para impulsar el crecimiento de tu empresa
             con responsabilidad y visión a futuro.

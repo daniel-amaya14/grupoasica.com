@@ -77,7 +77,7 @@ export default function Partners() {
                 </h1>
               </div>
               <div className="mt-5 max-w-3xl">
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-center">
                   Contamos con la mejor red de colaboradores. Nuestros partners
                   nos ayudan a ofrecer soluciones integrales a nuestros
                   clientes. Si quieres ser parte de nuestra red de

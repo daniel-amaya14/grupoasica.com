@@ -30,8 +30,8 @@ export default function Imedical() {
         <section className="flex flex-col gap-10 justify-center items-center lg:flex-row">
           <div className="order-2 lg:order-1">
             <h2 className="font-semibold text-2xl text-justify leading-normal mb-2 lg:mb-4 lg:text-3xl">
-              Software para la administración y gestión de IPS, Clínicas y
-              Hospitales
+              Software para la administración y gestión de IPS, clínicas y
+              hospitales
             </h2>
             <p className="text-justify">
               Plataforma de servicios en salud que Integra la información de la

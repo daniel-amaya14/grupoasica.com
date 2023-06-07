@@ -810,7 +810,7 @@ export default function Tab() {
                 alt="GTM"
                 className="w-14 aspect-square object-cover"
               />
-              <h2 className="text-xl max-w-xs">Gestión del Tesoro público</h2>
+              <h2 className="text-xl max-w-xs">Gestión del tesoro público</h2>
             </div>
             <div className="mt-6 flex flex-col gap-6">
               <p className="text-justify">
@@ -903,7 +903,7 @@ export default function Tab() {
                 className="w-14 aspect-square object-cover"
               />
               <h2 className="text-xl max-w-xs">
-                Gestión de la Función Pública
+                Gestión de la función pública
               </h2>
             </div>
             <div className="mt-6 flex flex-col gap-6">
