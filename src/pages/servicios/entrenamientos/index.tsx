@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import BannerContacto from '@/components/BannerContacto';
+import Certificado from '@/components/Home/Certificados';
 
 export default function Entrenamientos() {
   return (
@@ -464,6 +465,15 @@ export default function Entrenamientos() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/*  */}
+        <div>
+          <h2 className="text-3xl font-bold max-w-[58rem] text-gray-800 mb-6 lg:text-4xl">
+            Formate en ciberseguridad con nuestras certificaciones de Hack The
+            Box
+          </h2>
+          <Certificado />
         </div>
 
         {/*  */}
