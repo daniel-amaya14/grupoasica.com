@@ -29,12 +29,13 @@ export default function Gobierno() {
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {solucionesGobierno.map(({ title, description, href }) => (
+          {solucionesGobierno.map(({ title, description, href, icon }) => (
             <CardSoluciones
               key={title}
               title={title}
               description={description}
               href={href}
+              icon={icon}
             />
           ))}
         </div>

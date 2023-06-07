@@ -31,12 +31,13 @@ export default function Salud() {
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-center">
-          {solucionesSalud.map(({ title, description, href }) => (
+          {solucionesSalud.map(({ title, description, href, icon }) => (
             <CardSoluciones
               key={title}
               title={title}
               description={description}
               href={href}
+              icon={icon}
             />
           ))}
         </div>

@@ -4,12 +4,14 @@ import Link from 'next/link';
 interface CardSolucionesProps {
   title: string;
   description: string;
+  icon: any;
   href?: string;
 }
 
 export default function CardSoluciones({
   title,
   description,
+  icon,
   href,
 }: CardSolucionesProps) {
   return (
@@ -22,6 +24,7 @@ export default function CardSoluciones({
           <Content
             title={title}
             description={description}
+            icon={icon}
           />
         </Link>
       ) : (
@@ -29,6 +32,7 @@ export default function CardSoluciones({
           <Content
             title={title}
             description={description}
+            icon={icon}
           />
         </div>
       )}
@@ -36,24 +40,12 @@ export default function CardSoluciones({
   );
 }
 
-const Content = ({ title, description }: CardSolucionesProps) => {
+const Content = ({ title, description, icon }: CardSolucionesProps) => {
   return (
     <>
       <div className="p-5">
         <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
-          <svg
-            className="w-8 h-8"
-            stroke="currentColor"
-            viewBox="0 0 52 52"
-            strokeWidth={3}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <polygon
-              fill="none"
-              points="29 13 14 29 25 29 23 39 38 23 27 23"
-            />
-          </svg>
+          {React.createElement(icon, { className: 'w-5 h-5 text-black' })}
         </div>
         <p className="mb-2 font-bold text-primary">{title}</p>
         <p className="text-sm leading-5 text-gray-900 text-justify">

@@ -3,76 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import LogoAsica from '@/public/images/logo-asica.png';
 import ImgEntrenamiento from '@/public/images/entrenamiento.webp';
-import { SOLUCIONES } from '@/data/listServices';
-import {
-  IconGovernment,
-  IconCorporation,
-  IconPymes,
-  IconHealthLogo,
-  IconStudentGraduate,
-  IconBank,
-} from '@/components/Icons';
-
-const colors = {
-  blue: 'bg-blue-50 text-blue-500',
-  orange: 'bg-orange-50 text-orange-500',
-  green: 'bg-green-50 text-green-500',
-  'blue-gray': 'bg-blue-gray-50 text-blue-gray-500',
-  purple: 'bg-purple-50 text-purple-500',
-  teal: 'bg-teal-50 text-teal-500',
-  cyan: 'bg-cyan-50 text-cyan-500',
-  pink: 'bg-pink-50 text-pink-500',
-};
-
-const services = [
-  {
-    title: 'Gobierno',
-    description:
-      'Automatiza, inventaría, gestiona presupuestos de activos. Entro otros',
-    href: '/servicios/gobierno',
-    icon: IconGovernment,
-    color: colors.cyan,
-  },
-  {
-    title: 'Corporación',
-    description:
-      'Soluciones completas para alcanzar objetivos tecnológicos empresariales.',
-    href: '/servicios/corporacion',
-    icon: IconCorporation,
-    color: colors.orange,
-  },
-  {
-    title: 'Pymes',
-    href: '/servicios/pymes',
-    description:
-      'Aumenta ventas, controla inventario, protégete. Descubre soluciones para PYMES.',
-    icon: IconPymes,
-    color: colors.purple,
-  },
-  {
-    title: 'Banca y Finanzas',
-    description:
-      'IA moldea el mundo. Grupo ASICA te lleva a la vanguardia financiera.',
-    href: '/servicios/banca',
-    icon: IconBank,
-    color: colors.green,
-  },
-  {
-    title: 'Salud',
-    description:
-      'Mejora atención médica, genera ingresos. Descubre nuestras soluciones clínicas.',
-    href: '/servicios/salud',
-    icon: IconHealthLogo,
-    color: colors.blue,
-  },
-  {
-    title: 'Estudiante',
-    description: 'Grupo ASICA: guía eficiente en el mundo de TI. ¡Únete!',
-    href: '/servicios/educacion',
-    icon: IconStudentGraduate,
-    color: colors.teal,
-  },
-];
+import { SERVICIOS, SOLUCIONES } from '@/data/listServices';
 
 export default function Navbar() {
   return (
@@ -170,7 +101,7 @@ export default function Navbar() {
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-white md:shadow-2xl rounded-xl before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
                     <div className="md:grid md:grid-cols-2 lg:grid-cols-10">
                       <div className="grid col-span-7 py-2 md:p-4 md:grid-cols-2">
-                        {services.map(
+                        {Object.values(SERVICIOS).map(
                           ({ title, description, href, icon, color }) => {
                             return (
                               <Link

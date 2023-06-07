@@ -13,10 +13,12 @@ const Card = ({
   title,
   description,
   href,
+  icon,
 }: {
   title: string;
   description: string;
   href: string;
+  icon: any;
 }) => {
   return (
     <div>
@@ -26,22 +28,9 @@ const Card = ({
       >
         <div className="p-4 md:p-5">
           <div className="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 shrink-0 w-5 h-5 text-gray-800"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="m6 14l7-12v8h5l-7 12v-8H6Z"
-              />
-            </svg>
-
+            {React.createElement(icon, {
+              className: 'mt-1 shrink-0 w-5 h-5 text-gray-800',
+            })}
             <div className="grow ml-5">
               <h3 className="group-hover:text-blue-600 font-semibold text-gray-800">
                 {title}
@@ -156,13 +145,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(SOLUCIONES)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}
@@ -179,13 +169,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(solucionesGobierno)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}
@@ -202,13 +193,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(solucionesCorporacion)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}
@@ -225,13 +217,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(solucionesPymes)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}
@@ -248,13 +241,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(solucionesBanca)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}
@@ -271,13 +265,14 @@ export default function Hola() {
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(solucionesSalud)
                   .sort((a, b) => (a.title > b.title ? 1 : -1))
-                  .map(({ title, description, href }) => {
+                  .map(({ title, description, href, icon }) => {
                     return (
                       <Card
                         key={title}
                         title={title}
                         description={description}
                         href={href}
+                        icon={icon}
                       />
                     );
                   })}

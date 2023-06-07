@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import LogoAsica from '@/public/images/logo-asica.png';
+import { SERVICIOS } from '@/data/listServices';
 import {
   IconLinkedin,
   IconFacebook,
@@ -10,13 +11,8 @@ import {
   IconYoutube,
 } from '@/components/Icons';
 
-const itemsServices = [
-  { title: 'Gibierno', href: '/servicios/gobierno' },
-  { title: 'Corporación', href: '/servicios/corporacion' },
-  { title: 'Pymes', href: '/servicios/pymes' },
-  { title: 'Banca y Finanzas', href: '/servicios/banca' },
-  { title: 'Salud', href: '/servicios/salud' },
-  { title: 'Educación', href: '/servicios/educacion' },
+const listServices = [
+  ...Object.values(SERVICIOS),
   { title: 'Entrenamiento', href: '/servicios/entrenamientos' },
 ];
 
@@ -184,7 +180,7 @@ export default function Footer() {
               </h4>
 
               <ul className="mt-3 grid space-y-3 text-sm">
-                {itemsServices.map(({ title, href }) => {
+                {listServices.map(({ title, href }) => {
                   return (
                     <li key={title}>
                       <Link
