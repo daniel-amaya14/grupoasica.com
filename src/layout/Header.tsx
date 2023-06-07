@@ -100,36 +100,60 @@ export default function Navbar() {
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-white md:shadow-2xl rounded-xl before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
                     <div className="md:grid md:grid-cols-2 lg:grid-cols-10">
-                      <div className="grid col-span-7 py-2 md:p-4 md:grid-cols-2">
-                        {Object.values(SERVICIOS).map(
-                          ({ title, description, href, icon, color }) => {
-                            return (
-                              <Link
-                                href={href}
-                                key={title}
-                                className="inline-flex"
-                              >
-                                <div className="flex items-center gap-3 w-full py-2 px-3 rounded-lg transition-all hover:bg-blue-50 hover:bg-opacity-70">
-                                  <div className={`rounded-md p-5 ${color}`}>
-                                    {React.createElement(icon, {
-                                      className: 'h-6 w-6',
-                                    })}
+                      <div className="col-span-7 py-2 md:px-4">
+                        <div className="w-full text-end">
+                          <Link
+                            href="/servicios"
+                            className="group/link inline-flex items-center gap-x-2 text-sm font-semibold text-gray-800 "
+                          >
+                            Ver todos
+                            <svg
+                              className="w-2.5 h-2.5 transition-transform duration-500 ease-in-out group-hover/link:translate-x-1"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </Link>
+                        </div>
+                        <div className="grid md:grid-cols-2">
+                          {Object.values(SERVICIOS).map(
+                            ({ title, description, href, icon, color }) => {
+                              return (
+                                <Link
+                                  href={href}
+                                  key={title}
+                                  className="inline-flex"
+                                >
+                                  <div className="flex items-center gap-3 w-full py-2 px-3 rounded-lg transition-all hover:bg-blue-50 hover:bg-opacity-70">
+                                    <div className={`rounded-md p-5 ${color}`}>
+                                      {React.createElement(icon, {
+                                        className: 'h-6 w-6',
+                                      })}
+                                    </div>
+                                    <div>
+                                      <span className="antialiased tracking-normal font-sans font-semibold text-blue-gray-900 flex items-center text-sm">
+                                        {title}
+                                      </span>
+                                      <p className="block antialiased font-sans text-sm leading-normal text-gray-700 font-normal">
+                                        {description}
+                                      </p>
+                                    </div>
                                   </div>
-                                  <div>
-                                    <span className="antialiased tracking-normal font-sans font-semibold text-blue-gray-900 flex items-center text-sm">
-                                      {title}
-                                    </span>
-                                    <p className="block antialiased font-sans text-sm leading-normal text-gray-700 font-normal">
-                                      {description}
-                                    </p>
-                                  </div>
-                                </div>
-                              </Link>
-                            );
-                          }
-                        )}
+                                </Link>
+                              );
+                            }
+                          )}
+                        </div>
                       </div>
-
                       <div className="col-span-3">
                         <div className="flex flex-col bg-gray-50 p-6">
                           <span className="text-xs font-semibold uppercase text-gray-800 ">
@@ -205,28 +229,53 @@ export default function Navbar() {
                   </button>
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-white md:shadow-2xl rounded-xl py-2 md:p-4 before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
-                    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                      {Object.values(SOLUCIONES)
-                        .sort((a, b) => (a.title > b.title ? 1 : -1))
-                        .map(({ title, description, href }) => {
-                          return (
-                            <Link
-                              href={href}
-                              key={title}
-                            >
-                              <div className="flex items-center gap-3 w-full h-full py-2 px-3 rounded-lg transition-all hover:bg-blue-50 hover:bg-opacity-70">
-                                <div>
-                                  <span className="antialiased tracking-normal font-sans font-semibold text-blue-gray-900 flex items-center text-sm">
-                                    {title}
-                                  </span>
-                                  <p className="block antialiased font-sans text-sm leading-normal text-gray-700 font-normal">
-                                    {description}
-                                  </p>
+                    <div>
+                      <div className="w-full text-end px-3">
+                        <Link
+                          href="/servicios"
+                          className="group/link inline-flex items-center gap-x-2 text-sm font-semibold text-gray-800 "
+                        >
+                          Ver todos
+                          <svg
+                            className="w-2.5 h-2.5 transition-transform duration-500 ease-in-out group-hover/link:translate-x-1"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                      <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        {Object.values(SOLUCIONES)
+                          .sort((a, b) => (a.title > b.title ? 1 : -1))
+                          .map(({ title, description, href }) => {
+                            return (
+                              <Link
+                                href={href}
+                                key={title}
+                              >
+                                <div className="flex items-center gap-3 w-full h-full py-2 px-3 rounded-lg transition-all hover:bg-blue-50 hover:bg-opacity-70">
+                                  <div>
+                                    <span className="antialiased tracking-normal font-sans font-semibold text-blue-gray-900 flex items-center text-sm">
+                                      {title}
+                                    </span>
+                                    <p className="block antialiased font-sans text-sm leading-normal text-gray-700 font-normal">
+                                      {description}
+                                    </p>
+                                  </div>
                                 </div>
-                              </div>
-                            </Link>
-                          );
-                        })}
+                              </Link>
+                            );
+                          })}
+                      </div>
                     </div>
                   </div>
                 </div>
