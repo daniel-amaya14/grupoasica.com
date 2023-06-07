@@ -13,7 +13,7 @@ export default function BannerContacto({
         <h2 className="text-2xl font-bold md:text-3xl md:leading-tight">
           Contactanos
         </h2>
-        <p className="text-gray-600 tracking-wide max-w-md mx-auto">
+        <p className="text-center tracking-wide max-w-md mx-auto">
           Para obtener más información, da clic en el botón de abajo, y llena la
           información solicitada.
         </p>
