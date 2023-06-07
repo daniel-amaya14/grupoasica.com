@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import ImgSasFeature from '@/public/images/sas-features.webp';
 import {
   IconGovernment,
   IconBank,
@@ -180,14 +182,23 @@ export default function TabSas() {
               </div>
               <div className="mx-auto text-left">
                 <h4 className="sr-only">intro.</h4>
-                <div className="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 lg:gap-12">
-                  <div>
+                <div className="grid gap-y-2 lg:grid-cols-12 lg:gap-6">
+                  <div className="col-span-7">
+                    <Image
+                      className="w-full h-full object-cover rounded-md"
+                      src={ImgSasFeature}
+                      width={600}
+                      height={400}
+                      alt="SAS Feature"
+                    />
+                  </div>
+
+                  <div className="col-span-5 space-y-7">
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Toma de decisiones inteligente en el gobierno
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Toma de decisiones inteligente en el gobierno
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Descubra cómo el gobierno puede incorporar la toma de
                         decisiones impulsada por la IA en los procesos públicos
@@ -195,29 +206,24 @@ export default function TabSas() {
                         analítica de datos.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Gobiernos que lideran a través del cambio
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Gobiernos que lideran a través del cambio
+                      </p>
                       <p className="text-sm text-white text-justify">
                         Descubra cómo la analítica y la IA están ayudando a las
                         agencias gubernamentales a enfrentar los desafíos que
                         constantemente sufren las instituciones de gobierno.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Soluciones de análisis del sector público para
-                          combatir el COVID-19
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Soluciones de análisis del sector público para combatir
+                        el COVID-19
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Descubra cómo los datos y el análisis están desempeñando
                         un papel clave para ayudar con la toma de decisiones
@@ -287,42 +293,46 @@ export default function TabSas() {
               </div>
               <div className="mx-auto text-left">
                 <h4 className="sr-only">intro.</h4>
-                <div className="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 lg:gap-12">
-                  <div>
+                <div className="grid gap-y-2 lg:grid-cols-12 lg:gap-6">
+                  <div className="col-span-7">
+                    <Image
+                      className="w-full h-full object-cover rounded-md"
+                      src="https://images.pexels.com/photos/8296970/pexels-photo-8296970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width={600}
+                      height={400}
+                      alt="SAS Feature"
+                    />
+                  </div>
+
+                  <div className="col-span-5 space-y-7">
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Gestión de riesgos
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Gestión de riesgos
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Establecer una cultura consciente del riesgo. Optimizar
                         el capital y la liquidez. Cumplir con las demandas
                         regulatorias.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Prevención de Fraude y Delitos Financieros
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Prevención de fraude y delitos financieros
+                      </p>
                       <p className="text-sm text-white text-justify">
                         Garantice una detección y protección superiores.
                         Permitir una mejor prevención. Detecte oportunamente los
                         riesgos mediante la predicción por medio de IA.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Experiencia del cliente
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Experiencia del cliente
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Personalice cada interacción con el cliente. Gane la
                         confianza de los clientes. Cree experiencias de cliente
@@ -393,42 +403,46 @@ export default function TabSas() {
               </div>
               <div className="mx-auto text-left">
                 <h4 className="sr-only">intro.</h4>
-                <div className="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 lg:gap-12">
-                  <div>
+                <div className="grid gap-y-2 lg:grid-cols-12 lg:gap-6">
+                  <div className="col-span-7">
+                    <Image
+                      className="w-full h-full object-cover rounded-md"
+                      src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width={600}
+                      height={400}
+                      alt="SAS Feature"
+                    />
+                  </div>
+
+                  <div className="col-span-5 space-y-7">
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Salud de la población
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Salud de la población
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Combine datos de salud y de otros orígenes para
                         comprender y predecir las necesidades futuras de salud
                         de la población.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Optimice la atención médica
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Optimice la atención médica
+                      </p>
                       <p className="text-sm text-white text-justify">
                         Identificar acciones que mejoren la satisfacción del
                         paciente, maximice la utilización de recursos y controle
                         sus costos.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Fraude y abuso en el cuidado de la salud
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Fraude y abuso en el cuidado de la salud
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Optimice la gestión financiera para impulsar mejores
                         resultados para los pacientes.
@@ -495,14 +509,23 @@ export default function TabSas() {
               </div>
               <div className="mx-auto text-left">
                 <h4 className="sr-only">intro.</h4>
-                <div className="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 lg:gap-x-12">
-                  <div>
+                <div className="grid gap-y-2 lg:grid-cols-12 lg:gap-6">
+                  <div className="col-span-7">
+                    <Image
+                      className="w-full h-full object-cover rounded-md"
+                      src="https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width={600}
+                      height={400}
+                      alt="SAS Feature"
+                    />
+                  </div>
+
+                  <div className="col-span-5 space-y-7">
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Gestión de inventario de anuncios
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Gestión de inventario de anuncios
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Reúna una visión cohesiva de toda la información
                         relacionada con las audiencias, el inventario y los
@@ -511,14 +534,11 @@ export default function TabSas() {
                         de anuncios y previsiones de demanda.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Análisis de audiencia
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Análisis de audiencia
+                      </p>
                       <p className="text-sm text-white text-justify">
                         Utilice los datos de audiencia para comprender mejor a
                         los consumidores a lo largo de sus viajes. Sepa cuándo,
@@ -527,14 +547,12 @@ export default function TabSas() {
                         del cliente.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Experiencia del cliente
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Experiencia del cliente
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Obtenga una comprensión más profunda de la experiencia
                         total del cliente para que pueda predecir la rotación y
@@ -543,14 +561,12 @@ export default function TabSas() {
                         clientes más felices, leales y mas satisfechos.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Fraude en telecomunicaciones
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Fraude en telecomunicaciones
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Detecte el fraude de suscriptores en tiempo real para
                         aumentar las ganancias y proteger el inventario. Mejore
@@ -561,14 +577,12 @@ export default function TabSas() {
                         incobrables.
                       </p>
                     </div>
-                  </div>
-                  <div>
+
                     <div className="space-y-3">
-                      <div>
-                        <p className="mt-5 text-base font-semibold text-white">
-                          Análisis de redes de telecomunicaciones
-                        </p>
-                      </div>
+                      <p className="text-base font-semibold text-white">
+                        Análisis de redes de telecomunicaciones
+                      </p>
+
                       <p className="text-sm text-white text-justify">
                         Aplique técnicas analíticas avanzadas a los datos de la
                         red para obtener información más profunda sobre cómo
