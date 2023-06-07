@@ -7,7 +7,7 @@ export default function Document() {
       className="scroll-smooth"
     >
       <Head />
-      <body className="text-justify">
+      <body>
         <Main />
         <NextScript />
       </body>
