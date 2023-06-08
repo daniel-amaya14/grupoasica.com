@@ -13,7 +13,7 @@ import {
 
 const listServices = [
   ...Object.values(SERVICIOS),
-  { title: 'Entrenamiento', href: '/servicios/entrenamientos' },
+  { title: 'Entrenamientos', href: '/servicios/entrenamientos' },
 ];
 
 const itemsCompany = [
