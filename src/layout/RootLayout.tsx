@@ -11,11 +11,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <Head>
-        <link
-          rel="shortcut icon"
-          href="./favicon.ico"
-          type="image/x-icon"
-        />
+        <title>Grupo ASICA</title>
       </Head>
       <Header />
       <main>{children}</main>
