@@ -18,7 +18,7 @@ export default function Contactos() {
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl">
               Póngase en contacto con nosotros
             </h1>
-            <p className="mt-1 text-gray-600">
+            <p className="mt-1 text-gray-600 text-center">
               Nos encantaría hablar sobre cómo podemos ayudarle.
             </p>
           </div>
